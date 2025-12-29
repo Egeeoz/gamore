@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { ChevronDown } from 'lucide-react';
 import NavDropdown from './NavDropdown';
 
 const gelateriaItems = [
@@ -21,6 +20,51 @@ const gelateriaItems = [
   },
 ];
 
+const orderOnlineItems = [
+  {
+    label: 'Beställ Avhämtning',
+    href: '/',
+  },
+  {
+    label: 'Beställ Online',
+    href: '/',
+  },
+];
+
+const aboutItems = [
+  {
+    label: 'Kontakta oss',
+    href: '/',
+  },
+  {
+    label: 'Historia',
+    href: '/',
+  },
+  {
+    label: 'Vanliga frågor',
+    href: '/',
+  },
+  {
+    label: 'Integritetspolicy',
+    href: '/',
+  },
+];
+
+const cateringItems = [
+  {
+    label: 'Vegansk Catering',
+    href: '/',
+  },
+  {
+    label: 'Gelato Catering',
+    href: '/',
+  },
+  {
+    label: 'Wraps Catering',
+    href: '/',
+  },
+];
+
 export default function Nav() {
   return (
     // Förbättrings ide, samla drop downs till en sida, separera beställ online knapp så den sticker ut mer för användare, ska smörgåstårta ligga under catering drop down? Beställ online knapp byta till dropdown, passar mer in i menyn som består av fler dropdown
@@ -38,15 +82,19 @@ export default function Nav() {
           <li>
             <a href="#">Hem</a>
           </li>
-          <li>beställ online</li>
+          <NavDropdown title="BESTÄLL ONLINE" items={orderOnlineItems} />
           <li>
             <NavDropdown title="GELATERIA" items={gelateriaItems} />
           </li>
           <li>
             <a href="#">smörgåstårta</a>
           </li>
-          <li>catering</li>
-          <li>om oss</li>
+          <li>
+            <NavDropdown title="CATERING" items={cateringItems} />
+          </li>
+          <li>
+            <NavDropdown title="OM OSS" items={aboutItems} />
+          </li>
         </ul>
       </nav>
     </header>
