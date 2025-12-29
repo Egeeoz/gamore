@@ -1,4 +1,25 @@
 import Image from 'next/image';
+import { ChevronDown } from 'lucide-react';
+import NavDropdown from './NavDropdown';
+
+const gelateriaItems = [
+  {
+    label: 'Glassprovning',
+    href: '/',
+  },
+  {
+    label: 'Glasstårta',
+    href: '/',
+  },
+  {
+    label: 'Vegansk Gelato',
+    href: '/',
+  },
+  {
+    label: 'Tårta',
+    href: '/',
+  },
+];
 
 export default function Nav() {
   return (
@@ -9,6 +30,7 @@ export default function Nav() {
         <Image
           src="/logo-gamore.png"
           alt="Gelateria Amore Logo"
+          loading="eager"
           width={183}
           height={99}
         />
@@ -17,8 +39,12 @@ export default function Nav() {
             <a href="#">Hem</a>
           </li>
           <li>beställ online</li>
-          <li>gelateria</li>
-          <li>smörgåstårta</li>
+          <li>
+            <NavDropdown title="GELATERIA" items={gelateriaItems} />
+          </li>
+          <li>
+            <a href="#">smörgåstårta</a>
+          </li>
           <li>catering</li>
           <li>om oss</li>
         </ul>
