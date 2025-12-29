@@ -2,6 +2,8 @@ import './globals.css';
 import Nav from '@/components/Nav';
 import { Cabin, Source_Sans_3 } from 'next/font/google';
 import { Metadata } from 'next';
+import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
+import { NavSidebar } from '@/components/NavSideBar';
 
 const cabin = Cabin({});
 const sourceSans3 = Source_Sans_3({
@@ -35,9 +37,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sv" className={sourceSans3.className}>
-      <body className={`${cabin.className} antialiased h-1000`}>
-        <Nav />
-        {children}
+      <body className={`${cabin.className} antialiased flex min-h-screen`}>
+        <SidebarProvider defaultOpen={false}>
+          <NavSidebar />
+          <main className="flex-1 flex flex-col bg-background">
+            <Nav />
+            {children}
+          </main>
+        </SidebarProvider>
       </body>
     </html>
   );

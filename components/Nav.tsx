@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import NavDropdown from './NavDropdown';
+import { SidebarTrigger } from './SidebarTrigger';
 
 const gelateriaItems = [
   {
@@ -71,14 +72,16 @@ export default function Nav() {
 
     <header className="sticky top-0">
       <nav className="flex items-center justify-center gap-14 py-3.5 bg-background">
+        <SidebarTrigger />
         <Image
           src="/logo-gamore.png"
           alt="Gelateria Amore Logo"
           loading="eager"
           width={183}
           height={99}
+          className="mr-6 md:mr-0"
         />
-        <ul className="flex gap-14 uppercase text-sm">
+        <ul className="md:flex hidden gap-14 uppercase text-sm">
           <li>
             <a href="#">Hem</a>
           </li>
@@ -96,6 +99,8 @@ export default function Nav() {
             <NavDropdown title="OM OSS" items={aboutItems} />
           </li>
         </ul>
+
+        <div className="md:hidden"></div>
       </nav>
     </header>
   );
