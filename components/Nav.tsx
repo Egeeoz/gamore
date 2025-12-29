@@ -77,8 +77,10 @@ export default function Nav() {
           src="/logo-gamore.png"
           alt="Gelateria Amore Logo"
           loading="eager"
+          preload={true}
           width={183}
           height={99}
+          fetchPriority="high"
           className="mr-6 md:mr-0"
         />
         <ul className="md:flex hidden gap-14 uppercase text-sm">

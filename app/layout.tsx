@@ -5,9 +5,14 @@ import { Metadata } from 'next';
 import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
 import { NavSidebar } from '@/components/NavSideBar';
 
-const cabin = Cabin({});
+const cabin = Cabin({
+  display: 'swap',
+  preload: true,
+});
 const sourceSans3 = Source_Sans_3({
   subsets: ['latin'],
+  display: 'swap',
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -37,6 +42,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sv" className={sourceSans3.className}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+      </head>
       <body className={`${cabin.className} antialiased flex min-h-screen`}>
         <SidebarProvider defaultOpen={false}>
           <NavSidebar />
