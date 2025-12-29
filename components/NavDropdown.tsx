@@ -17,7 +17,7 @@ export default function NavDropdown({ title, items }: NavDropdownProps) {
   return (
     <DropdownMenu open={open} onOpenChange={setOpen} modal={false}>
       <DropdownMenuTrigger
-        className="flex items-center gap-1 hover:text-blue-600"
+        className="flex items-center gap-1 hover:text-blue-600 cursor-pointer outline-none focus:outline-none"
         onMouseEnter={() => setOpen(true)}
       >
         {title}
@@ -25,7 +25,11 @@ export default function NavDropdown({ title, items }: NavDropdownProps) {
       </DropdownMenuTrigger>
       <DropdownMenuContent onMouseLeave={() => setOpen(false)}>
         {items.map((item, index) => (
-          <DropdownMenuItem key={`${item.href}-${index}`} asChild>
+          <DropdownMenuItem
+            key={`${item.href}-${index}`}
+            asChild
+            className="cursor-pointer"
+          >
             <Link href={item.href} className="w-full">
               {item.label}
             </Link>
