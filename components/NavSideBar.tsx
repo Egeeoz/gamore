@@ -1,42 +1,38 @@
-import { Calendar, Home, Inbox, Search, Settings } from 'lucide-react';
-
 import {
   Sidebar,
   SidebarContent,
   SidebarGroup,
   SidebarGroupContent,
-  SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
 } from '@/components/ui/sidebar';
+import { SidebarX } from './SidebarTrigger';
 
-// Menu items.
 const items = [
   {
-    title: 'Home',
+    title: 'HEM',
     url: '#',
-    icon: Home,
   },
   {
-    title: 'Inbox',
+    title: 'BESTÄLL ONLINE',
     url: '#',
-    icon: Inbox,
   },
   {
-    title: 'Calendar',
+    title: 'GELATERIA',
     url: '#',
-    icon: Calendar,
   },
   {
-    title: 'Search',
+    title: 'SMÖRGÅSTÅRTA',
     url: '#',
-    icon: Search,
   },
   {
-    title: 'Settings',
+    title: 'CATERING',
     url: '#',
-    icon: Settings,
+  },
+  {
+    title: 'OM OSS',
+    url: '#',
   },
 ];
 
@@ -44,15 +40,13 @@ export function NavSidebar() {
   return (
     <Sidebar variant="inset">
       <SidebarContent>
-        <SidebarGroup>
-          <SidebarGroupLabel>Application</SidebarGroupLabel>
+        <SidebarGroup className="flex flex-row">
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
                     <a href={item.url}>
-                      <item.icon />
                       <span>{item.title}</span>
                     </a>
                   </SidebarMenuButton>
@@ -60,6 +54,7 @@ export function NavSidebar() {
               ))}
             </SidebarMenu>
           </SidebarGroupContent>
+          <SidebarX />
         </SidebarGroup>
       </SidebarContent>
     </Sidebar>
