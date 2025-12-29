@@ -6,7 +6,7 @@ export const SidebarX = () => {
   const { toggleSidebar } = useSidebar();
   return (
     <>
-      <X onClick={toggleSidebar} className="md:hidden" size={30} />
+      <X onClick={toggleSidebar} className="md:hidden" size={25} />
     </>
   );
 };

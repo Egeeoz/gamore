@@ -1,14 +1,10 @@
 import './globals.css';
 import Nav from '@/components/Nav';
-import { Cabin, Source_Sans_3 } from 'next/font/google';
+import { Source_Sans_3 } from 'next/font/google';
 import { Metadata } from 'next';
-import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
-import { NavSidebar } from '@/components/NavSideBar';
+import { SidebarProvider } from '@/components/ui/sidebar';
+import NavSidebar from '@/components/NavSideBar';
 
-const cabin = Cabin({
-  display: 'swap',
-  preload: true,
-});
 const sourceSans3 = Source_Sans_3({
   subsets: ['latin'],
   display: 'swap',
@@ -41,11 +37,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="sv" className={sourceSans3.className}>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-      </head>
-      <body className={`${cabin.className} antialiased flex min-h-screen`}>
+    <html lang="sv">
+      <body
+        className={`${sourceSans3.className} antialiased flex min-h-screen`}
+      >
         <SidebarProvider defaultOpen={false}>
           <NavSidebar />
           <main className="flex-1 flex flex-col bg-background">
