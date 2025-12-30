@@ -50,7 +50,6 @@ const NAV_ITEMS: NavItem[] = [
       { title: 'Tårta', url: '/' },
     ],
   },
-  { title: 'SMÖRGÅSTÅRTA', url: '#' },
   {
     title: 'CATERING',
     url: '#',
@@ -70,6 +69,8 @@ const NAV_ITEMS: NavItem[] = [
       { title: 'Integritetspolicy', url: '/' },
     ],
   },
+  { title: 'SMÖRGÅSTÅRTA', url: '#' },
+  { title: 'PIZZA', url: '#' },
 ];
 
 const SubMenu = memo(({ items }: { items: NavSubItem[] }) => (

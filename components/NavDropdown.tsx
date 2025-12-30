@@ -17,7 +17,7 @@ export default function NavDropdown({ title, items }: NavDropdownProps) {
   return (
     <DropdownMenu open={open} onOpenChange={setOpen} modal={false}>
       <DropdownMenuTrigger
-        className="flex items-center gap-1 hover:text-blue-600 cursor-pointer outline-none focus:outline-none"
+        className="flex items-center gap-1 hover:text-[#C59D5F] ease-in-out transition cursor-pointer outline-none focus:outline-none"
         onMouseEnter={() => setOpen(true)}
       >
         {title}

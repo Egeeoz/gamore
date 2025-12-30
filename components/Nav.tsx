@@ -71,7 +71,7 @@ export default function Nav() {
     // Förbättrings ide, samla drop downs till en sida, separera beställ online knapp så den sticker ut mer för användare, ska smörgåstårta ligga under catering drop down? Beställ online knapp byta till dropdown, passar mer in i menyn som består av fler dropdown
 
     <header className="sticky top-0">
-      <nav className="flex items-center justify-center gap-14 py-3.5 bg-background">
+      <nav className="flex items-center justify-center md:gap-4 lg:gap-10 xl:gap-16 py-3.5 bg-background">
         <SidebarTrigger />
         <Image
           src="/logo-gamore.png"
@@ -83,7 +83,7 @@ export default function Nav() {
           fetchPriority="high"
           className="mr-6 md:mr-0"
         />
-        <ul className="md:flex hidden gap-14 uppercase text-sm">
+        <ul className="md:flex hidden gap-0 md:gap-4 lg:gap-10 xl:gap-16 uppercase lg:text-sm text-xs">
           <li>
             <a href="#">Hem</a>
           </li>
@@ -92,13 +92,16 @@ export default function Nav() {
             <NavDropdown title="GELATERIA" items={gelateriaItems} />
           </li>
           <li>
-            <a href="#">smörgåstårta</a>
-          </li>
-          <li>
             <NavDropdown title="CATERING" items={cateringItems} />
           </li>
           <li>
             <NavDropdown title="OM OSS" items={aboutItems} />
+          </li>
+          <li>
+            <a href="#">smörgåstårta</a>
+          </li>
+          <li>
+            <a href="#">pizza</a>
           </li>
         </ul>
 
