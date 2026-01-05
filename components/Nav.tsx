@@ -70,22 +70,24 @@ export default function Nav() {
   return (
     // Förbättrings ide, samla drop downs till en sida, separera beställ online knapp så den sticker ut mer för användare, ska smörgåstårta ligga under catering drop down? Beställ online knapp byta till dropdown, passar mer in i menyn som består av fler dropdown
 
-    <header className="sticky top-0">
-      <nav className="flex items-center justify-center md:gap-4 lg:gap-10 xl:gap-16 py-3.5 bg-background">
+    <header className="sticky top-0 z-10">
+      <nav className="flex items-center justify-center md:gap-2 lg:gap-8 xl:gap-14 py-3.5 bg-background">
         <SidebarTrigger />
         <Image
           src="/logo-gamore.png"
           alt="Gelateria Amore Logo"
           loading="eager"
           preload={true}
-          width={183}
-          height={99}
+          width={170}
+          height={85}
           fetchPriority="high"
           className="mr-6 md:mr-0"
         />
         <ul className="md:flex hidden gap-0 md:gap-4 lg:gap-10 xl:gap-16 uppercase lg:text-sm text-xs">
           <li>
-            <a href="#">Hem</a>
+            <a href="#" className="hover:text-[#C59D5F] ease-in-out transition">
+              Hem
+            </a>
           </li>
           <NavDropdown title="BESTÄLL ONLINE" items={orderOnlineItems} />
           <li>
@@ -98,10 +100,14 @@ export default function Nav() {
             <NavDropdown title="OM OSS" items={aboutItems} />
           </li>
           <li>
-            <a href="#">smörgåstårta</a>
+            <a href="#" className="hover:text-[#C59D5F] ease-in-out transition">
+              smörgåstårta
+            </a>
           </li>
           <li>
-            <a href="#">pizza</a>
+            <a href="#" className="hover:text-[#C59D5F] ease-in-out transition">
+              pizza
+            </a>
           </li>
         </ul>
 
