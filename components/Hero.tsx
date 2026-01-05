@@ -71,10 +71,10 @@ export default function Hero() {
         <aside className="flex flex-col gap-2">
           <p className="text-xl">Beställ direkt i vår nya webshop!</p>
           <section className="flex gap-6 justify-center">
-            <Button className="cursor-pointer rounded bg-background text-foreground border border-foreground">
+            <Button className="cursor-pointer rounded text-foreground hover:bg-gold/80 border border-foreground text-base px-6 bg-transparent">
               Beställ avhämtning
             </Button>
-            <Button className="cursor-pointer rounded bg-[#C59D5F] hover:text-black hover:bg-[#C59D5F]">
+            <Button className="cursor-pointer rounded bg-gold hover:bg-gold/80 text-base px-6">
               Beställ Catering
             </Button>
           </section>
