@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Info() {
   return (
     <section className="py-10 flex flex-col items-center gap-6">
@@ -33,6 +35,34 @@ export default function Info() {
           och ni får inte missa möjligheten att gå på vår unika glassprovning!
         </p>
       </article>
+      <section className="flex gap-3 [&_img]:aspect-square [&_img]:object-cover [&_h5]:text-center [&_h5]:text-2xl [&_h5]:text-foreground/50 [&_h5]:font-light [&_h5]:pt-6">
+        <article>
+          <Image
+            src="/hero-img.png"
+            width={275}
+            height={275}
+            alt="Smörgåstårta"
+          />
+          <h5>Smörgåstårta</h5>
+        </article>
+        <article>
+          <Image src="/hero-img.png" width={275} height={275} alt="Gelato" />
+          <h5>Gelato</h5>
+        </article>
+        <article>
+          <Image src="/hero-img.png" width={275} height={275} alt="Catering" />
+          <h5>Catering</h5>
+        </article>
+        <article>
+          <Image
+            src="/hero-img.png"
+            width={275}
+            height={275}
+            alt="Glasstårta"
+          />
+          <h5>Glasstårta</h5>
+        </article>
+      </section>
     </section>
   );
 }
