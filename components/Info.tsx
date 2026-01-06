@@ -3,10 +3,10 @@ import Image from 'next/image';
 export default function Info() {
   return (
     <section className="py-10 flex flex-col items-center gap-6">
-      <h4 className="text-center text-3xl tracking-widest font-semibold">
+      <h4 className="text-center text-2xl md:text-3xl tracking-widest font-semibold">
         VÄLKOMNA TILL AMORE CATERING STOCKHOLM
       </h4>
-      <article className="flex flex-col gap-4 w-[65%] [&>p]:text-foreground/70">
+      <article className="flex flex-col gap-4 px-4 md:px-0 md:w-[65%] [&>p]:text-foreground/70">
         <p>
           Om ni är sugna på Stockholms bästa Gelato, så är Gelateria Amore på
           Långholmsgatan 5 i Stockholm den rätta platsen för er. Här hittar ni
@@ -35,7 +35,7 @@ export default function Info() {
           och ni får inte missa möjligheten att gå på vår unika glassprovning!
         </p>
       </article>
-      <section className="flex gap-3 [&_img]:aspect-square [&_img]:object-cover [&_h5]:text-center [&_h5]:text-2xl [&_h5]:text-foreground/50 [&_h5]:font-light [&_h5]:pt-6">
+      <section className="flex flex-col md:flex-row gap-3 [&_img]:aspect-square [&_img]:object-cover [&_h5]:text-center [&_h5]:text-2xl [&_h5]:text-foreground/50 [&_h5]:font-light [&_h5]:pt-6">
         <article>
           <Image
             src="/hero-img.png"
