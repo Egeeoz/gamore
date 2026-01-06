@@ -44,7 +44,7 @@ export default function Hero() {
     //     />
     //   </figure>
     // </section>
-    <figure className="w-full">
+    <figure className="w-full relative" style={{ height: '600px' }}>
       <Image
         src="https://placehold.net/800x600.png"
         alt="Hero Img"
