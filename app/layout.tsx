@@ -1,6 +1,6 @@
 import './globals.css';
 import Nav from '@/components/Nav';
-import { Source_Sans_3 } from 'next/font/google';
+import { Source_Sans_3, Herr_Von_Muellerhoff } from 'next/font/google';
 import { Metadata } from 'next';
 import { SidebarProvider } from '@/components/ui/sidebar';
 import NavSidebar from '@/components/NavSideBar';
@@ -9,6 +9,12 @@ const sourceSans3 = Source_Sans_3({
   subsets: ['latin'],
   display: 'swap',
   preload: true,
+});
+
+const herVonMuellerHoff = Herr_Von_Muellerhoff({
+  display: 'swap',
+  preload: true,
+  weight: '400',
 });
 
 export const metadata: Metadata = {
@@ -30,7 +36,6 @@ export const metadata: Metadata = {
   },
 };
 
-// Add antialiased in body later to see if it fixes rough edges
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -38,9 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sv">
-      <body
-        className={`${sourceSans3.className} antialiased flex min-h-screen`}
-      >
+      <body className={`${sourceSans3.className}  flex min-h-screen`}>
         <SidebarProvider defaultOpen={false}>
           <NavSidebar />
           <main className="flex-1 flex flex-col bg-background">
