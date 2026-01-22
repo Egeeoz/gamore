@@ -53,7 +53,7 @@ export default function Hero() {
         fetchPriority="high"
         className="w-full max-h-150 object-cover"
       />
-      <section className="absolute inset-0 flex flex-col justify-center gap-8 text-center text-white max-h-150 pt-20">
+      <section className="absolute inset-0 flex flex-col justify-center gap-8 text-center text-white max-h-150 md:pt-20">
         <section>
           <h1
             className="md:text-9xl text-7xl text-[#C59D5F]"
