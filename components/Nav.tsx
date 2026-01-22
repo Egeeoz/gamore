@@ -51,20 +51,20 @@ const aboutItems = [
   },
 ];
 
-const cateringItems = [
-  {
-    label: 'Vegansk Catering',
-    href: '/',
-  },
-  {
-    label: 'Gelato Catering',
-    href: '/',
-  },
-  {
-    label: 'Wraps Catering',
-    href: '/',
-  },
-];
+// const cateringItems = [
+//   {
+//     label: 'Vegansk Catering',
+//     href: '/',
+//   },
+//   {
+//     label: 'Gelato Catering',
+//     href: '/',
+//   },
+//   {
+//     label: 'Wraps Catering',
+//     href: '/',
+//   },
+// ];
 
 export default function Nav() {
   return (
@@ -93,9 +93,6 @@ export default function Nav() {
           </li>
           <li>
             <NavDropdown title="GELATERIA" items={gelateriaItems} />
-          </li>
-          <li>
-            <NavDropdown title="CATERING" items={cateringItems} />
           </li>
           <li>
             <NavDropdown title="OM OSS" items={aboutItems} />
