@@ -76,12 +76,11 @@ export default function Nav() {
         <Image
           src="/logo-gamore.png"
           alt="Gelateria Amore Logo"
-          loading="eager"
-          preload={true}
-          width={170}
-          height={85}
-          fetchPriority="high"
+          width={185}
+          height={100}
           className="mr-6 md:mr-0"
+          loading="eager"
+          style={{ width: '185px', height: '100px' }}
         />
         <ul className="md:flex hidden gap-0 md:gap-4 lg:gap-10 xl:gap-16 uppercase lg:text-sm text-xs">
           <li>
@@ -89,7 +88,9 @@ export default function Nav() {
               Hem
             </a>
           </li>
-          <NavDropdown title="BESTÄLL ONLINE" items={orderOnlineItems} />
+          <li>
+            <NavDropdown title="BESTÄLL ONLINE" items={orderOnlineItems} />
+          </li>
           <li>
             <NavDropdown title="GELATERIA" items={gelateriaItems} />
           </li>
