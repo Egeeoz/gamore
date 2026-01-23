@@ -48,9 +48,9 @@ export default function Hero() {
       <Image
         src="https://placehold.net/800x600.png"
         alt="Hero Img"
-        priority
+        preload={true}
         fill
-        fetchPriority="high"
+        sizes="100vw"
         className="w-full max-h-150 object-cover"
       />
       <section className="absolute inset-0 flex flex-col justify-center gap-8 text-center text-white max-h-150 md:pt-20">
@@ -63,9 +63,7 @@ export default function Hero() {
           >
             Gelateria Amore
           </h1>
-          <h2 className="md:text-4xl text-3xl font-bold">
-            Catering Stockholm & Gelato
-          </h2>
+          <h2 className="md:text-4xl text-3xl font-bold">Gelato & Pizza</h2>
           <h3 className="text-xl md:text-2xl pt-2">Hur äkta kärlek smakar</h3>
         </section>
         <aside className="flex flex-col gap-2">

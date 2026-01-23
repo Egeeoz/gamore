@@ -36,37 +36,52 @@ export default function Info() {
           och ni får inte missa möjligheten att gå på vår unika glassprovning!
         </p>
       </article>
-      <section className="flex flex-col md:flex-row gap-3 [&_h5]:text-center [&_h5]:text-2xl [&_h5]:text-foreground/50 [&_h5]:font-light [&_h5]:pt-4 [&_img]:transition-transform [&_img]:duration-300 [&_img]:hover:-translate-y-2 [&_img]:aspect-square [&_img]:object-cover [&_img]:rounded-sm">
+      <section className="flex flex-col md:flex-row gap-3 [&_h5]:text-center [&_h5]:text-2xl [&_h5]:text-foreground/50 [&_h5]:font-light [&_h5]:pt-4 [&_img]:transition-transform [&_img]:duration-300 [&_img]:hover:-translate-y-2 [&_img]:aspect-square [&_img]:object-cover [&_img]:rounded-sm [&_img]:border-2 [&_img]:border-gold">
         <article>
           <Link href="#">
             <Image
-              src="/hero-img.png"
+              src="/smörgåstårta.jpg"
               width={275}
               height={275}
               alt="Smörgåstårta"
+              sizes="(max-width: 768px) 100vw, 25vw"
             />
           </Link>
           <h5>Smörgåstårta</h5>
         </article>
         <article>
           <Link href="#">
-            <Image src="/hero-img.png" width={275} height={275} alt="Gelato" />
+            <Image
+              src="/gelato.jpg"
+              width={275}
+              height={275}
+              alt="Gelato"
+              sizes="(max-width: 768px) 100vw, 25vw"
+            />
           </Link>
           <h5>Gelato</h5>
         </article>
         <article>
           <Link href="#">
-            <Image src="/hero-img.png" width={275} height={275} alt="Pizza" />
+            <Image
+              src="/pizza.jpg"
+              width={275}
+              height={275}
+              alt="Pizza"
+              className="object-left"
+              sizes="(max-width: 768px) 100vw, 25vw"
+            />
           </Link>
           <h5>Pizza</h5>
         </article>
         <article>
           <Link href="#">
             <Image
-              src="/hero-img.png"
+              src="/glasstårta.jpg"
               width={275}
               height={275}
               alt="Glasstårta"
+              sizes="(max-width: 768px) 100vw, 25vw"
             />
           </Link>
           <h5>Glasstårta</h5>
