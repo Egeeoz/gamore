@@ -78,6 +78,28 @@ export default function Hero() {
           </section>
         </aside>
       </section>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute bottom-0 left-0 right-0 w-full"
+        style={{
+          height: '12px',
+          fill: 'white',
+        }}
+      >
+        <defs>
+          <pattern
+            id="spike-pattern"
+            x="0"
+            y="0"
+            width="11"
+            height="12"
+            patternUnits="userSpaceOnUse"
+          >
+            <path d="M0 12L5.5 1l5.5 11z" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#spike-pattern)" />
+      </svg>
     </figure>
   );
 }
