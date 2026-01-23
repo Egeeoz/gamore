@@ -48,12 +48,12 @@ export default function Hero() {
       <Image
         src="https://placehold.net/800x600.png"
         alt="Hero Img"
-        priority
+        preload={true}
         fill
-        fetchPriority="high"
+        sizes="100vw"
         className="w-full max-h-150 object-cover"
       />
-      <section className="absolute inset-0 flex flex-col justify-center gap-8 text-center text-white max-h-150 pt-20">
+      <section className="absolute inset-0 flex flex-col justify-center gap-8 text-center text-white max-h-150 md:pt-20">
         <section>
           <h1
             className="md:text-9xl text-7xl text-[#C59D5F]"
@@ -63,9 +63,7 @@ export default function Hero() {
           >
             Gelateria Amore
           </h1>
-          <h2 className="md:text-4xl text-3xl font-bold">
-            Catering Stockholm & Gelato
-          </h2>
+          <h2 className="md:text-4xl text-3xl font-bold">Gelato & Pizza</h2>
           <h3 className="text-xl md:text-2xl pt-2">Hur äkta kärlek smakar</h3>
         </section>
         <aside className="flex flex-col gap-2">
@@ -80,6 +78,28 @@ export default function Hero() {
           </section>
         </aside>
       </section>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute bottom-0 left-0 right-0 w-full"
+        style={{
+          height: '12px',
+          fill: 'white',
+        }}
+      >
+        <defs>
+          <pattern
+            id="spike-pattern"
+            x="0"
+            y="0"
+            width="11"
+            height="12"
+            patternUnits="userSpaceOnUse"
+          >
+            <path d="M0 12L5.5 1l5.5 11z" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#spike-pattern)" />
+      </svg>
     </figure>
   );
 }

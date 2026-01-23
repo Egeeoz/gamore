@@ -3,7 +3,30 @@ import { FaInstagram, FaYelp, FaTripadvisor } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-8 pt-8 items-center bg-foreground/90 *:text-background [&_h6]:font-light [&_h6]:text-xl [&_h6]:uppercase [&_h6]:text-background/80">
+    <footer className="flex flex-col gap-8 pt-8 items-center bg-foreground/90 *:text-background [&_h6]:font-light [&_h6]:text-xl [&_h6]:uppercase [&_h6]:text-background/80 relative">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute top-0 left-0 right-0 w-full"
+        style={{
+          height: '12px',
+          fill: 'white',
+          transform: 'scaleY(-1)',
+        }}
+      >
+        <defs>
+          <pattern
+            id="spike-pattern-footer"
+            x="0"
+            y="0"
+            width="11"
+            height="12"
+            patternUnits="userSpaceOnUse"
+          >
+            <path d="M0 12L5.5 1l5.5 11z" fill="white" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#spike-pattern-footer)" />
+      </svg>
       <section className="flex flex-col items-center gap-3">
         <h6>Om oss</h6>
         <p className="md:w-[60%] w-[90%] text-center">

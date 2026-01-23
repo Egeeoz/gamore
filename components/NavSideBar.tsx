@@ -50,15 +50,15 @@ const NAV_ITEMS: NavItem[] = [
       { title: 'Tårta', url: '/' },
     ],
   },
-  {
-    title: 'CATERING',
-    url: '#',
-    subItems: [
-      { title: 'Vegansk Catering', url: '/' },
-      { title: 'Gelato Catering', url: '/' },
-      { title: 'Wraps Catering', url: '/' },
-    ],
-  },
+  // {
+  //   title: 'CATERING',
+  //   url: '#',
+  //   subItems: [
+  //     { title: 'Vegansk Catering', url: '/' },
+  //     { title: 'Gelato Catering', url: '/' },
+  //     { title: 'Wraps Catering', url: '/' },
+  //   ],
+  // },
   {
     title: 'OM OSS',
     url: '#',
