@@ -44,7 +44,7 @@ export default function Hero() {
     //     />
     //   </figure>
     // </section>
-    <figure className="w-full relative" style={{ height: '600px' }}>
+    <section className="w-full relative" style={{ height: '600px' }}>
       <Image
         src="https://placehold.net/800x600.png"
         alt="Hero Img"
@@ -54,7 +54,7 @@ export default function Hero() {
         className="w-full max-h-150 object-cover"
       />
       <div className="absolute inset-0 flex flex-col justify-center gap-8 text-center text-white max-h-150 md:pt-20">
-        <section>
+        <div>
           <h1
             className="md:text-9xl text-7xl text-[#C59D5F]"
             style={{
@@ -65,9 +65,9 @@ export default function Hero() {
           </h1>
           <h2 className="md:text-4xl text-3xl font-bold">Gelato & Pizza</h2>
           <h3 className="text-xl md:text-2xl pt-2">Hur äkta kärlek smakar</h3>
-        </section>
-        <aside className="flex flex-col gap-2">
-          <p className="text-xl">Beställ direkt i vår nya webshop!</p>
+        </div>
+        <section className="flex flex-col gap-2">
+          <h3 className="text-xl">Beställ direkt i vår nya webshop!</h3>
           <div className="flex gap-6 justify-center">
             <Button className="cursor-pointer rounded text-foreground hover:bg-gold/80 border border-foreground text-base px-6 bg-transparent">
               Beställ avhämtning
@@ -76,7 +76,7 @@ export default function Hero() {
               Beställ Catering
             </Button>
           </div>
-        </aside>
+        </section>
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -100,6 +100,6 @@ export default function Hero() {
         </defs>
         <rect width="100%" height="100%" fill="url(#spike-pattern)" />
       </svg>
-    </figure>
+    </section>
   );
 }
