@@ -71,6 +71,7 @@ export default function Hero() {
             <a
               href="https://order.foodtec.se/gamore/bestall-mat?delivery_option=self_pickup"
               rel="noopener noreferrer"
+              target="_blank"
               className="cursor-pointer rounded text-foreground hover:bg-gold/80 border border-foreground md:text-lg md:px-6 px-4 py-1 bg-transparent"
             >
               Beställ avhämtning
@@ -78,6 +79,7 @@ export default function Hero() {
             <a
               href="https://wolt.com/sv/swe/stockholm/restaurant/pizzeria-amore-langholmsgatan"
               rel="noopener noreferrer"
+              target="_blank"
               className="cursor-pointer rounded bg-gold hover:bg-gold/80 md:text-lg md:px-6 px-4 py-1 flex items-center"
             >
               Beställ med Leverans
