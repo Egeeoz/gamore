@@ -74,8 +74,15 @@ export default function Footer() {
       </section>
       <section className="flex flex-col gap-3 items-center">
         <h2>KONTAKTA OSS</h2>
-        <address className="*:not-italic text-center flex flex-col gap-1">
-          <p className="address">Långholmsgatan 5, 117 33 Stockholm</p>
+        <address className="*:not-italic text-center flex flex-col gap-1.5 *:hover:text-gold/80 *:ease-in-out *:transition *:cursor-pointer">
+          <a
+            className="address"
+            href="https://www.google.com/maps/place/Gelateria+Amore/@59.3177426,18.0279998,16z/data=!3m1!4b1!4m6!3m5!1s0x465f77c51132f8b1:0xb2ff7b2f1441e768!8m2!3d59.31774!4d18.0328707!16s%2Fg%2F11c46cd7z2?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Långholmsgatan 5, 117 33 Stockholm
+          </a>
 
           <a className="email" href="mailto:info@gamore.se">
             info@gamore.se
