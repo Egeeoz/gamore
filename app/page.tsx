@@ -4,6 +4,7 @@ import Info from '@/components/Info';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://gamore.vercel.app/'),
   title: 'Gelateria Amore - Stockholms Bästa Pizza & Gelato | Hornstull',
   description:
     'Gelateria Amore erbjuder äkta napolitansk pizza och italiensk gelato. Familjedrivet glasscafé på Långholmsgatan 5. Beställ avhämtning eller med leverans.',
