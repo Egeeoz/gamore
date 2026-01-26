@@ -4,10 +4,10 @@ import Link from 'next/link';
 export default function Info() {
   return (
     <section className="py-8 flex flex-col items-center gap-10">
-      <h4 className="text-center text-2xl md:text-3xl tracking-widest font-semibold">
+      <h3 className="text-center text-2xl md:text-3xl tracking-widest font-semibold">
         VÄLKOMNA TILL AMORE STOCKHOLM
-      </h4>
-      <article className="flex flex-col gap-4 px-4 md:px-0 md:w-[65%] [&>p]:text-foreground/70">
+      </h3>
+      <div className="flex flex-col gap-4 px-4 md:px-0 md:w-[65%] [&>p]:text-foreground/70">
         <p>
           Om ni är sugna på Stockholms bästa Gelato, så är Gelateria Amore på
           Långholmsgatan 5 i Stockholm den rätta platsen för er. Här hittar ni
@@ -35,8 +35,8 @@ export default function Info() {
           Hos oss hittar ni även Smörgåstårta, Wraps catering, glass catering
           och ni får inte missa möjligheten att gå på vår unika glassprovning!
         </p>
-      </article>
-      <section className="flex flex-col md:flex-row gap-3 [&_h5]:text-center [&_h5]:text-2xl [&_h5]:text-foreground/50 [&_h5]:font-light [&_h5]:pt-4 [&_img]:transition-transform [&_img]:duration-300 [&_img]:hover:-translate-y-2 [&_img]:aspect-square [&_img]:object-cover [&_img]:rounded-sm [&_img]:border-2 [&_img]:border-gold">
+      </div>
+      <div className="flex flex-col md:flex-row gap-3 [&_h4]:text-center [&_h4]:text-2xl [&_h4]:text-foreground/50 [&_h4]:font-light [&_h4]:pt-4 [&_img]:transition-transform [&_img]:duration-300 [&_img]:hover:-translate-y-2 [&_img]:aspect-square [&_img]:object-cover [&_img]:rounded-sm [&_img]:border-2 [&_img]:border-gold">
         <article>
           <Link href="#">
             <Image
@@ -47,7 +47,7 @@ export default function Info() {
               sizes="(max-width: 768px) 100vw, 25vw"
             />
           </Link>
-          <h5>Smörgåstårta</h5>
+          <h4>Smörgåstårta</h4>
         </article>
         <article>
           <Link href="#">
@@ -59,7 +59,7 @@ export default function Info() {
               sizes="(max-width: 768px) 100vw, 25vw"
             />
           </Link>
-          <h5>Gelato</h5>
+          <h4>Gelato</h4>
         </article>
         <article>
           <Link href="#">
@@ -72,7 +72,7 @@ export default function Info() {
               sizes="(max-width: 768px) 100vw, 25vw"
             />
           </Link>
-          <h5>Pizza</h5>
+          <h4>Pizza</h4>
         </article>
         <article>
           <Link href="#">
@@ -84,9 +84,9 @@ export default function Info() {
               sizes="(max-width: 768px) 100vw, 25vw"
             />
           </Link>
-          <h5>Glasstårta</h5>
+          <h4>Glasstårta</h4>
         </article>
-      </section>
+      </div>
     </section>
   );
 }

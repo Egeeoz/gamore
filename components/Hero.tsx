@@ -53,7 +53,7 @@ export default function Hero() {
         sizes="100vw"
         className="w-full max-h-150 object-cover"
       />
-      <section className="absolute inset-0 flex flex-col justify-center gap-8 text-center text-white max-h-150 md:pt-20">
+      <div className="absolute inset-0 flex flex-col justify-center gap-8 text-center text-white max-h-150 md:pt-20">
         <section>
           <h1
             className="md:text-9xl text-7xl text-[#C59D5F]"
@@ -68,16 +68,16 @@ export default function Hero() {
         </section>
         <aside className="flex flex-col gap-2">
           <p className="text-xl">Beställ direkt i vår nya webshop!</p>
-          <section className="flex gap-6 justify-center">
+          <div className="flex gap-6 justify-center">
             <Button className="cursor-pointer rounded text-foreground hover:bg-gold/80 border border-foreground text-base px-6 bg-transparent">
               Beställ avhämtning
             </Button>
             <Button className="cursor-pointer rounded bg-gold hover:bg-gold/80 text-base px-6">
               Beställ Catering
             </Button>
-          </section>
+          </div>
         </aside>
-      </section>
+      </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="absolute bottom-0 left-0 right-0 w-full"

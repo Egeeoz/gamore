@@ -122,3 +122,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+.address::before {
+  content: '📍';
+}
+
+.email::before {
+  content: '✉️';
+}
+
+.phone::before {
+  content: '📞';
+}
