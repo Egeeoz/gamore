@@ -43,7 +43,7 @@ export default function Info() {
               src="/smörgåstårta.jpg"
               width={275}
               height={275}
-              alt="Smörgåstårta"
+              alt="Bild på en smörgåstårta"
               sizes="(max-width: 768px) 100vw, 25vw"
             />
           </Link>
@@ -55,7 +55,7 @@ export default function Info() {
               src="/gelato.jpg"
               width={275}
               height={275}
-              alt="Gelato"
+              alt="Bild på italiensk gelato"
               sizes="(max-width: 768px) 100vw, 25vw"
             />
           </Link>
@@ -67,7 +67,7 @@ export default function Info() {
               src="/pizza.jpg"
               width={275}
               height={275}
-              alt="Pizza"
+              alt="Bild på en napolitansk pizza, pizzan heter Estate på menyn"
               className="object-left"
               sizes="(max-width: 768px) 100vw, 25vw"
             />
@@ -80,7 +80,7 @@ export default function Info() {
               src="/glasstårta.jpg"
               width={275}
               height={275}
-              alt="Glasstårta"
+              alt="Bild på en Glasstårta"
               sizes="(max-width: 768px) 100vw, 25vw"
             />
           </Link>
