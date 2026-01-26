@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { Button } from './ui/button';
 
 export default function Hero() {
   return (
@@ -44,17 +43,18 @@ export default function Hero() {
     //     />
     //   </figure>
     // </section>
-    <figure className="w-full relative" style={{ height: '600px' }}>
+    <section className="w-full relative" style={{ height: '600px' }}>
       <Image
-        src="https://placehold.net/800x600.png"
-        alt="Hero Img"
+        // src="https://placehold.net/800x600.png"
+        src="/gelateria-amore-entre-stockholm-pizzeria.png"
+        alt="Entrén till Gelateria Amore på Långholmsgatan i Stockholm, där vi erbjuder italiensk glass och napolitansk pizza"
         preload={true}
         fill
         sizes="100vw"
         className="w-full max-h-150 object-cover"
       />
-      <section className="absolute inset-0 flex flex-col justify-center gap-8 text-center text-white max-h-150 md:pt-20">
-        <section>
+      <div className="absolute inset-0 flex flex-col justify-center gap-8 text-center text-white max-h-150 md:pt-20">
+        <div>
           <h1
             className="md:text-9xl text-7xl text-[#C59D5F]"
             style={{
@@ -65,19 +65,29 @@ export default function Hero() {
           </h1>
           <h2 className="md:text-4xl text-3xl font-bold">Gelato & Pizza</h2>
           <h3 className="text-xl md:text-2xl pt-2">Hur äkta kärlek smakar</h3>
-        </section>
-        <aside className="flex flex-col gap-2">
-          <p className="text-xl">Beställ direkt i vår nya webshop!</p>
-          <section className="flex gap-6 justify-center">
-            <Button className="cursor-pointer rounded text-foreground hover:bg-gold/80 border border-foreground text-base px-6 bg-transparent">
+        </div>
+        <div className="flex flex-col gap-2">
+          <p className="text-xl font-bold">Beställ direkt i vår nya webshop!</p>
+          <div className="flex gap-6 justify-center">
+            <a
+              href="https://order.foodtec.se/gamore/bestall-mat?delivery_option=self_pickup"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="cursor-pointer rounded hover:bg-gold/80 border-2 md:text-lg md:px-6 px-4 py-1 bg-transparent"
+            >
               Beställ avhämtning
-            </Button>
-            <Button className="cursor-pointer rounded bg-gold hover:bg-gold/80 text-base px-6">
-              Beställ Catering
-            </Button>
-          </section>
-        </aside>
-      </section>
+            </a>
+            <a
+              href="https://wolt.com/sv/swe/stockholm/restaurant/pizzeria-amore-langholmsgatan"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="cursor-pointer rounded bg-gold hover:bg-gold/80 md:text-lg md:px-6 px-4 py-1 flex items-center"
+            >
+              Beställ med Leverans
+            </a>
+          </div>
+        </div>
+      </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="absolute bottom-0 left-0 right-0 w-full"
@@ -100,6 +110,6 @@ export default function Hero() {
         </defs>
         <rect width="100%" height="100%" fill="url(#spike-pattern)" />
       </svg>
-    </figure>
+    </section>
   );
 }
