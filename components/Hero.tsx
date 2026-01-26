@@ -45,8 +45,9 @@ export default function Hero() {
     // </section>
     <section className="w-full relative" style={{ height: '600px' }}>
       <Image
-        src="https://placehold.net/800x600.png"
-        alt="Hero Img"
+        // src="https://placehold.net/800x600.png"
+        src="/gelateria-amore-entre-stockholm-pizzeria.png"
+        alt="Entrén till Gelateria Amore på Långholmsgatan i Stockholm, där vi erbjuder italiensk glass och napolitansk pizza"
         preload={true}
         fill
         sizes="100vw"
@@ -66,13 +67,13 @@ export default function Hero() {
           <h3 className="text-xl md:text-2xl pt-2">Hur äkta kärlek smakar</h3>
         </div>
         <div className="flex flex-col gap-2">
-          <p className="text-xl">Beställ direkt i vår nya webshop!</p>
+          <p className="text-xl font-bold">Beställ direkt i vår nya webshop!</p>
           <div className="flex gap-6 justify-center">
             <a
               href="https://order.foodtec.se/gamore/bestall-mat?delivery_option=self_pickup"
               rel="noopener noreferrer"
               target="_blank"
-              className="cursor-pointer rounded text-foreground hover:bg-gold/80 border border-foreground md:text-lg md:px-6 px-4 py-1 bg-transparent"
+              className="cursor-pointer rounded hover:bg-gold/80 border-2 md:text-lg md:px-6 px-4 py-1 bg-transparent"
             >
               Beställ avhämtning
             </a>
