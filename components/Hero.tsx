@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { Button } from './ui/button';
 
 export default function Hero() {
   return (
@@ -66,17 +65,25 @@ export default function Hero() {
           <h2 className="md:text-4xl text-3xl font-bold">Gelato & Pizza</h2>
           <h3 className="text-xl md:text-2xl pt-2">Hur äkta kärlek smakar</h3>
         </div>
-        <section className="flex flex-col gap-2">
-          <h3 className="text-xl">Beställ direkt i vår nya webshop!</h3>
+        <div className="flex flex-col gap-2">
+          <p className="text-xl">Beställ direkt i vår nya webshop!</p>
           <div className="flex gap-6 justify-center">
-            <Button className="cursor-pointer rounded text-foreground hover:bg-gold/80 border border-foreground text-base px-6 bg-transparent">
+            <a
+              href="https://order.foodtec.se/gamore/bestall-mat?delivery_option=self_pickup"
+              rel="noopener noreferrer"
+              className="cursor-pointer rounded text-foreground hover:bg-gold/80 border border-foreground md:text-lg md:px-6 px-4 py-1 bg-transparent"
+            >
               Beställ avhämtning
-            </Button>
-            <Button className="cursor-pointer rounded bg-gold hover:bg-gold/80 text-base px-6">
-              Beställ Catering
-            </Button>
+            </a>
+            <a
+              href="https://wolt.com/sv/swe/stockholm/restaurant/pizzeria-amore-langholmsgatan"
+              rel="noopener noreferrer"
+              className="cursor-pointer rounded bg-gold hover:bg-gold/80 md:text-lg md:px-6 px-4 py-1 flex items-center"
+            >
+              Beställ med Leverans
+            </a>
           </div>
-        </section>
+        </div>
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
