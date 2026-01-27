@@ -2,55 +2,12 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    // <section className="flex justify-between w-[65%] h-117.5 m-auto my-0 pt-5">
-    //   <section className="relative flex flex-col gap-8 border-l-2 border-[#C59D5F] p-4 w-1/2">
-    //     <aside>
-    //       <h1
-    //         className="text-8xl"
-    //         style={{
-    //           fontFamily: 'Herr Von Muellerhoff',
-    //         }}
-    //       >
-    //         Gelateria Amore
-    //       </h1>
-    //       <h2 className="text-2xl">Catering Stockholm & Gelato</h2>
-    //       <p>
-    //         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
-    //         inventore dolor natus dolores et quaerat nam illum harum suscipit
-    //         dolore?
-    //       </p>
-    //     </aside>
-    //     <aside className="flex flex-col gap-4">
-    //       <h3>Beställ direkt i vår nya webshop!</h3>
-    //       <aside className="flex gap-6">
-    //         <Button className="cursor-pointer rounded bg-background text-foreground border border-foreground">
-    //           Beställ avhämtning
-    //         </Button>
-    //         <Button className="cursor-pointer rounded bg-[#C59D5F] hover:text-black hover:bg-[#C59D5F]">
-    //           Beställ Catering
-    //         </Button>
-    //       </aside>
-    //     </aside>
-    //   </section>
-    //   <figure className="relative w-[40%] h-[200px] md:h-[350px] lg:h-[450px]">
-    //     <Image
-    //       src="/hero-img.png"
-    //       alt="Hero Img"
-    //       priority
-    //       fill
-    //       fetchPriority="high"
-    //       className="object-cover rounded-sm"
-    //     />
-    //   </figure>
-    // </section>
     <section className="w-full relative" style={{ height: '600px' }}>
       <Image
-        // src="https://placehold.net/800x600.png"
-        src="/gelateria-amore-entre-stockholm-pizzeria.png"
+        src="/gelateria-amore-entre-stockholm-pizzeria.jpg"
         alt="Entrén till Gelateria Amore på Långholmsgatan i Stockholm, där vi erbjuder italiensk glass och napolitansk pizza"
         preload={true}
         fill
-        sizes="100vw"
         className="w-full max-h-150 object-cover"
       />
       <div className="absolute inset-0 flex flex-col justify-center gap-8 text-center text-white max-h-150 md:pt-20">
@@ -68,12 +25,12 @@ export default function Hero() {
         </div>
         <div className="flex flex-col gap-2">
           <p className="text-xl font-bold">Beställ direkt i vår nya webshop!</p>
-          <div className="flex gap-6 justify-center">
+          <div className="flex gap-6 justify-center [&_a]:transition-transform [&_a]:duration-300 [&_a]:hover:-translate-y-1 [&_a]:shadow-2xl [&_a]:ring-2">
             <a
               href="https://order.foodtec.se/gamore/bestall-mat?delivery_option=self_pickup"
               rel="noopener noreferrer"
               target="_blank"
-              className="cursor-pointer rounded hover:bg-gold/80 border-2 md:text-lg md:px-6 px-4 py-1 bg-transparent"
+              className="cursor-pointer rounded bg-background text-gold font-medium md:text-lg md:px-6 px-4 py-1 hover:"
             >
               Beställ avhämtning
             </a>
@@ -81,9 +38,9 @@ export default function Hero() {
               href="https://wolt.com/sv/swe/stockholm/restaurant/pizzeria-amore-langholmsgatan"
               rel="noopener noreferrer"
               target="_blank"
-              className="cursor-pointer rounded bg-gold hover:bg-gold/80 md:text-lg md:px-6 px-4 py-1 flex items-center"
+              className="cursor-pointer rounded bg-gold font-medium md:text-lg md:px-6 px-4 py-1 flex items-center"
             >
-              Beställ med Leverans
+              Beställ med leverans
             </a>
           </div>
         </div>

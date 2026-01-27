@@ -1,4 +1,5 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
+import Link from 'next/link';
 import { ChevronDown } from 'lucide-react';
 import {
   Sidebar,
@@ -22,11 +23,15 @@ import { SidebarX } from './SidebarTrigger';
 interface NavSubItem {
   title: string;
   url: string;
+  rel?: string;
+  target?: string;
 }
 
 interface NavItem {
   title: string;
   url: string;
+  rel?: string;
+  target?: string;
   subItems?: NavSubItem[];
 }
 
@@ -36,8 +41,18 @@ const NAV_ITEMS: NavItem[] = [
     title: 'BESTÄLL ONLINE',
     url: '#',
     subItems: [
-      { title: 'Beställ Avhämtning', url: '/' },
-      { title: 'Beställ Online', url: '/' },
+      {
+        title: 'Beställ avhämtning',
+        url: 'https://order.foodtec.se/gamore/bestall-mat?delivery_option=self_pickup',
+        rel: 'noopener noreferrer',
+        target: '_blank',
+      },
+      {
+        title: 'Beställ med leverans',
+        url: 'https://wolt.com/sv/swe/stockholm/restaurant/pizzeria-amore-langholmsgatan',
+        rel: 'noopener noreferrer',
+        target: '_blank',
+      },
     ],
   },
   {
@@ -46,7 +61,7 @@ const NAV_ITEMS: NavItem[] = [
     subItems: [
       { title: 'Glassprovning', url: '/' },
       { title: 'Glasstårta', url: '/' },
-      { title: 'Vegansk Gelato', url: '/' },
+      { title: 'Vegansk gelato', url: '/' },
       { title: 'Tårta', url: '/' },
     ],
   },
@@ -78,12 +93,14 @@ const SubMenu = memo(({ items }: { items: NavSubItem[] }) => (
     {items.map((sub: NavSubItem) => (
       <SidebarMenuSubItem key={sub.title}>
         <SidebarMenuSubButton asChild>
-          <a
+          <Link
             href={sub.url}
+            rel={sub.rel ?? ''}
+            target={sub.target ?? ''}
             className="text-sm py-2 block text-white/60 hover:text-white hover:bg-transparent active:bg-transparent active:text-white transition-colors"
           >
             {sub.title}
-          </a>
+          </Link>
         </SidebarMenuSubButton>
       </SidebarMenuSubItem>
     ))}
@@ -133,7 +150,13 @@ export default function NavSidebar() {
                     </Collapsible>
                   ) : (
                     <SidebarMenuButton asChild className={buttonStyles}>
-                      <a href={item.url}>{item.title}</a>
+                      <Link
+                        href={item.url}
+                        rel={item.rel ?? ''}
+                        target={item.target ?? ''}
+                      >
+                        {item.title}
+                      </Link>
                     </SidebarMenuButton>
                   )}
                 </SidebarMenuItem>

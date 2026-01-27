@@ -5,7 +5,7 @@ export default function Info() {
   return (
     <section className="py-8 flex flex-col items-center gap-10">
       <h3 className="text-center text-2xl md:text-3xl tracking-widest font-semibold">
-        VÄLKOMNA TILL AMORE STOCKHOLM
+        VÄLKOMNA TILL GELATERIA AMORE STOCKHOLM
       </h3>
       <div className="flex flex-col gap-4 px-4 md:px-0 md:w-[65%] [&>p]:text-foreground/70">
         <p>

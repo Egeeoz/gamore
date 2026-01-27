@@ -11,7 +11,12 @@ import { useState } from 'react';
 
 import { NavDropdownProps } from '@/types/types';
 
-export default function NavDropdown({ title, items }: NavDropdownProps) {
+export default function NavDropdown({
+  title,
+  items,
+  rel = '',
+  target = '',
+}: NavDropdownProps) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -30,7 +35,7 @@ export default function NavDropdown({ title, items }: NavDropdownProps) {
             asChild
             className="cursor-pointer"
           >
-            <Link href={item.href} className="w-full">
+            <Link href={item.href} className="w-full" rel={rel} target={target}>
               {item.label}
             </Link>
           </DropdownMenuItem>
