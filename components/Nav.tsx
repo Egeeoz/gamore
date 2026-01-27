@@ -12,7 +12,7 @@ const gelateriaItems = [
     href: '/',
   },
   {
-    label: 'Vegansk Gelato',
+    label: 'Vegansk gelato',
     href: '/',
   },
   {
@@ -23,12 +23,12 @@ const gelateriaItems = [
 
 const orderOnlineItems = [
   {
-    label: 'Beställ Avhämtning',
-    href: '/',
+    label: 'Beställ avhämtning',
+    href: 'https://order.foodtec.se/gamore/bestall-mat?delivery_option=self_pickup',
   },
   {
-    label: 'Beställ Online',
-    href: '/',
+    label: 'Beställ med leverans',
+    href: 'https://wolt.com/sv/swe/stockholm/restaurant/pizzeria-amore-langholmsgatan',
   },
 ];
 
@@ -89,7 +89,12 @@ export default function Nav() {
             </a>
           </li>
           <li>
-            <NavDropdown title="BESTÄLL ONLINE" items={orderOnlineItems} />
+            <NavDropdown
+              title="BESTÄLL ONLINE"
+              items={orderOnlineItems}
+              rel="noopener noreferrer"
+              target="_blank"
+            />
           </li>
           <li>
             <NavDropdown title="GELATERIA" items={gelateriaItems} />
