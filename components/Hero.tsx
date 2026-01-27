@@ -1,14 +1,17 @@
 import Image from 'next/image';
+import heroImg from '@/public/gelateria-amore-entre-stockholm-pizzeria.webp';
 
 export default function Hero() {
   return (
     <section className="w-full relative" style={{ height: '600px' }}>
       <Image
-        src="/gelateria-amore-entre-stockholm-pizzeria.jpg"
+        src={heroImg}
         alt="Entrén till Gelateria Amore på Långholmsgatan i Stockholm, där vi erbjuder italiensk glass och napolitansk pizza"
-        preload={true}
         fill
-        className="w-full max-h-150 object-cover"
+        fetchPriority="high"
+        sizes="100vw"
+        placeholder="blur"
+        className="object-cover"
       />
       <div className="absolute inset-0 flex flex-col justify-center gap-8 text-center text-white max-h-150 md:pt-20">
         <div>
