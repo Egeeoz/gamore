@@ -27,7 +27,7 @@ export default function Footer() {
         </defs>
         <rect width="100%" height="100%" fill="url(#spike-pattern-footer)" />
       </svg>
-      <section className="flex flex-col items-center gap-3">
+      <section className="flex flex-col items-center gap-2">
         <h2>Om oss</h2>
         <p className="md:w-[60%] w-[90%] text-center">
           Gelateria Amore är ett litet, familjedrivet företag. Ägarna Dragana
@@ -35,7 +35,7 @@ export default function Footer() {
           glass och pizza. Kom in och upplev hur äkta kärlek smakar!
         </p>
       </section>
-      <section className="flex flex-col items-center gap-3">
+      <section className="flex flex-col items-center gap-2">
         <h2>FÖLJ OSS</h2>
         <div className="flex items-center justify-center gap-5 [&>a]:hover:text-gold/80 [&>a]:ease-in-out [&>a]:transition">
           <a
@@ -72,7 +72,7 @@ export default function Footer() {
           </a>
         </div>
       </section>
-      <section className="flex flex-col gap-3 items-center">
+      <section className="flex flex-col gap-2 items-center">
         <h2>KONTAKTA OSS</h2>
         <address className="*:not-italic text-center flex flex-col gap-1.5 *:hover:text-gold/80 *:ease-in-out *:transition *:cursor-pointer">
           <a
@@ -94,6 +94,39 @@ export default function Footer() {
             08 30 42 70
           </a>
         </address>
+      </section>
+      <section className="">
+        <h2 className="text-center pb-2">ÖPPETTIDER</h2>
+        <dl className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2 [&_dt]:font-medium">
+          <div className="flex flex-col items-center">
+            <dt>Måndag</dt>
+            <dd>Stängt</dd>
+          </div>
+          <div className="flex flex-col items-center">
+            <dt>Tisdag</dt>
+            <dd>11 - 18</dd>
+          </div>
+          <div className="flex flex-col items-center">
+            <dt>Onsdag</dt>
+            <dd>11 - 18</dd>
+          </div>
+          <div className="flex flex-col items-center">
+            <dt>Torsdag</dt>
+            <dd>11 - 18</dd>
+          </div>
+          <div className="flex flex-col items-center">
+            <dt>Fredag</dt>
+            <dd>11 - 21</dd>
+          </div>
+          <div className="flex flex-col items-center">
+            <dt>Lördag</dt>
+            <dd>11 - 21</dd>
+          </div>
+          <div className="flex flex-col items-center last:col-span-2 last:md:col-span-1">
+            <dt>Söndag</dt>
+            <dd>11 - 21</dd>
+          </div>
+        </dl>
       </section>
       <section>
         <p className="uppercase text-background/80 pb-8 text-sm text-center">
