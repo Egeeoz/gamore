@@ -89,6 +89,11 @@ export default function Nav() {
             </a>
           </li>
           <li>
+            <a href="#" className="hover:text-[#C59D5F] ease-in-out transition">
+              Meny
+            </a>
+          </li>
+          <li>
             <NavDropdown
               title="BESTÄLL ONLINE"
               items={orderOnlineItems}
