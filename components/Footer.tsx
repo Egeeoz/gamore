@@ -95,7 +95,7 @@ export default function Footer() {
           </a>
         </address>
       </section>
-      <section className="">
+      <section>
         <h2 className="text-center pb-2">ÖPPETTIDER</h2>
         <dl className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2 [&_dt]:font-medium">
           <div className="flex flex-col items-center">

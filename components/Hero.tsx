@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import heroImg from '@/public/gelateria-amore-entre-stockholm-pizzeria.webp';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -26,9 +27,11 @@ export default function Hero() {
           <h2 className="md:text-4xl text-3xl font-bold">Gelato & Pizza</h2>
           <h3 className="text-xl md:text-2xl pt-2">Hur äkta kärlek smakar</h3>
         </div>
-        <div className="flex flex-col gap-2">
-          <p className="text-xl font-bold">Beställ direkt i vår nya webshop!</p>
-          <div className="flex gap-6 justify-center [&_a]:transition-transform [&_a]:duration-300 [&_a]:hover:-translate-y-1 [&_a]:shadow-2xl [&_a]:ring-2">
+        <div className="flex flex-col gap-3">
+          <p className="text-xl font-bold">
+            Beställ direkt i vår nya webshop eller se vår meny!
+          </p>
+          <div className="flex gap-6 justify-center [&_a]:transition-transform [&_a]:duration-300 [&_a]:hover:-translate-y-1 [&_a]:shadow-2xl [&_a]:ring-2 flex-wrap">
             <a
               href="https://order.foodtec.se/gamore/bestall-mat?delivery_option=self_pickup"
               rel="noopener noreferrer"
@@ -45,6 +48,12 @@ export default function Hero() {
             >
               Beställ med leverans
             </a>
+            <Link
+              href="/"
+              className="cursor-pointer rounded bg-foreground/80 ring-2 ring-gold border-gold font-medium md:text-lg md:px-6 px-4 py-1"
+            >
+              Meny
+            </Link>
           </div>
         </div>
       </div>
