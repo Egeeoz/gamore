@@ -3,6 +3,7 @@ import { Source_Sans_3, Herr_Von_Muellerhoff } from 'next/font/google';
 import { Metadata } from 'next';
 
 import Nav from '@/components/Nav';
+import Footer from '@/components/Footer';
 import { SidebarProvider } from '@/components/ui/sidebar';
 import NavSidebar from '@/components/NavSideBar';
 
