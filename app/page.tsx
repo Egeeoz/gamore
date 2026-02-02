@@ -1,4 +1,3 @@
-import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import Info from '@/components/Info';
 import { Metadata } from 'next';
@@ -101,7 +100,6 @@ export default function Home() {
     <>
       <Hero />
       <Info />
-      <Footer />
     </>
   );
 }

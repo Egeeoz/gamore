@@ -1,5 +1,6 @@
 import './globals.css';
 import Nav from '@/components/Nav';
+import Footer from '@/components/Footer';
 import { Source_Sans_3, Herr_Von_Muellerhoff } from 'next/font/google';
 import { Metadata } from 'next';
 import { SidebarProvider } from '@/components/ui/sidebar';
@@ -18,22 +19,12 @@ const herVonMuellerHoff = Herr_Von_Muellerhoff({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://gamore.vercel.app'),
   title: {
-    default: 'Your Site Name',
-    template: '%s | Your Site Name', // För andra sidor
+    default: 'Gelateria Amore - Pizza & Gelato i Stockholm',
+    template: '%s | Gelateria Amore',
   },
-  description:
-    'Your site description here - make it compelling and under 160 characters',
-  keywords: ['keyword1', 'keyword2', 'keyword3'],
-  authors: [{ name: 'Your Name' }],
-  openGraph: {
-    title: 'Your Site Name',
-    description: 'Your site description',
-    url: 'https://yoursite.com',
-    siteName: 'Your Site Name',
-    locale: 'sv_SE',
-    type: 'website',
-  },
+  description: 'Äkta napolitansk pizza och italiensk gelato på Hornstull',
 };
 
 export default function RootLayout({
@@ -46,10 +37,13 @@ export default function RootLayout({
       <body className={`${sourceSans3.className}  flex min-h-screen`}>
         <SidebarProvider defaultOpen={false}>
           <NavSidebar />
-          <main className="flex-1 flex flex-col bg-background">
+          <div className="flex flex-col flex-1">
             <Nav />
-            {children}
-          </main>
+            <main className="flex-1 flex flex-col bg-background min-h-dvh">
+              {children}
+            </main>
+            <Footer />
+          </div>
         </SidebarProvider>
       </body>
     </html>

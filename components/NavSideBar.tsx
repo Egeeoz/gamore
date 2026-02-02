@@ -37,6 +37,11 @@ interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   { title: 'HEM', url: '#' },
+  { title: 'MENY', url: '#' },
+  { title: 'PIZZA', url: '#' },
+  { title: 'GELATO', url: '#' },
+  { title: 'GlASSPROVNING', url: '#' },
+  { title: 'VEGANSK GELATO', url: '#' },
   {
     title: 'BESTÄLL ONLINE',
     url: '#',
@@ -55,23 +60,12 @@ const NAV_ITEMS: NavItem[] = [
       },
     ],
   },
-  {
-    title: 'GELATERIA',
-    url: '#',
-    subItems: [
-      { title: 'Glassprovning', url: '/' },
-      { title: 'Glasstårta', url: '/' },
-      { title: 'Vegansk gelato', url: '/' },
-      { title: 'Tårta', url: '/' },
-    ],
-  },
   // {
-  //   title: 'CATERING',
+  //   title: 'GELATO',
   //   url: '#',
   //   subItems: [
-  //     { title: 'Vegansk Catering', url: '/' },
-  //     { title: 'Gelato Catering', url: '/' },
-  //     { title: 'Wraps Catering', url: '/' },
+  //     { title: 'Glassprovning', url: '/' },
+  //     { title: 'Vegansk gelato', url: '/' },
   //   ],
   // },
   {
@@ -84,8 +78,6 @@ const NAV_ITEMS: NavItem[] = [
       { title: 'Integritetspolicy', url: '/' },
     ],
   },
-  { title: 'SMÖRGÅSTÅRTA', url: '#' },
-  { title: 'PIZZA', url: '#' },
 ];
 
 const SubMenu = memo(({ items }: { items: NavSubItem[] }) => (
