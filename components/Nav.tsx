@@ -1,25 +1,18 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import NavDropdown from './NavDropdown';
 import { SidebarTrigger } from './SidebarTrigger';
 
-const gelateriaItems = [
-  {
-    label: 'Glassprovning',
-    href: '/',
-  },
-  {
-    label: 'Glasstårta',
-    href: '/',
-  },
-  {
-    label: 'Vegansk gelato',
-    href: '/',
-  },
-  {
-    label: 'Tårta',
-    href: '/',
-  },
-];
+// const gelateriaItems = [
+//   {
+//     label: 'Glassprovning',
+//     href: '/',
+//   },
+//   {
+//     label: 'Vegansk gelato',
+//     href: '/',
+//   },
+// ];
 
 const orderOnlineItems = [
   {
@@ -35,36 +28,21 @@ const orderOnlineItems = [
 const aboutItems = [
   {
     label: 'Kontakta oss',
-    href: '/',
+    href: 'kontakt',
   },
   {
     label: 'Historia',
-    href: '/',
+    href: 'historia',
   },
   {
     label: 'Vanliga frågor',
-    href: '/',
+    href: 'faq',
   },
   {
     label: 'Integritetspolicy',
-    href: '/',
+    href: 'integritetspolicy',
   },
 ];
-
-// const cateringItems = [
-//   {
-//     label: 'Vegansk Catering',
-//     href: '/',
-//   },
-//   {
-//     label: 'Gelato Catering',
-//     href: '/',
-//   },
-//   {
-//     label: 'Wraps Catering',
-//     href: '/',
-//   },
-// ];
 
 export default function Nav() {
   return (
@@ -84,15 +62,56 @@ export default function Nav() {
         />
         <ul className="md:flex hidden gap-0 md:gap-4 lg:gap-10 xl:gap-16 uppercase lg:text-sm text-xs">
           <li>
-            <a href="#" className="hover:text-[#C59D5F] ease-in-out transition">
-              Hem
-            </a>
+            <Link
+              href="/"
+              className="hover:text-[#C59D5F] ease-in-out transition"
+            >
+              hem
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-[#C59D5F] ease-in-out transition">
-              Meny
-            </a>
+            <Link
+              href="meny"
+              className="hover:text-[#C59D5F] ease-in-out transition"
+            >
+              meny
+            </Link>
           </li>
+          <li>
+            <Link
+              href="pizza"
+              className="hover:text-[#C59D5F] ease-in-out transition"
+            >
+              pizza
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="gelato"
+              className="hover:text-[#C59D5F] ease-in-out transition"
+            >
+              gelato
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="glassprovning"
+              className="hover:text-[#C59D5F] ease-in-out transition"
+            >
+              glassprovning
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="vegansk-gelato"
+              className="hover:text-[#C59D5F] ease-in-out transition"
+            >
+              vegansk gelato
+            </Link>
+          </li>
+          {/* <li>
+            <NavDropdown title="GELATERIA" items={gelateriaItems} />
+          </li> */}
           <li>
             <NavDropdown
               title="BESTÄLL ONLINE"
@@ -102,20 +121,7 @@ export default function Nav() {
             />
           </li>
           <li>
-            <NavDropdown title="GELATERIA" items={gelateriaItems} />
-          </li>
-          <li>
             <NavDropdown title="OM OSS" items={aboutItems} />
-          </li>
-          <li>
-            <a href="#" className="hover:text-[#C59D5F] ease-in-out transition">
-              smörgåstårta
-            </a>
-          </li>
-          <li>
-            <a href="#" className="hover:text-[#C59D5F] ease-in-out transition">
-              pizza
-            </a>
           </li>
         </ul>
 
