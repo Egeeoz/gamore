@@ -1,10 +1,13 @@
 import './globals.css';
-import Nav from '@/components/Nav';
-import Footer from '@/components/Footer';
 import { Source_Sans_3, Herr_Von_Muellerhoff } from 'next/font/google';
 import { Metadata } from 'next';
+
+import Nav from '@/components/Nav';
 import { SidebarProvider } from '@/components/ui/sidebar';
 import NavSidebar from '@/components/NavSideBar';
+
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const sourceSans3 = Source_Sans_3({
   subsets: ['latin'],
@@ -41,6 +44,8 @@ export default function RootLayout({
             <Nav />
             <main className="flex-1 flex flex-col bg-background min-h-dvh">
               {children}
+              <Analytics />
+              <SpeedInsights />
             </main>
             <Footer />
           </div>
