@@ -86,19 +86,28 @@ export default function Nav() {
             </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-[#C59D5F] ease-in-out transition">
+            <Link
+              href="gelato"
+              className="hover:text-[#C59D5F] ease-in-out transition"
+            >
               gelato
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-[#C59D5F] ease-in-out transition">
+            <Link
+              href="glassprovning"
+              className="hover:text-[#C59D5F] ease-in-out transition"
+            >
               glassprovning
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-[#C59D5F] ease-in-out transition">
+            <Link
+              href="vegansk-gelato"
+              className="hover:text-[#C59D5F] ease-in-out transition"
+            >
               vegansk gelato
-            </a>
+            </Link>
           </li>
           {/* <li>
             <NavDropdown title="GELATERIA" items={gelateriaItems} />
