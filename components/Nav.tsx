@@ -28,19 +28,19 @@ const orderOnlineItems = [
 const aboutItems = [
   {
     label: 'Kontakta oss',
-    href: '/',
+    href: 'kontakt',
   },
   {
     label: 'Historia',
-    href: '/',
+    href: 'historia',
   },
   {
     label: 'Vanliga frågor',
-    href: '/',
+    href: 'faq',
   },
   {
     label: 'Integritetspolicy',
-    href: '/',
+    href: 'integritetspolicy',
   },
 ];
 
