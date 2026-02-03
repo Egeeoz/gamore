@@ -104,27 +104,27 @@ export default function Footer() {
           </div>
           <div className="flex flex-col items-center">
             <dt>Tisdag</dt>
-            <dd>11 - 18</dd>
+            <dd>13 - 21</dd>
           </div>
           <div className="flex flex-col items-center">
             <dt>Onsdag</dt>
-            <dd>11 - 18</dd>
+            <dd>13 - 21</dd>
           </div>
           <div className="flex flex-col items-center">
             <dt>Torsdag</dt>
-            <dd>11 - 18</dd>
+            <dd>13 - 21</dd>
           </div>
           <div className="flex flex-col items-center">
             <dt>Fredag</dt>
-            <dd>11 - 21</dd>
+            <dd>13 - 21</dd>
           </div>
           <div className="flex flex-col items-center">
             <dt>Lördag</dt>
-            <dd>11 - 21</dd>
+            <dd>13 - 21</dd>
           </div>
           <div className="flex flex-col items-center last:col-span-2 last:md:col-span-1">
             <dt>Söndag</dt>
-            <dd>11 - 21</dd>
+            <dd>13 - 21</dd>
           </div>
         </dl>
       </section>

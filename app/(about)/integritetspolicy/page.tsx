@@ -47,7 +47,7 @@ function Page() {
         <section>
           <h3>Nyhetsbrev</h3>
           <p>
-            Om du anmäler dig till vårt nyhetsbrev så spar vi dina
+            Om du anmäler dig till vårt nyhetsbrev så spara vi dina
             personuppgifter för att kunna skicka dig erbjudanden och
             marknadsföring.
           </p>
