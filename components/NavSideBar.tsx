@@ -22,26 +22,26 @@ import { SidebarX } from './SidebarTrigger';
 
 interface NavSubItem {
   title: string;
-  url: string;
+  url?: string;
   rel?: string;
   target?: string;
 }
 
 interface NavItem {
   title: string;
-  url: string;
+  url?: string;
   rel?: string;
   target?: string;
   subItems?: NavSubItem[];
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { title: 'HEM', url: '#' },
-  { title: 'MENY', url: '#' },
-  { title: 'PIZZA', url: '#' },
-  { title: 'GELATO', url: '#' },
-  { title: 'GlASSPROVNING', url: '#' },
-  { title: 'VEGANSK GELATO', url: '#' },
+  { title: 'HEM', url: '/' },
+  { title: 'MENY', url: 'meny' },
+  { title: 'PIZZA', url: 'pizza' },
+  // { title: 'GELATO', url: 'gelato' },
+  // { title: 'GlASSPROVNING', url: '#' },
+  // { title: 'VEGANSK GELATO', url: '#' },
   {
     title: 'BESTÄLL ONLINE',
     url: '#',
@@ -60,22 +60,21 @@ const NAV_ITEMS: NavItem[] = [
       },
     ],
   },
-  // {
-  //   title: 'GELATO',
-  //   url: '#',
-  //   subItems: [
-  //     { title: 'Glassprovning', url: '/' },
-  //     { title: 'Vegansk gelato', url: '/' },
-  //   ],
-  // },
+  {
+    title: 'GELATATERIA',
+    subItems: [
+      { title: 'Gelato', url: 'gelato' },
+      { title: 'Glassprovning', url: 'glassprovning' },
+      { title: 'Vegansk gelato', url: 'vegansk-gelato' },
+    ],
+  },
   {
     title: 'OM OSS',
-    url: '#',
     subItems: [
-      { title: 'Kontakta oss', url: '/' },
-      { title: 'Historia', url: '/' },
-      { title: 'Vanliga frågor', url: '/' },
-      { title: 'Integritetspolicy', url: '/' },
+      { title: 'Kontakta oss', url: 'kontakt' },
+      { title: 'Historia', url: 'historia' },
+      { title: 'Vanliga frågor', url: 'faq' },
+      { title: 'Integritetspolicy', url: 'integritetspolicy' },
     ],
   },
 ];
@@ -86,7 +85,7 @@ const SubMenu = memo(({ items }: { items: NavSubItem[] }) => (
       <SidebarMenuSubItem key={sub.title}>
         <SidebarMenuSubButton asChild>
           <Link
-            href={sub.url}
+            href={sub.url ?? ''}
             rel={sub.rel ?? ''}
             target={sub.target ?? ''}
             className="text-sm py-2 block text-white/60 hover:text-white hover:bg-transparent active:bg-transparent active:text-white transition-colors"
@@ -143,7 +142,7 @@ export default function NavSidebar() {
                   ) : (
                     <SidebarMenuButton asChild className={buttonStyles}>
                       <Link
-                        href={item.url}
+                        href={item.url ?? ''}
                         rel={item.rel ?? ''}
                         target={item.target ?? ''}
                       >

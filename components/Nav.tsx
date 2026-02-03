@@ -3,16 +3,20 @@ import Link from 'next/link';
 import NavDropdown from './NavDropdown';
 import { SidebarTrigger } from './SidebarTrigger';
 
-// const gelateriaItems = [
-//   {
-//     label: 'Glassprovning',
-//     href: '/',
-//   },
-//   {
-//     label: 'Vegansk gelato',
-//     href: '/',
-//   },
-// ];
+const gelateriaItems = [
+  {
+    label: 'Gelato',
+    href: 'gelato',
+  },
+  {
+    label: 'Glassprovning',
+    href: 'glassprovning',
+  },
+  {
+    label: 'Vegansk gelato',
+    href: 'vegansk-gelato',
+  },
+];
 
 const orderOnlineItems = [
   {
@@ -85,33 +89,33 @@ export default function Nav() {
               pizza
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               href="gelato"
               className="hover:text-[#C59D5F] ease-in-out transition"
             >
               gelato
             </Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link
               href="glassprovning"
               className="hover:text-[#C59D5F] ease-in-out transition"
             >
               glassprovning
             </Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link
               href="vegansk-gelato"
               className="hover:text-[#C59D5F] ease-in-out transition"
             >
               vegansk gelato
             </Link>
-          </li>
-          {/* <li>
-            <NavDropdown title="GELATERIA" items={gelateriaItems} />
           </li> */}
+          <li>
+            <NavDropdown title="GELATERIA" items={gelateriaItems} />
+          </li>
           <li>
             <NavDropdown
               title="BESTÄLL ONLINE"
