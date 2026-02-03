@@ -4,9 +4,9 @@ import Link from 'next/link';
 export default function Info() {
   return (
     <section className="py-8 flex flex-col items-center gap-10">
-      <h3 className="text-center text-2xl md:text-3xl tracking-widest font-semibold">
-        VÄLKOMNA TILL GELATERIA AMORE STOCKHOLM
-      </h3>
+      <h1 className="text-center text-2xl md:text-3xl tracking-widest font-semibold">
+        VÄLKOMMEN TILL GELATERIA AMORE STOCKHOLM
+      </h1>
       <div className="flex flex-col gap-4 px-4 md:px-0 md:w-[65%] [&>p]:text-foreground/70">
         <p>
           Om ni är sugna på Stockholms bästa Gelato, så är Gelateria Amore på
@@ -36,7 +36,7 @@ export default function Info() {
           och ni får inte missa möjligheten att gå på vår unika glassprovning!
         </p>
       </div>
-      <div className="flex flex-col md:flex-row gap-3 [&_h4]:text-center [&_h4]:text-2xl [&_h4]:text-foreground/50 [&_h4]:font-light [&_h4]:pt-4 [&_img]:transition-transform [&_img]:duration-300 [&_img]:hover:-translate-y-2 [&_img]:aspect-square [&_img]:object-cover [&_img]:rounded-sm [&_img]:border-2 [&_img]:border-gold">
+      <div className="flex flex-col md:flex-row gap-3 [&_h3]:text-center [&_h3]:text-2xl [&_h3]:text-foreground/50 [&_h3]:font-light [&_h3]:pt-4 [&_img]:transition-transform [&_img]:duration-300 [&_img]:hover:-translate-y-2 [&_img]:aspect-square [&_img]:object-cover [&_img]:rounded-sm [&_img]:border-2 [&_img]:border-gold">
         <article>
           <Link href="#">
             <Image
@@ -47,7 +47,7 @@ export default function Info() {
               sizes="(max-width: 768px) 100vw, 25vw"
             />
           </Link>
-          <h4>Smörgåstårta</h4>
+          <h3>Smörgåstårta</h3>
         </article>
         <article>
           <Link href="#">
@@ -59,7 +59,7 @@ export default function Info() {
               sizes="(max-width: 768px) 100vw, 25vw"
             />
           </Link>
-          <h4>Gelato</h4>
+          <h3>Gelato</h3>
         </article>
         <article>
           <Link href="#">
@@ -72,7 +72,7 @@ export default function Info() {
               sizes="(max-width: 768px) 100vw, 25vw"
             />
           </Link>
-          <h4>Pizza</h4>
+          <h3>Pizza</h3>
         </article>
         <article>
           <Link href="#">
@@ -84,7 +84,7 @@ export default function Info() {
               sizes="(max-width: 768px) 100vw, 25vw"
             />
           </Link>
-          <h4>Glasstårta</h4>
+          <h3>Glasstårta</h3>
         </article>
       </div>
     </section>
