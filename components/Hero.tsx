@@ -14,7 +14,7 @@ export default function Hero() {
         placeholder="blur"
         className="object-cover"
       />
-      <div className="absolute inset-0 flex flex-col justify-end gap-8 text-center text-white max-h-150 md:pt-20 pb-20">
+      <div className="absolute inset-0 flex flex-col justify-end gap-8 text-center text-white max-h-150 md:pt-20 md:pb-20 pb-6">
         <div>
           {/* <h1
             className="md:text-9xl text-7xl text-[#C59D5F]"
