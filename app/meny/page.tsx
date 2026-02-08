@@ -5,13 +5,14 @@ function page() {
 
       <section className="w-2/3">
         <h2 className="text-3xl text-left">Pizza</h2>
+        <p className="font-medium pb-4">Alla våra pizzor är stenugnsbakade</p>
 
-        <div className="flex">
-          <div>
+        <div className="flex justify-between gap-6 [&_article]:h-25 [&_article]:border [&_article]:flex [&_article]:flex-col [&_article]:justify">
+          <div className="flex flex-col justify-start gap-6">
             <article>
               <h3>Marinara</h3>
               <p>Tomatsås, färsk vitlök, oregano och färsk basilika.</p>
-              <p>115kr</p>
+              <p className="price">115kr</p>
             </article>
 
             <article>
@@ -20,7 +21,7 @@ function page() {
                 Tomatsås, rökt skinka, färska champinjoner, mozzarella,
                 parmesan, kronärtskocka och färsk basilika.
               </p>
-              <p>140kr</p>
+              <p className="price">140kr</p>
             </article>
 
             <article>
@@ -29,7 +30,7 @@ function page() {
                 Tomatsås, parmesan, Mozzarella, tonfisk, oliver, kapris, röd lök
                 och oregano.
               </p>
-              <p>140kr</p>
+              <p className="price">140kr</p>
             </article>
 
             <article>
@@ -38,7 +39,7 @@ function page() {
                 Tomatsås, kycklingfilé, mozzarella, oliver, färsk paprika och
                 tryffelsås.
               </p>
-              <p>140kr</p>
+              <p className="price">140kr</p>
             </article>
 
             <article>
@@ -47,7 +48,7 @@ function page() {
                 Tomatsås, mozzarella, parmesan, handskalade räkor, färsk vitlök,
                 och färsk persilja.
               </p>
-              <p>155kr</p>
+              <p className="price">155kr</p>
             </article>
             <article>
               <h3>Frutti di Mare</h3>
@@ -55,12 +56,12 @@ function page() {
                 Tomatsås, mozzarella, parmesan, handskalade räkor, Blå musslor,
                 färsk vitlök, färsk persilja och citronskiva.
               </p>
-              <p>165kr</p>
+              <p className="price">165kr</p>
             </article>
 
             <article>
               <h3>Pizza Lovers Delight - Pizzamackan</h3>
-              <p>100kr</p>
+              <p className="price">100kr</p>
             </article>
 
             <article>
@@ -70,17 +71,17 @@ function page() {
                 tomatsås, mozzarella ost, parmigiano ost, i vikt som vi använder
                 när vi bakar våra pizzor.
               </p>
-              <p>69kr</p>
+              <p className="price">69kr</p>
             </article>
           </div>
-          <div>
+          <div className="flex flex-col gap-6 ">
             <article>
               <h3>Margherita</h3>
               <p>
                 Tomatsås, parmesan, mozzarella, oregano och färsk basilika med
                 en smak av våra här gjord gelato.
               </p>
-              <p>125kr</p>
+              <p className="price">125kr</p>
             </article>
 
             <article>
@@ -89,7 +90,7 @@ function page() {
                 Tomatsås, mozzarella, Ventricina pikante (stark salami med
                 mycket smak), parmesan, röd lök och färsk basilika.
               </p>
-              <p>140kr</p>
+              <p className="price">140kr</p>
             </article>
             <article>
               <h3>Vegana</h3>
@@ -98,7 +99,7 @@ function page() {
                 champinjoner, rödlök, stark grillad paprika röra, oregano och
                 hickory grovsalt.
               </p>
-              <p>145kr</p>
+              <p className="price">145kr</p>
             </article>
 
             <article>
@@ -107,7 +108,7 @@ function page() {
                 Mild ost, parmesan, gorgonzola, mozzarella, prosciutto, torkad
                 tomat och pepparmix.
               </p>
-              <p>155kr</p>
+              <p className="price">155kr</p>
             </article>
 
             <article>
@@ -116,7 +117,7 @@ function page() {
                 Tomatsås, Mozzarella, ruccola, prosciutto, parmesan, pesto,
                 balsamico kräm och pinjenötter.
               </p>
-              <p>160kr</p>
+              <p className="price">160kr</p>
             </article>
             <article>
               <h3>Mezaluna halvinbakad</h3>
@@ -124,7 +125,7 @@ function page() {
                 Tomatsås, rökt skinka, mozzarella, ruccolasallad, parmesan,
                 prosciutto och pinjenötter.
               </p>
-              <p>155kr</p>
+              <p className="price">155kr</p>
             </article>
             <article>
               <h3>Kebab pizza</h3>
@@ -132,7 +133,7 @@ function page() {
                 Tomatsås, ost, kebabkött, färsk tomat, färsk rödlök, feferoni,
                 vitlöksdressing och kebabdressing.
               </p>
-              <p>155kr</p>
+              <p className="price">155kr</p>
             </article>
           </div>
         </div>
