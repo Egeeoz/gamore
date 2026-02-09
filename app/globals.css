@@ -134,3 +134,7 @@
 .phone::before {
   content: '📞';
 }
+
+.price {
+  margin-top: auto;
+}
