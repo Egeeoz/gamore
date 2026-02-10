@@ -1,10 +1,19 @@
+// MenuPage.tsx
+import MenuSection from './MenuSection';
+
 export default function MenuPage() {
-  const pizzas = {
+  const pizzaData = {
     left: [
       {
         name: 'Marinara',
         description: 'Tomatsås, färsk vitlök, oregano och färsk basilika.',
         price: '115',
+      },
+      {
+        name: 'Margherita',
+        description:
+          'Tomatsås, parmesan, mozzarella, oregano och färsk basilika med en smak av våra här gjord gelato.',
+        price: '125',
       },
       {
         name: 'Capricciosa',
@@ -25,10 +34,48 @@ export default function MenuPage() {
         price: '140',
       },
       {
+        name: 'Cacciatora',
+        description:
+          'Tomatsås, mozzarella, Ventricina pikante (stark salami med mycket smak), parmesan, röd lök och färsk basilika.',
+        price: '140',
+      },
+      {
+        name: 'Vegana',
+        description:
+          'Tomatsås, oliver, grillad paprika tricolore, färska champinjoner, rödlök, stark grillad paprika röra, oregano och hickory grovsalt.',
+        price: '145',
+      },
+    ],
+    right: [
+      {
         name: 'Prezzemolo',
         description:
           'Tomatsås, mozzarella, parmesan, handskalade räkor, färsk vitlök, och färsk persilja.',
         price: '155',
+      },
+      {
+        name: 'Mille Amore',
+        description:
+          'Mild ost, parmesan, gorgonzola, mozzarella, prosciutto, torkad tomat och pepparmix.',
+        price: '155',
+      },
+      {
+        name: 'Mezaluna halvinbakad',
+        description:
+          'Tomatsås, rökt skinka, mozzarella, ruccolasallad, parmesan, prosciutto och pinjenötter.',
+        price: '155',
+      },
+      {
+        name: 'Kebab pizza',
+        description:
+          'Tomatsås, ost, kebabkött, färsk tomat, färsk rödlök, feferoni, vitlöksdressing och kebabdressing.',
+        price: '155',
+      },
+      {
+        name: 'Estate',
+        description:
+          'Tomatsås, Mozzarella, ruccola, prosciutto, parmesan, pesto, balsamico kräm och pinjenötter.',
+        price: '160',
       },
       {
         name: 'Frutti di Mare',
@@ -43,140 +90,140 @@ export default function MenuPage() {
         price: '69',
       },
     ],
-    right: [
+  };
+
+  const matData = {
+    left: [
       {
-        name: 'Margherita',
+        name: 'Hamburgertallrik',
         description:
-          'Tomatsås, parmesan, mozzarella, oregano och färsk basilika med en smak av våra här gjord gelato.',
+          'Grillad hamburgare (200g), hamburgerbröd, hamburger dressing, stark paprikaröra, ost, sallad, färsk tomat, rödlök, serveras med vitlökssås, ketchup och pommes.',
         price: '125',
       },
       {
-        name: 'Cacciatora',
+        name: 'Kebabtallrik',
         description:
-          'Tomatsås, mozzarella, Ventricina pikante (stark salami med mycket smak), parmesan, röd lök och färsk basilika.',
+          'Kebabkött, krispig isbergssallad, tomat, rödlök, vitlöksdressing, feferoni, serveras med pommes och kebabdressing.',
         price: '140',
       },
       {
-        name: 'Vegana',
+        name: 'Lasagne',
         description:
-          'Tomatsås, oliver, grillad paprika tricolore, färska champinjoner, rödlök, stark grillad paprika röra, oregano och hickory grovsalt.',
-        price: '145',
+          'Hem gjorda lasagne med långkokt tomatsås, béchamelsås, mozzarella, parmesan, lök, vitlök, och basilika.',
+        price: '129',
       },
       {
-        name: 'Mille Amore',
+        name: 'Räksallad',
         description:
-          'Mild ost, parmesan, gorgonzola, mozzarella, prosciutto, torkad tomat och pepparmix.',
-        price: '155',
+          'Krispig sallad, handskalade räkor, tomat, ägg, handskalade räkor och dressning.',
+        price: '109',
       },
       {
-        name: 'Estate',
+        name: 'Caesar wraps',
         description:
-          'Tomatsås, Mozzarella, ruccola, prosciutto, parmesan, pesto, balsamico kräm och pinjenötter.',
-        price: '160',
+          'Sallad, kycklingfilé, krutonger, bacon, tomater, parmesanost och hemgjord caesardressing.',
+        price: '109',
       },
       {
-        name: 'Mezaluna halvinbakad',
+        name: 'Heta räkor wraps 🌶️🌶️🌶️',
         description:
-          'Tomatsås, rökt skinka, mozzarella, ruccolasallad, parmesan, prosciutto och pinjenötter.',
-        price: '155',
+          'Krispig isbergssallad, tomat, ägg, handskalade räkor och sriracha.',
+        price: '109',
       },
       {
-        name: 'Kebab pizza',
+        name: 'Hälsotallrik med kyckling',
         description:
-          'Tomatsås, ost, kebabkött, färsk tomat, färsk rödlök, feferoni, vitlöksdressing och kebabdressing.',
-        price: '155',
+          'Ugnstekt kycklingfilé, couscous, körsbärstomat, gurka, rödlök, paprika, rädisor, ruccola och Caesar dressing.',
+        price: '119',
+      },
+      {
+        name: 'Dagens Pasta',
+        description: 'Pasta tricolore välj mellan',
+        price: '129',
+      },
+    ],
+    right: [
+      {
+        name: 'Vegan Burgare',
+        description:
+          'Grillad veganburgare (150g), sallad, grillad paprikaröra, färsk tomat, rödlök. Serveras med ketchup och pommes.',
+        price: '100',
+      },
+      {
+        name: 'Korvtallrik',
+        description:
+          'Grillad rökt, kryddad korv fylld med ost. Serveras med pommes, stekt ägg, sallad och dipp.',
+        price: '100',
+      },
+      {
+        name: 'Caesarsallad',
+        description:
+          'Grillad kycklingfilé, krutonger, bacon, tomat, parmesanost och hemgjord caesardressing.',
+        price: '105',
+      },
+      {
+        name: 'Grekisk sallad',
+        description:
+          'Färska salladsblad, tomat, oliver, rödlök, fetaost, oregano och olivolja.',
+        price: '109',
+      },
+      {
+        name: 'Kebabwraps',
+        description:
+          'Kebabkött, färsk krispig sallad, solmogna tomater, rödlök, färsk gurka, skivad feferoni, vitlökssås och kebabsås.',
+        price: '109',
+      },
+      {
+        name: 'Hälsotallrik med räkor',
+        description:
+          'Mixsallad, rödlök, citron, ägg, handskalade räkor, körsbärstomat, gurka, rädisor, olivolja dressing.',
+        price: '125',
+      },
+      {
+        name: 'Grillad Focaccia 🌶️',
+        description: 'Grillad Focaccia bröd med rosmarin (uppdelad)',
+        price: '79',
+      },
+      {
+        name: 'Dagens Soppa',
+        description: 'från 69 KR',
+        price: '69',
       },
     ],
   };
-  //  bg-linear-to-b from-amber-50 to-white
+
   return (
     <div className="bg-[#FAF9F6] md:py-12 py-4 px-4">
-      <section className="max-w-6xl mx-auto">
-        <h1
-          className="text-center text-6xl md:text-7xl font-light mb-4 text-amber-900"
-          style={{ fontFamily: 'Georgia, serif' }}
-        >
-          Meny
-        </h1>
-        <div className="w-32 h-1 bg-amber-600 mx-auto mb-8"></div>
+      <h1
+        className="text-center text-6xl md:text-7xl font-light mb-4 text-amber-900"
+        style={{ fontFamily: 'Georgia, serif' }}
+      >
+        Meny
+      </h1>
+      <div className="w-32 h-1 bg-amber-600 mx-auto mb-12"></div>
 
-        <section className="bg-white rounded-lg shadow-lg p-4 md:p-12">
-          <h2
-            className="text-4xl md:text-5xl font-light text-amber-900 mb-8"
-            style={{ fontFamily: 'Georgia, serif' }}
-          >
-            Pizza
-          </h2>
-          <p className="text-lg text-gray-600 italic border-l-4 border-amber-500 pl-4">
-            Alla våra pizzor är stenugnsbakade
-          </p>
+      <MenuSection
+        title="Pizza"
+        subtitle="Alla våra pizzor är stenugnsbakade"
+        items={pizzaData}
+        specialItem={{
+          name: 'Pizza Lovers Delight - Pizzamackan',
+          price: '100',
+          subtitle: 'Välj med:',
+          options: [
+            'Kebabkött',
+            'Ćevapčići',
+            'Ventricina Salami',
+            'Pesto och Mozzarella',
+          ],
+        }}
+      />
 
-          <div className="grid md:grid-cols-2 gap-8 pt-4 pb-8 [&_article]:border-b [&_article]:border-gray-200 [&_article]:rounded">
-            {/* Left Column */}
-            <div className="space-y-6">
-              {pizzas.left.map((pizza, index) => (
-                <article key={index} className="md:h-23">
-                  <div className="flex mb-1">
-                    <h3 className="text-xl font-semibold text-gray-800 flex-1">
-                      {pizza.name}
-                    </h3>
-                    <span className="text-2xl font-bold text-amber-700 whitespace-nowrap">
-                      {pizza.price} kr
-                    </span>
-                  </div>
-                  {pizza.description && (
-                    <p className="text-sm text-gray-600 leading-relaxed">
-                      {pizza.description}
-                    </p>
-                  )}
-                </article>
-              ))}
-            </div>
+      <MenuSection title="Mat" items={matData} />
 
-            {/* Right Column */}
-            <div className="space-y-6 [&_article]:border-b [&_article]:border-gray-200 [&_article]:rounded">
-              {pizzas.right.map((pizza, index) => (
-                <article key={index} className="md:h-23">
-                  <div className="flex mb-1">
-                    <h3 className="text-xl font-semibold text-gray-800 flex-1">
-                      {pizza.name}
-                    </h3>
-                    <span className="text-2xl font-bold text-amber-700 whitespace-nowrap">
-                      {pizza.price} kr
-                    </span>
-                  </div>
-                  {pizza.description && (
-                    <p className="text-sm text-gray-600 leading-relaxed">
-                      {pizza.description}
-                    </p>
-                  )}
-                </article>
-              ))}
-            </div>
-          </div>
-          <article className="border-b rounded md:h-23 md:w-1/2 m-auto">
-            <div className="flex mb-1">
-              <h3 className="text-xl font-semibold text-gray-800 flex-1">
-                Pizza Lovers Delight - Pizzamackan
-              </h3>
-              <span className="text-2xl font-bold text-amber-700 whitespace-nowrap">
-                100 kr
-              </span>
-            </div>
-            <p className="font-medium">Välj med:</p>
-            <ul className="flex md:flex-row flex-col gap-4 text-sm text-gray-600 leading-relaxed [&_li]:border-l-2 [&_li]:border-amber-600 [&_li]:pl-1 md:py-0 py-2">
-              <li>Kebabkött</li>
-              <li>Ćevapčići</li>
-              <li>Ventricina Salami</li>
-              <li>Pesto och Mozzarella</li>
-            </ul>
-          </article>
-        </section>
-
-        <div className="text-center mt-8 text-gray-500 text-sm">
-          <p>🍕 Stenugnsbakad med passion sedan 2018</p>
-        </div>
-      </section>
+      <div className="text-center mt-8 text-gray-500 text-sm">
+        <p>🍕 Stenugnsbakad med passion sedan 2018</p>
+      </div>
     </div>
   );
 }

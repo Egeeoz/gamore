@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Info() {
   return (
-    <section className="py-8 flex flex-col items-center gap-10">
+    <section className="py-8 flex flex-col items-center gap-10 bg-[#FAF9F6]">
       <h1 className="text-center text-2xl md:text-3xl tracking-widest font-semibold">
         VÄLKOMMEN TILL GELATERIA AMORE STOCKHOLM
       </h1>
