@@ -27,20 +27,19 @@ export default function MenuSection({
   specialItem,
 }: MenuSectionProps) {
   return (
-    <section className="max-w-6xl mx-auto mb-8">
-      <h2
-        className="text-4xl md:text-5xl font-light text-amber-900 mb-4 text-center"
-        style={{ fontFamily: 'Georgia, serif' }}
-      >
-        {title}
-      </h2>
-      {subtitle && (
-        <p className="text-lg text-gray-600 italic border-l-4 border-amber-500 pl-4 mb-8">
-          {subtitle}
-        </p>
-      )}
-
+    <div className="max-w-6xl mx-auto mb-8">
       <section className="bg-white rounded-lg shadow-lg p-4 md:p-12">
+        <h2
+          className="text-4xl md:text-5xl font-light text-amber-900 mb-4"
+          style={{ fontFamily: 'Georgia, serif' }}
+        >
+          {title}
+        </h2>
+        {subtitle && (
+          <p className="text-lg text-gray-600 italic border-l-4 border-amber-500 pl-4 mb-8">
+            {subtitle}
+          </p>
+        )}
         <div className="grid md:grid-cols-2 gap-8 pt-4 pb-8 [&_article]:border-b [&_article]:border-gray-200 [&_article]:rounded">
           {/* Left Column */}
           <div className="space-y-6">
@@ -50,9 +49,9 @@ export default function MenuSection({
                   <h3 className="text-xl font-semibold text-gray-800 flex-1">
                     {item.name}
                   </h3>
-                  <span className="text-2xl font-bold text-amber-700 whitespace-nowrap">
+                  <p className="text-2xl font-bold text-amber-700 whitespace-nowrap">
                     {item.price} kr
-                  </span>
+                  </p>
                 </div>
                 {item.description && (
                   <p className="text-sm text-gray-600 leading-relaxed">
@@ -71,9 +70,9 @@ export default function MenuSection({
                   <h3 className="text-xl font-semibold text-gray-800 flex-1">
                     {item.name}
                   </h3>
-                  <span className="text-2xl font-bold text-amber-700 whitespace-nowrap">
+                  <p className="text-2xl font-bold text-amber-700 whitespace-nowrap">
                     {item.price} kr
-                  </span>
+                  </p>
                 </div>
                 {item.description && (
                   <p className="text-sm text-gray-600 leading-relaxed">
@@ -92,9 +91,9 @@ export default function MenuSection({
               <h3 className="text-xl font-semibold text-gray-800 flex-1">
                 {specialItem.name}
               </h3>
-              <span className="text-2xl font-bold text-amber-700 whitespace-nowrap">
+              <p className="text-2xl font-bold text-amber-700 whitespace-nowrap">
                 {specialItem.price} kr
-              </span>
+              </p>
             </div>
             {specialItem.subtitle && (
               <p className="font-medium">{specialItem.subtitle}</p>
@@ -109,6 +108,6 @@ export default function MenuSection({
           </article>
         )}
       </section>
-    </section>
+    </div>
   );
 }

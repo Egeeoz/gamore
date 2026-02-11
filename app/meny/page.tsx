@@ -107,6 +107,12 @@ export default function MenuPage() {
         price: '140',
       },
       {
+        name: 'Kyckling kebabtallrik',
+        description:
+          'Kycklingkebab, krispig isbergssallad, tomat, rödlök, vitlöksdressing, feferoni, serveras med pommes och kebabdressing.',
+        price: '140',
+      },
+      {
         name: 'Lasagne',
         description:
           'Hem gjorda lasagne med långkokt tomatsås, béchamelsås, mozzarella, parmesan, lök, vitlök, och basilika.',
@@ -119,27 +125,10 @@ export default function MenuPage() {
         price: '109',
       },
       {
-        name: 'Caesar wraps',
-        description:
-          'Sallad, kycklingfilé, krutonger, bacon, tomater, parmesanost och hemgjord caesardressing.',
-        price: '109',
-      },
-      {
-        name: 'Heta räkor wraps 🌶️🌶️🌶️',
-        description:
-          'Krispig isbergssallad, tomat, ägg, handskalade räkor och sriracha.',
-        price: '109',
-      },
-      {
         name: 'Hälsotallrik med kyckling',
         description:
           'Ugnstekt kycklingfilé, couscous, körsbärstomat, gurka, rödlök, paprika, rädisor, ruccola och Caesar dressing.',
         price: '119',
-      },
-      {
-        name: 'Dagens Pasta',
-        description: 'Pasta tricolore välj mellan',
-        price: '129',
       },
     ],
     right: [
@@ -168,32 +157,128 @@ export default function MenuPage() {
         price: '109',
       },
       {
-        name: 'Kebabwraps',
-        description:
-          'Kebabkött, färsk krispig sallad, solmogna tomater, rödlök, färsk gurka, skivad feferoni, vitlökssås och kebabsås.',
-        price: '109',
-      },
-      {
         name: 'Hälsotallrik med räkor',
         description:
           'Mixsallad, rödlök, citron, ägg, handskalade räkor, körsbärstomat, gurka, rädisor, olivolja dressing.',
         price: '125',
       },
       {
-        name: 'Grillad Focaccia 🌶️',
-        description: 'Grillad Focaccia bröd med rosmarin (uppdelad)',
+        name: 'Grillad Focaccia',
+        description:
+          'Grillad Focaccia bröd med rosmarin, välj mellan mozzarella eller feta ost (uppdelad)',
         price: '79',
-      },
-      {
-        name: 'Dagens Soppa',
-        description: 'från 69 KR',
-        price: '69',
       },
     ],
   };
 
+  const wrapsData = {
+    left: [
+      {
+        name: 'Fetaost wrap',
+        description:
+          'Krispig isbergsallad, tomat, oliver, rödlök, feta ost och stark paprikaröra',
+        price: '109',
+      },
+      {
+        name: 'Kebab wrap',
+        description:
+          'Kebabkött, färsk krispig sallad, solmogna tomater, rödlök, färsk gurka, skivad peperoni, vitlökssås och kebabsås.',
+        price: '109',
+      },
+      {
+        name: 'Kyckling med pesto wrap',
+        description:
+          'Grillad kycklingfilé, färsk krispig sallad, mozzarella, hemmagjord pesto och solmogna tomater.',
+        price: '109',
+      },
+      {
+        name: 'Vegeterian wrap',
+        description:
+          'Färsk krispig sallad, oliver, solmogna tomater, rödlök, fetaost och grillad paprika kräm.',
+        price: '105',
+      },
+    ],
+    right: [
+      {
+        name: 'Italiensk romana wrap',
+        description:
+          'Prosciutto, färsk krispig sallad, mozzarella, solmogna tomater, rödlök och hemgjord pesto.',
+        price: '109',
+      },
+      {
+        name: 'Ceasar wrap',
+        description:
+          'Grillad kycklingfilé, färsk romansallad, grovriven parmesanost, knaprig stekt rökt bacon, hemmagjord caesardressing och solmogna tomater.',
+        price: '109',
+      },
+      {
+        name: 'Het räka wrap',
+        description:
+          'Handskalade räkor, färsk krispig sallad, solmogna tomater, ägg och stark chilisås.',
+        price: '109',
+      },
+    ],
+  };
+
+  const gelatoData = {
+    left: [
+      {
+        name: 'Pistage',
+        description: 'No description provided',
+        price: '65',
+      },
+      {
+        name: 'Choklad',
+        description:
+          'Belgisk premium 70 % mörkchoklad kryddat med bourbonvanilj och havssalt.',
+        price: '55',
+      },
+    ],
+    right: [
+      {
+        name: 'Hasselnötter',
+        description: 'No description provided',
+        price: '55',
+      },
+      {
+        name: 'Straccietella',
+        description: 'Vanilj glass med choklad strössel.',
+        price: '55',
+      },
+    ],
+  };
+
+  const dessertData = {
+    left: [
+      {
+        name: 'Amore Semla',
+        description:
+          'Kärlekens Semla till två personer, en krämig semla gjort på brioche bröd, välj mellan vanlig med mandelmassa eller med pistage smak.',
+        price: '49',
+      },
+      {
+        name: 'Canolli',
+        description:
+          'Italiensk bakverk i form av rör, som friteras och sedan fylls med krämig ricotta som smaksatts.',
+        price: '30',
+      },
+    ],
+    right: [
+      {
+        name: 'Choklad tryffel',
+        description:
+          'Ljuvlig choklad tryffel gjord på belgisk premium choklad.',
+        price: '55',
+      },
+      {
+        name: 'Biskvi',
+        description: 'Choklad biskvi med krämig fyllning',
+        price: '39',
+      },
+    ],
+  };
   return (
-    <div className="bg-[#FAF9F6] md:py-12 py-4 px-4">
+    <section className="bg-[#FAF9F6] md:py-12 py-4 px-4">
       <h1
         className="text-center text-6xl md:text-7xl font-light mb-4 text-amber-900"
         style={{ fontFamily: 'Georgia, serif' }}
@@ -219,11 +304,26 @@ export default function MenuPage() {
         }}
       />
 
-      <MenuSection title="Mat" items={matData} />
+      <MenuSection
+        title="Mat"
+        items={matData}
+        specialItem={{
+          name: 'Dagens pasta',
+          price: '129',
+          subtitle: 'Välj med:',
+          options: ['Kyckling', 'Carbonara', 'Räkor +10kr', 'Bolognese'],
+        }}
+      />
+
+      <MenuSection title="Wraps" items={wrapsData} />
+
+      <MenuSection title="Gelato" items={gelatoData} />
+
+      <MenuSection title="Dessert" items={dessertData} />
 
       <div className="text-center mt-8 text-gray-500 text-sm">
         <p>🍕 Stenugnsbakad med passion sedan 2018</p>
       </div>
-    </div>
+    </section>
   );
 }
