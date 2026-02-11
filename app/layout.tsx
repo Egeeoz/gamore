@@ -1,5 +1,9 @@
 import './globals.css';
-import { Source_Sans_3, Herr_Von_Muellerhoff } from 'next/font/google';
+import {
+  Source_Sans_3,
+  Herr_Von_Muellerhoff,
+  Birthstone,
+} from 'next/font/google';
 import { Metadata } from 'next';
 
 import Nav from '@/components/Nav';
@@ -14,6 +18,12 @@ const sourceSans3 = Source_Sans_3({
   subsets: ['latin'],
   display: 'swap',
   preload: true,
+});
+
+const birthstone = Birthstone({
+  display: 'swap',
+  preload: true,
+  weight: '400',
 });
 
 const herVonMuellerHoff = Herr_Von_Muellerhoff({
