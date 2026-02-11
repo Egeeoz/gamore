@@ -30,8 +30,8 @@ export default function MenuSection({
     <div className="max-w-6xl mx-auto mb-8">
       <section className="bg-white rounded-lg shadow-lg p-4 md:p-12">
         <h2
-          className="text-4xl md:text-5xl font-light text-amber-900 mb-4"
-          style={{ fontFamily: 'Georgia, serif' }}
+          className="text-6xl md:text-6xl font-light text-amber-900 mb-4"
+          style={{ fontFamily: 'Birthstone' }}
         >
           {title}
         </h2>
@@ -49,7 +49,7 @@ export default function MenuSection({
                   <h3 className="text-xl font-semibold text-gray-800 flex-1">
                     {item.name}
                   </h3>
-                  <p className="text-2xl font-bold text-amber-700 whitespace-nowrap">
+                  <p className="text-xl font-bold text-amber-700 whitespace-nowrap">
                     {item.price} kr
                   </p>
                 </div>
@@ -70,7 +70,7 @@ export default function MenuSection({
                   <h3 className="text-xl font-semibold text-gray-800 flex-1">
                     {item.name}
                   </h3>
-                  <p className="text-2xl font-bold text-amber-700 whitespace-nowrap">
+                  <p className="text-xl font-bold text-amber-700 whitespace-nowrap">
                     {item.price} kr
                   </p>
                 </div>
@@ -91,7 +91,7 @@ export default function MenuSection({
               <h3 className="text-xl font-semibold text-gray-800 flex-1">
                 {specialItem.name}
               </h3>
-              <p className="text-2xl font-bold text-amber-700 whitespace-nowrap">
+              <p className="text-xl font-bold text-amber-700 whitespace-nowrap">
                 {specialItem.price} kr
               </p>
             </div>

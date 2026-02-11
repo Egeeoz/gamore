@@ -280,8 +280,8 @@ export default function MenuPage() {
   return (
     <section className="bg-[#FAF9F6] md:py-12 py-4 px-4">
       <h1
-        className="text-center text-6xl md:text-7xl font-light mb-4 text-amber-900"
-        style={{ fontFamily: 'Georgia, serif' }}
+        className="text-center text-6xl md:text-8xl font-light mb-4 text-amber-900"
+        style={{ fontFamily: 'Birthstone, serif' }}
       >
         Meny
       </h1>
