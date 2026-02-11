@@ -49,7 +49,7 @@ export default function Hero() {
               Beställ med leverans
             </a>
             <Link
-              href="/"
+              href="meny"
               className="cursor-pointer rounded bg-foreground/80 ring-2 ring-gold border-gold font-medium md:text-lg md:px-6 px-4 py-1"
             >
               Meny
