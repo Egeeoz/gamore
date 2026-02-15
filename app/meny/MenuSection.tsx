@@ -10,7 +10,7 @@ interface MenuSectionProps {
   subtitle?: string;
   items: {
     left: MenuItem[];
-    right: MenuItem[];
+    right?: MenuItem[];
   };
   specialItem?: {
     name: string;
@@ -26,6 +26,8 @@ export default function MenuSection({
   items,
   specialItem,
 }: MenuSectionProps) {
+  const hasRight = items.right && items.right.length > 0;
+
   return (
     <div className="max-w-6xl mx-auto mb-8">
       <section className="bg-white rounded-lg shadow-lg p-4 md:p-12">
@@ -40,7 +42,9 @@ export default function MenuSection({
             {subtitle}
           </p>
         )}
-        <div className="grid md:grid-cols-2 gap-8 pt-4 pb-8 [&_article]:border-b [&_article]:border-gray-200 [&_article]:rounded">
+        <div
+          className={`grid ${hasRight ? 'md:grid-cols-2' : 'md:grid-cols-1'} gap-8 pt-4 pb-8 [&_article]:border-b [&_article]:border-gray-200 [&_article]:rounded`}
+        >
           {/* Left Column */}
           <div className="space-y-6">
             {items.left.map((item, index) => (
@@ -63,25 +67,27 @@ export default function MenuSection({
           </div>
 
           {/* Right Column */}
-          <div className="space-y-6">
-            {items.right.map((item, index) => (
-              <article key={index} className="md:h-23">
-                <div className="flex mb-1">
-                  <h3 className="text-xl font-semibold text-gray-800 flex-1">
-                    {item.name}
-                  </h3>
-                  <p className="text-xl font-bold text-amber-700 whitespace-nowrap">
-                    {item.price} kr
-                  </p>
-                </div>
-                {item.description && (
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    {item.description}
-                  </p>
-                )}
-              </article>
-            ))}
-          </div>
+          {items.right && items.right.length > 0 && (
+            <div className="space-y-6">
+              {items.right.map((item, index) => (
+                <article key={index} className="md:h-23">
+                  <div className="flex mb-1">
+                    <h3 className="text-xl font-semibold text-gray-800 flex-1">
+                      {item.name}
+                    </h3>
+                    <p className="text-xl font-bold text-amber-700 whitespace-nowrap">
+                      {item.price} kr
+                    </p>
+                  </div>
+                  {item.description && (
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {item.description}
+                    </p>
+                  )}
+                </article>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Special Item */}
