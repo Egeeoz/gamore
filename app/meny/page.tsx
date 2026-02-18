@@ -1,4 +1,3 @@
-// MenuPage.tsx
 import MenuSection from './MenuSection';
 
 export default function MenuPage() {
@@ -342,85 +341,6 @@ export default function MenuPage() {
     ],
   };
 
-  // const matData = {
-  //   left: [
-  //     {
-  //       name: 'Hamburgertallrik',
-  //       description:
-  //         'Grillad hamburgare (200g), hamburgerbröd, hamburger dressing, stark paprikaröra, ost, sallad, färsk tomat, rödlök, serveras med vitlökssås, ketchup och pommes.',
-  //       price: '125',
-  //     },
-  //     {
-  //       name: 'Kebabtallrik',
-  //       description:
-  //         'Kebabkött, krispig isbergssallad, tomat, rödlök, vitlöksdressing, feferoni, serveras med pommes och kebabdressing.',
-  //       price: '125',
-  //     },
-  //     {
-  //       name: 'Kyckling kebabtallrik',
-  //       description:
-  //         'Kycklingkebab, krispig isbergssallad, tomat, rödlök, vitlöksdressing, feferoni, serveras med pommes och kebabdressing.',
-  //       price: '140',
-  //     },
-  //     {
-  //       name: 'Lasagne',
-  //       description:
-  //         'Hem gjorda lasagne med långkokt tomatsås, béchamelsås, mozzarella, parmesan, lök, vitlök, och basilika.',
-  //       price: '129',
-  //     },
-  //     {
-  //       name: 'Räksallad',
-  //       description:
-  //         'Krispig sallad, handskalade räkor, tomat, ägg, handskalade räkor och dressning.',
-  //       price: '109',
-  //     },
-  //     {
-  //       name: 'Hälsotallrik med kyckling',
-  //       description:
-  //         'Ugnstekt kycklingfilé, couscous, körsbärstomat, gurka, rödlök, paprika, rädisor, ruccola och Caesar dressing.',
-  //       price: '119',
-  //     },
-  //   ],
-  //   right: [
-  //     {
-  //       name: 'Vegan Burgare',
-  //       description:
-  //         'Grillad veganburgare (150g), sallad, grillad paprikaröra, färsk tomat, rödlök. Serveras med ketchup och pommes.',
-  //       price: '110',
-  //     },
-  //     {
-  //       name: 'Korvtallrik',
-  //       description:
-  //         'Grillad rökt, kryddad korv fylld med ost. Serveras med pommes, stekt ägg, sallad och dipp.',
-  //       price: '110',
-  //     },
-  //     {
-  //       name: 'Caesarsallad',
-  //       description:
-  //         'Grillad kycklingfilé, krutonger, bacon, tomat, parmesanost och hemgjord caesardressing.',
-  //       price: '105',
-  //     },
-  //     {
-  //       name: 'Grekisk sallad',
-  //       description:
-  //         'Färska salladsblad, tomat, oliver, rödlök, fetaost, oregano och olivolja.',
-  //       price: '109',
-  //     },
-  //     {
-  //       name: 'Hälsotallrik med räkor',
-  //       description:
-  //         'Mixsallad, rödlök, citron, ägg, handskalade räkor, körsbärstomat, gurka, rädisor, olivolja dressing.',
-  //       price: '125',
-  //     },
-  //     {
-  //       name: 'Grillad Focaccia',
-  //       description:
-  //         'Grillad Focaccia bröd med rosmarin, välj mellan mozzarella eller feta ost (uppdelad)',
-  //       price: '79',
-  //     },
-  //   ],
-  // };
-
   return (
     <section className="bg-[#FAF9F6] md:py-12 py-4 px-4">
       <h1
@@ -447,6 +367,7 @@ export default function MenuPage() {
           ],
         }}
       />
+
       <MenuSection title="Pasta" subtitle="Penne Tricolore" items={pastaData} />
 
       <MenuSection title="Grill" items={grillData} />
