@@ -38,53 +38,58 @@ export default function Info() {
       </div>
       <div className="flex flex-col md:flex-row gap-3 [&_h3]:text-center [&_h3]:text-2xl [&_h3]:text-foreground/50 [&_h3]:font-light [&_h3]:pt-4 [&_img]:transition-transform [&_img]:duration-300 [&_img]:hover:-translate-y-2 [&_img]:aspect-square [&_img]:object-cover [&_img]:rounded-sm [&_img]:border-2 [&_img]:border-gold">
         <article>
-          <Link href="#">
-            <Image
-              src="/smörgåstårta.jpg"
-              width={275}
-              height={275}
-              alt="Bild på en smörgåstårta"
-              sizes="(max-width: 768px) 100vw, 25vw"
-            />
-          </Link>
-          <h3>Smörgåstårta</h3>
+          <Image
+            src="/pizza-marghareta.jpeg"
+            width={275}
+            height={275}
+            alt="Bild på en napolitansk pizza, pizzan heter Marghareta på menyn"
+            sizes="(max-width: 768px) 100vw, 25vw"
+          />
+
+          <h3>Marghareta</h3>
         </article>
         <article>
-          <Link href="#">
-            <Image
-              src="/gelato.jpg"
-              width={275}
-              height={275}
-              alt="Bild på italiensk gelato"
-              sizes="(max-width: 768px) 100vw, 25vw"
-            />
-          </Link>
+          <Image
+            src="/gelato.jpg"
+            width={275}
+            height={275}
+            alt="Bild på italiensk gelato"
+            sizes="(max-width: 768px) 100vw, 25vw"
+          />
+
           <h3>Gelato</h3>
         </article>
         <article>
-          <Link href="#">
-            <Image
-              src="/pizza.jpg"
-              width={275}
-              height={275}
-              alt="Bild på en napolitansk pizza, pizzan heter Estate på menyn"
-              className="object-left"
-              sizes="(max-width: 768px) 100vw, 25vw"
-            />
-          </Link>
-          <h3>Pizza</h3>
+          <Image
+            src="/pizza.jpg"
+            width={275}
+            height={275}
+            alt="Bild på en napolitansk pizza, pizzan heter Estate på menyn"
+            className="object-left"
+            sizes="(max-width: 768px) 100vw, 25vw"
+          />
+
+          <h3>Estate</h3>
         </article>
         <article>
-          <Link href="#">
-            <Image
-              src="/glasstårta.jpg"
-              width={275}
-              height={275}
-              alt="Bild på en Glasstårta"
-              sizes="(max-width: 768px) 100vw, 25vw"
-            />
-          </Link>
-          <h3>Glasstårta</h3>
+          <Image
+            src="/gelato-pink.webp"
+            width={275}
+            height={275}
+            alt="Bild på Gelato med jordgubbsmak"
+            sizes="(max-width: 768px) 100vw, 25vw"
+          />
+          <h3>Jordgubb Gelato</h3>
+        </article>
+        <article>
+          <Image
+            src="/pizza-capricciosa.jpeg"
+            width={275}
+            height={275}
+            alt="Bild på en napolitansk pizza, pizzan heter Capricciosa på menyn"
+            sizes="(max-width: 768px) 100vw, 25vw"
+          />
+          <h3>Capricciosa</h3>
         </article>
       </div>
     </section>
