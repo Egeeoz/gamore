@@ -26,11 +26,11 @@ const birthstone = Birthstone({
   weight: '400',
 });
 
-const herVonMuellerHoff = Herr_Von_Muellerhoff({
-  display: 'swap',
-  preload: true,
-  weight: '400',
-});
+// const herVonMuellerHoff = Herr_Von_Muellerhoff({
+//   display: 'swap',
+//   preload: true,
+//   weight: '400',
+// });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://gamore.vercel.app'),
@@ -48,7 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sv">
-      <body className={`${sourceSans3.className}  flex min-h-screen`}>
+      <body className={`${sourceSans3.className} flex min-h-screen`}>
         <SidebarProvider defaultOpen={false}>
           <NavSidebar />
           <div className="flex flex-col flex-1">
