@@ -7,7 +7,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Glassprovning Stockholm - Boka Gelato-upplevelse | Gelateria Amore',
   description:
-    'Boka unik glassprovning i Stockholm. Prova 15+ smaker äkta italiensk gelato. Perfekt för företagsevent och privatfester. Bokning öppnar mars 2026!',
+    'Boka unik glassprovning i Stockholm. Prova 12 smaker äkta italiensk gelato. Perfekt för företagsevent och privatfester. Bokning öppnar mars 2026!',
   keywords: [
     'glassprovning Stockholm',
     'gelato tasting',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Glassprovning Stockholm - Upplev Äkta Italiensk Gelato',
     description:
-      'Prova 15+ smaker färsk gelato i en guidad provning. Perfekt för företag och glassälskare.',
+      'Prova 12 smaker färsk gelato i en guidad provning. Perfekt för företag och glassälskare.',
     url: 'https://gamore.se/glassprovning',
     images: ['/gelato-banner.webp'],
     locale: 'sv_SE',
@@ -223,7 +223,7 @@ export default function Page() {
               Hur många personer ryms på en glassprovning?
             </h3>
             <p className="text-gray-700">
-              Max 12 personer per glassprovning för att säkerställa en personlig
+              Max 16 personer per glassprovning för att säkerställa en personlig
               och högkvalitativ upplevelse.
             </p>
           </article>
@@ -233,7 +233,7 @@ export default function Page() {
               Hur lång tid tar glassprovningen?
             </h3>
             <p className="text-gray-700">
-              Cirka 1 timme där ni får prova 15+ olika smaker av vår färska
+              Cirka 1 timme där ni får prova 12 olika smaker av vår färska
               gelato.
             </p>
           </article>
@@ -243,8 +243,8 @@ export default function Page() {
               När öppnar bokningarna för 2026?
             </h3>
             <p className="text-gray-700">
-              Bokningar öppnar i mars 2026. Ni måste boka minst 5 dagar i
-              förväg.
+              Bokningar öppnar i mars 2026. Ni måste ha Amores glassprovnings
+              presentkort.
             </p>
           </article>
         </div>
@@ -295,9 +295,10 @@ export default function Page() {
               </p>
               <p>
                 Det är viktigt att ni kontaktar oss och gör er bokning minst fem
-                (5) dag innan ni vill besöka oss för en glassprovning. Detta är
+                (5) dag innan ni vill besöka oss för en glassprovning.Detta är
                 för att säkerställa att det finns platser kvar. Speciellt då vi
-                inte kan ta in mer än 12 personer per glassprovning.
+                inte kan ta in mer än 16 personer per glassprovning. Ni måste
+                också ha Amores glassprovnings presentkort
               </p>
             </div>
           </div>

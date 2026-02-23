@@ -76,10 +76,10 @@ export default function Info() {
             src="/gelato-pink.webp"
             width={275}
             height={275}
-            alt="Bild på Gelato med jordgubbsmak"
+            alt="Bild på Gelato med hallon smak"
             sizes="(max-width: 768px) 100vw, 25vw"
           />
-          <h3>Jordgubb Gelato</h3>
+          <h3>Hallon Gelato</h3>
         </article>
         <article>
           <Image

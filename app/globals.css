@@ -5,6 +5,10 @@
 
 @theme inline {
   --color-gold: #c59d5f;
+  --color-amber-primary: #b45309;
+  --color-amber-light: #d97706;
+  --color-amber-dark: #92400e;
+  --color-cream: #faf9f6;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-sidebar-ring: var(--sidebar-ring);
