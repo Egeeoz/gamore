@@ -68,7 +68,7 @@ export default function Nav() {
           <li>
             <Link
               href="/"
-              className="hover:text-[#C59D5F] ease-in-out transition"
+              className="hover:text-amber-dark ease-in-out transition"
             >
               hem
             </Link>
@@ -76,7 +76,7 @@ export default function Nav() {
           <li>
             <Link
               href="meny"
-              className="hover:text-[#C59D5F] ease-in-out transition"
+              className="hover:text-amber-dark ease-in-out transition"
             >
               meny
             </Link>
@@ -84,7 +84,7 @@ export default function Nav() {
           <li>
             <Link
               href="pizza"
-              className="hover:text-[#C59D5F] ease-in-out transition"
+              className="hover:text-amber-dark ease-in-out transition"
             >
               pizza
             </Link>
