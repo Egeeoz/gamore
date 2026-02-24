@@ -46,7 +46,7 @@ export default function GelatoPage() {
   return (
     <>
       {/* Hero Section */}
-      <section
+      <div
         className="w-full relative overflow-hidden"
         style={{ minHeight: '550px' }}
       >
@@ -60,7 +60,7 @@ export default function GelatoPage() {
           className="object-cover"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-black/10" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/50 via-black/20 to-black/10" />
 
         <section className="absolute inset-0 flex flex-col justify-center px-6 md:px-12">
           <div className="max-w-2xl">
@@ -100,41 +100,38 @@ export default function GelatoPage() {
           </defs>
           <rect width="100%" height="100%" fill="url(#spike-pattern)" />
         </svg>
-      </section>
+      </div>
 
       {/* Main Content Section */}
       <section className="py-12 md:py-20 flex flex-col gap-8 bg-white">
-        {/* Vad är Gelato */}
-        <article className="md:w-[70%] w-full mx-auto px-4 md:px-0">
-          <h2 className="text-4xl md:text-5xl text-amber-900 mb-8 font-light">
-            Vad är Gelato?
-          </h2>
-          <div className="space-y-6 text-gray-700 leading-relaxed [&>p]:text-lg">
-            <p>
-              Gelato betyder glass på italienska, men när vi pratar om att köpa
-              gelato syftar vi nästan alltid på en speciell slags glass. Till
-              skillnad från traditionell glass, som vi för det mesta konsumerar,
-              innehåller gelato nästan ingen grädde alls, utan den tillverkas
-              endast av komjölk, socker och smakämnen. Med så simpla råvaror är
-              det väldigt viktigt att dessa håller hög klass för att skapa en
-              exklusiv och delikat produkt.
-            </p>
-            <p>
-              Hos oss på Gelateria Amore på Långholmsgatan 5 i Stockholm kan du
-              vara säker på att all vår gelato i Stockholm är tillverkad med
-              äkta kärlek och med de bästa råvarorna som marknaden erbjuder.
-            </p>
-          </div>
-        </article>
+        <h2 className="text-4xl md:text-5xl text-amber-900 font-light md:w-[70%] mx-auto">
+          Vad är Gelato?
+        </h2>
+        <div className="md:w-[70%] w-full mx-auto px-4 md:px-0 space-y-6 text-gray-700 leading-relaxed [&>p]:text-lg">
+          <p>
+            Gelato betyder glass på italienska, men när vi pratar om att köpa
+            gelato syftar vi nästan alltid på en speciell slags glass. Till
+            skillnad från traditionell glass, som vi för det mesta konsumerar,
+            innehåller gelato nästan ingen grädde alls, utan den tillverkas
+            endast av komjölk, socker och smakämnen. Med så simpla råvaror är
+            det väldigt viktigt att dessa håller hög klass för att skapa en
+            exklusiv och delikat produkt.
+          </p>
+          <p>
+            Hos oss på Gelateria Amore på Långholmsgatan 5 i Stockholm kan du
+            vara säker på att all vår gelato i Stockholm är tillverkad med äkta
+            kärlek och med de bästa råvarorna som marknaden erbjuder.
+          </p>
+        </div>
 
         {/* Divider */}
         <div className="w-[90%] md:w-[70%] mx-auto h-px bg-linear-to-r from-transparent via-black/40 to-transparent" />
 
         {/* Hur Tillverkas Ern Gelato */}
         <article className="md:w-[70%] w-full mx-auto px-4 md:px-0">
-          <h2 className="text-4xl md:text-5xl text-amber-900 mb-8 font-light">
+          <h3 className="text-4xl md:text-5xl text-amber-900 mb-8 font-light">
             Hur Tillverkas Vår Gelato?
-          </h2>
+          </h3>
           <div className="space-y-6 text-gray-700 leading-relaxed [&>p]:text-lg">
             <p>
               Gelato har en bas på mjölk, socker och smakämnen och till skillnad
@@ -185,9 +182,9 @@ export default function GelatoPage() {
 
         {/* Beste Råvaror */}
         <article className="md:w-[70%] w-full mx-auto px-4 md:px-0">
-          <h2 className="text-4xl md:text-5xl text-amber-900 mb-8 font-light">
+          <h3 className="text-4xl md:text-5xl text-amber-900 mb-8 font-light">
             Vi Använder Bara de Bästa Råvarorna
-          </h2>
+          </h3>
           <div className="space-y-6 text-gray-700 leading-relaxed [&>p]:text-lg">
             <p>
               Vi är väldigt stolta över vår Gelato och tillverkar den med äkta
