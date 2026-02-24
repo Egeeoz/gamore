@@ -104,7 +104,7 @@ export default function GelatoPage() {
 
       {/* Main Content Section */}
       <section className="py-12 md:py-20 flex flex-col gap-8 bg-white">
-        <h2 className="text-4xl md:text-5xl text-amber-900 font-light md:w-[70%] mx-auto">
+        <h2 className="text-3xl md:text-5xl text-amber-900 font-light md:w-[70%] mx-auto">
           Vad är Gelato?
         </h2>
         <div className="md:w-[70%] w-full mx-auto px-4 md:px-0 space-y-6 text-gray-700 leading-relaxed [&>p]:text-lg">
@@ -129,7 +129,7 @@ export default function GelatoPage() {
 
         {/* Hur Tillverkas Ern Gelato */}
         <article className="md:w-[70%] w-full mx-auto px-4 md:px-0">
-          <h3 className="text-4xl md:text-5xl text-amber-900 mb-8 font-light">
+          <h3 className="text-3xl md:text-5xl text-amber-900 mb-8 font-light">
             Hur Tillverkas Vår Gelato?
           </h3>
           <div className="space-y-6 text-gray-700 leading-relaxed [&>p]:text-lg">
@@ -182,7 +182,7 @@ export default function GelatoPage() {
 
         {/* Beste Råvaror */}
         <article className="md:w-[70%] w-full mx-auto px-4 md:px-0">
-          <h3 className="text-4xl md:text-5xl text-amber-900 mb-8 font-light">
+          <h3 className="text-3xl md:text-5xl text-amber-900 mb-8 font-light">
             Vi Använder Bara de Bästa Råvarorna
           </h3>
           <div className="space-y-6 text-gray-700 leading-relaxed [&>p]:text-lg">

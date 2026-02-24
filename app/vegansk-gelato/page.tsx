@@ -103,7 +103,7 @@ export default function VeganGelatoPage() {
 
       {/* Main Content Section */}
       <section className="py-12 md:py-20 flex flex-col gap-8 bg-white">
-        <h2 className="text-4xl md:text-5xl text-amber-900 font-light md:w-[70%] mx-auto">
+        <h2 className="text-3xl md:text-5xl text-amber-900 font-light md:w-[70%] mx-auto">
           Vegansk Gelato Stockholm
         </h2>
 
@@ -125,7 +125,7 @@ export default function VeganGelatoPage() {
         <div className="w-[90%] md:w-[70%] mx-auto h-px bg-linear-to-r from-transparent via-black/40 to-transparent" />
 
         <article className="md:w-[70%] w-full mx-auto px-4 md:px-0">
-          <h3 className="text-4xl md:text-5xl text-amber-900 mb-8 font-light">
+          <h3 className="text-3xl md:text-5xl text-amber-900 mb-8 font-light">
             Vår Veganska Gelato
           </h3>
 
@@ -171,7 +171,7 @@ export default function VeganGelatoPage() {
         <div className="w-[90%] md:w-[70%] mx-auto h-px bg-linear-to-r from-transparent via-black/40 to-transparent" />
 
         <article className="md:w-[70%] w-full mx-auto px-4 md:px-0">
-          <h3 className="text-4xl md:text-5xl text-amber-900 mb-8 font-light">
+          <h3 className="text-3xl md:text-5xl text-amber-900 mb-8 font-light">
             Vill du testa vår veganska gelato?
           </h3>
           <div className="space-y-6 text-gray-700 leading-relaxed [&>p]:text-lg">
