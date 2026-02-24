@@ -41,7 +41,7 @@ export default function Page() {
       {/* Header Section */}
       <section className="py-12 md:py-20 px-4 text-center">
         <h1 className="text-4xl md:text-6xl font-light text-amber-900 mb-4">
-          🍦 Glassprovning Stockholm 🍦
+          Glassprovning Stockholm
         </h1>
         <h2 className="text-xl md:text-2xl font-semibold tracking-widest mb-8 text-amber-800">
           UPPTÄCK STOCKHOLMS BÄSTA GELATO
