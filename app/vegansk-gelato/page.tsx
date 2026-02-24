@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import gelatoImg from '@/public/gelato-pink.webp';
+import gelatoImg from '@/public/vegan-gelato-blueberry.webp';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://gamore.vercel.app'),
@@ -149,7 +149,7 @@ export default function VeganGelatoPage() {
           {/* Image Gallery */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
             <Image
-              src="/gelato-pink.webp"
+              src="/gelato-yellow.webp"
               alt="Vegansk gelato - färsk handgjord glass från Gelateria Amore Stockholm"
               width={400}
               height={400}
@@ -157,11 +157,11 @@ export default function VeganGelatoPage() {
               sizes="(max-width: 768px) 100vw, 50vw"
             />
             <Image
-              src="/gelato.jpg"
+              src="/gelato-white.webp"
               alt="Vegansk gelato - italiensk glass i Stockholm"
               width={400}
               height={400}
-              className="rounded-lg shadow-lg object-cover w-full aspect-square"
+              className="rounded-lg shadow-lg object-cover object-top w-full aspect-square"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>

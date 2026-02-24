@@ -159,15 +159,15 @@ export default function GelatoPage() {
           {/* Image Gallery */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
             <Image
-              src="/gelato.jpg"
+              src="/gelato-pistachio.webp"
               alt="Italiensk gelato - färsk handgjord glass från Gelateria Amore Stockholm"
               width={400}
               height={400}
-              className="rounded-lg shadow-lg object-cover w-full aspect-square"
+              className="rounded-lg shadow-lg object-cover w-full aspect-square "
               sizes="(max-width: 768px) 100vw, 50vw"
             />
             <Image
-              src="/gelato-pink.webp"
+              src="/gelato-almond.webp"
               alt="Rosa gelato med hallon smak - italiensk glass i Stockholm"
               width={400}
               height={400}
