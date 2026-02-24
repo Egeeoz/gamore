@@ -104,7 +104,7 @@ export default function Hero() {
       />
 
       {/* Sophisticated Overlay Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-black/10" />
+      <div className="absolute inset-0 bg-linear-to-r from-black/50 via-black/20 to-black/10" />
 
       {/* Content Container */}
       <section className="absolute inset-0 flex flex-col justify-center px-6 md:px-12">
