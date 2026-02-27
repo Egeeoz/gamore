@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title:
     'Italiensk Gelato Stockholm | Färsk Glass Gjord Dagligen | Gelateria Amore',
   description:
-    'Äkta italiensk gelato i Stockholm gjord dagligen med svenska ekologiska råvaror. Lär dig vad gelato är och hur vi tillverkar den på Gelateria Amore.',
+    'Äkta italiensk gelato i Stockholm gjord dagligen. Lär dig vad gelato är och hur vi tillverkar den på Gelateria Amore.',
   keywords: [
     'gelato Stockholm',
     'italiensk gelato',
@@ -71,9 +71,8 @@ export default function GelatoPage() {
               Äkta kärlek i varje skalp
             </p>
             <p className="text-base md:text-lg text-white/80 mb-8 max-w-xl leading-relaxed font-light">
-              Handgjord gelato med svenska ekologiska råvaror och italienska
-              traditioner. Lär dig mer om vad gelato är och hur vi tillverkar
-              den.
+              Handgjord gelato med svenska råvaror och italienska traditioner.
+              Lär dig mer om vad gelato är och hur vi tillverkar den.
             </p>
           </div>
         </section>
