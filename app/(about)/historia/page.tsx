@@ -92,14 +92,14 @@ export default function Historia() {
                 key={index}
                 className="flex flex-col md:flex-row gap-4 md:gap-8 bg-cream rounded-lg px-4 py-4 w-full md:w-[70%]"
               >
-                <div className="flex-shrink-0">
+                <div className="shrink-0">
                   <span className="inline-block text-sm font-bold bg-amber-700 text-white px-3 py-1 rounded-full whitespace-nowrap">
                     {event.year}
                   </span>
                 </div>
 
-                <div className="flex flex-col md:flex-row gap-4 md:gap-6 flex-grow">
-                  <div className="flex-grow">
+                <div className="flex flex-col md:flex-row gap-4 md:gap-6 grow">
+                  <div className="grow">
                     <h3 className="text-xl font-light text-amber-900 mb-3">
                       {event.title}
                     </h3>
@@ -108,7 +108,7 @@ export default function Historia() {
                     </p>
                   </div>
 
-                  <div className="h-40 md:h-48 md:w-48 flex-shrink-0 rounded-lg overflow-hidden">
+                  <div className="h-40 md:h-48 md:w-48 shrink-0 rounded-lg overflow-hidden">
                     <Image
                       src={event.image}
                       alt={event.imageAlt}
