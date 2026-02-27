@@ -54,7 +54,7 @@ const timelineEvents = [
 
 export default function Historia() {
   return (
-    <section className="py-12 md:py-12">
+    <section className="py-12">
       <div className="flex flex-col items-center gap-8 w-[70%] mx-auto">
         <h1 className="text-4xl md:text-5xl font-light text-amber-900 mb-4 text-center">
           Vår Historia
