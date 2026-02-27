@@ -102,7 +102,7 @@ export default function VeganGelatoPage() {
       </div>
 
       {/* Main Content Section */}
-      <section className="py-12 md:py-20 flex flex-col gap-8 bg-white">
+      <section className="py-12 flex flex-col gap-8 bg-cream">
         <h2 className="text-3xl md:text-5xl text-amber-900 font-light md:w-[70%] mx-auto">
           Vegansk Gelato Stockholm
         </h2>
