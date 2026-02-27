@@ -39,9 +39,6 @@ const NAV_ITEMS: NavItem[] = [
   { title: 'HEM', url: '/' },
   { title: 'MENY', url: 'meny' },
   { title: 'PIZZA', url: 'pizza' },
-  // { title: 'GELATO', url: 'gelato' },
-  // { title: 'GlASSPROVNING', url: '#' },
-  // { title: 'VEGANSK GELATO', url: '#' },
   {
     title: 'BESTÄLL ONLINE',
     url: '#',
@@ -71,7 +68,6 @@ const NAV_ITEMS: NavItem[] = [
   {
     title: 'OM OSS',
     subItems: [
-      { title: 'Kontakta oss', url: 'kontakt' },
       { title: 'Historia', url: 'historia' },
       { title: 'Vanliga frågor', url: 'faq' },
       { title: 'Integritetspolicy', url: 'integritetspolicy' },

@@ -31,10 +31,6 @@ const orderOnlineItems = [
 
 const aboutItems = [
   {
-    label: 'Kontakta oss',
-    href: 'kontakt',
-  },
-  {
     label: 'Historia',
     href: 'historia',
   },

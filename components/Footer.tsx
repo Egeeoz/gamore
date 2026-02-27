@@ -27,17 +27,18 @@ export default function Footer() {
         </defs>
         <rect width="100%" height="100%" fill="url(#spike-pattern-footer)" />
       </svg>
-      <section className="flex flex-col items-center gap-2">
+      {/* <section className="flex flex-col items-center gap-2">
+      
         <h2>Om oss</h2>
         <p className="md:w-[60%] w-[90%] text-center">
           Gelateria Amore är ett litet, familjedrivet företag. Ägarna Dragana
           och Miroslav är passionerade, kunniga och entusiastiska när det gäller
           glass och pizza. Kom in och upplev hur äkta kärlek smakar!
         </p>
-      </section>
+      </section> */}
       <section className="flex flex-col items-center gap-2">
         <h2>FÖLJ OSS</h2>
-        <div className="flex items-center justify-center gap-5 [&>a]:hover:text-gold/80 [&>a]:ease-in-out [&>a]:transition">
+        <div className="flex items-center justify-center gap-5 [&>a]:hover:text-amber-light [&>a]:ease-in-out [&>a]:transition">
           <a
             href="https://www.facebook.com/gelateriaamore/"
             target="_blank"
@@ -74,7 +75,7 @@ export default function Footer() {
       </section>
       <section className="flex flex-col gap-2 items-center">
         <h2>KONTAKTA OSS</h2>
-        <address className="*:not-italic text-center flex flex-col gap-1.5 *:hover:text-gold/80 *:ease-in-out *:transition *:cursor-pointer">
+        <address className="*:not-italic text-center flex flex-col gap-1.5 *:hover:text-amber-light *:ease-in-out *:transition *:cursor-pointer">
           <a
             className="address"
             href="https://www.google.com/maps/place/Gelateria+Amore/@59.3177426,18.0279998,16z/data=!3m1!4b1!4m6!3m5!1s0x465f77c51132f8b1:0xb2ff7b2f1441e768!8m2!3d59.31774!4d18.0328707!16s%2Fg%2F11c46cd7z2?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
