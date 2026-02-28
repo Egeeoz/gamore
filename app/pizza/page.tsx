@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Metadata } from 'next';
-import pizzaImg from '@/public/pizza.jpg';
+import pizzaImg from '@/public/pizza.webp';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://gamore.vercel.app'),
