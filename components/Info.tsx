@@ -1,100 +1,3 @@
-// import Image from 'next/image';
-// import Link from 'next/link';
-
-// export default function Info() {
-//   return (
-//     <section className="py-8 flex flex-col items-center gap-10 bg-[#FAF9F6]">
-//       <h1 className="text-center text-2xl md:text-3xl tracking-widest font-semibold">
-//         VÄLKOMMEN TILL GELATERIA AMORE STOCKHOLM
-//       </h1>
-//       <div className="flex flex-col gap-4 px-4 md:px-0 md:w-[65%] [&>p]:text-foreground/70">
-//         <p>
-//           Om ni är sugna på Stockholms bästa Gelato, så är Gelateria Amore på
-//           Långholmsgatan 5 i Stockholm den rätta platsen för er. Här hittar ni
-//           enligt våra kunder den bästa och mest autentiska gelaton i stan. Hos
-//           oss är allting tillverkat med kärlek och självklart använder vi oss
-//           endast av de bästa råvarorna som marknaden erbjuder. Förutom
-//           traditionell gelato erbjuder vi även vegansk gelato.
-//         </p>
-//         <p>
-//           Vår gelato innehåller de finaste råvarorna, färska och torkade frukter
-//           och bär samt reducerad mängd socker och fett för en nyttigare gelato
-//           utan att kompromissa med smaken. Utöver vår gelato i Stockholm så
-//           hittar ni även mycket annat gott hos oss. Ni kan bland annat köpa
-//           handgjorda tårtor, gelato-tårtor, hemmagjord choklad, praliner och
-//           desserter.
-//         </p>
-//         <p>
-//           På Gelaterian erbjuder vi dig även mat i form av Napolitansk pizza,
-//           smörgåsar, wraps och italienskt kaffe. Om du vill njuta av den godaste
-//           gelaton i Stockholm, tårtor och andra spännande delikatesser i ditt
-//           hem, på firmafesten, under ett event eller något helt annat, så
-//           erbjuder vi er självklart catering i Stockholm i världsklass.
-//         </p>
-//         <p>
-//           Hos oss hittar ni även Smörgåstårta, Wraps catering, glass catering
-//           och ni får inte missa möjligheten att gå på vår unika glassprovning!
-//         </p>
-//       </div>
-//       <div className="flex flex-col md:flex-row gap-3 [&_h3]:text-center [&_h3]:text-2xl [&_h3]:text-foreground/50 [&_h3]:font-light [&_h3]:pt-4 [&_img]:transition-transform [&_img]:duration-300 [&_img]:hover:-translate-y-2 [&_img]:aspect-square [&_img]:object-cover [&_img]:rounded-sm [&_img]:border-2 [&_img]:border-gold">
-//         <article>
-//           <Image
-//             src="/pizza-marghareta.jpeg"
-//             width={275}
-//             height={275}
-//             alt="Bild på en napolitansk pizza, pizzan heter Marghareta på menyn"
-//             sizes="(max-width: 768px) 100vw, 25vw"
-//           />
-
-//           <h3>Marghareta</h3>
-//         </article>
-//         <article>
-//           <Image
-//             src="/gelato.jpg"
-//             width={275}
-//             height={275}
-//             alt="Bild på italiensk gelato"
-//             sizes="(max-width: 768px) 100vw, 25vw"
-//           />
-
-//           <h3>Gelato</h3>
-//         </article>
-//         <article>
-//           <Image
-//             src="/pizza.jpg"
-//             width={275}
-//             height={275}
-//             alt="Bild på en napolitansk pizza, pizzan heter Estate på menyn"
-//             className="object-left"
-//             sizes="(max-width: 768px) 100vw, 25vw"
-//           />
-
-//           <h3>Estate</h3>
-//         </article>
-//         <article>
-//           <Image
-//             src="/gelato-pink.webp"
-//             width={275}
-//             height={275}
-//             alt="Bild på Gelato med hallon smak"
-//             sizes="(max-width: 768px) 100vw, 25vw"
-//           />
-//           <h3>Hallon Gelato</h3>
-//         </article>
-//         <article>
-//           <Image
-//             src="/pizza-capricciosa.jpeg"
-//             width={275}
-//             height={275}
-//             alt="Bild på en napolitansk pizza, pizzan heter Capricciosa på menyn"
-//             sizes="(max-width: 768px) 100vw, 25vw"
-//           />
-//           <h3>Capricciosa</h3>
-//         </article>
-//       </div>
-//     </section>
-//   );
-// }
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -105,7 +8,18 @@ export default function Info() {
         Välkommen till Gelateria Amore Stockholm
       </h2>
 
-      <div className="space-y-6 text-gray-700 leading-relaxed [&>p]:text-lg md:px-0 px-4 md:w-[60%] mx-auto">
+      <section className="space-y-6 text-gray-700 leading-relaxed [&>p]:text-lg md:px-0 px-4 md:w-[60%] mx-auto">
+        <h3 className="text-xl font-semibold text-amber-900 mb-4">
+          Välkommen till Hornstulls bästa pizzeria och glasscafé
+        </h3>
+        <p>
+          Letar du efter äkta napolitansk pizza i Stockholm? Gelateria Amore på
+          Hornstull serverar traditionell stenugnsbakad pizza enligt italienska
+          metoder. Vår pizzeria ligger på Långholmsgatan 5, bara ett stenkast
+          från Hornstulls tunnelbana. Förutom vår napolitanska pizza erbjuder vi
+          även färsk italiensk gelato gjord dagligen, pasta, wraps och
+          desserter.
+        </p>
         <p>
           Om ni är sugna på Stockholms bästa Gelato, så är Gelateria Amore på
           Långholmsgatan 5 i Stockholm den rätta platsen för er. Här hittar ni
@@ -125,13 +39,37 @@ export default function Info() {
         </p>
 
         <p>
-          På Gelaterian erbjuder vi dig även mat i form av Napolitansk pizza,
-          smörgåsar, wraps och italienskt kaffe. Vi är ett familjedrivet
+          På Gelaterian erbjuder vi dig även mat i form av{' '}
+          <Link
+            href="/pizza"
+            className="text-amber-900 underline hover:text-amber-800"
+          >
+            napolitansk pizza
+          </Link>
+          , smörgåsar, wraps och italienskt kaffe. Vi är ett familjedrivet
           glasscafé där ägarna Dragana och Miroslav är passionerade, kunniga och
-          entusiastiska när det gäller glass och mat. Kom in och upplev hur äkta
-          kärlek smakar!
+          entusiastiska när det gäller{' '}
+          <Link
+            href="/gelato"
+            className="text-amber-900 underline hover:text-amber-800"
+          >
+            glass
+          </Link>{' '}
+          och mat. Kom in och upplev hur äkta kärlek smakar!
         </p>
-      </div>
+        <section className="bg-amber-50 p-6 rounded-lg mt-8">
+          <h3 className="text-2xl text-amber-900 mb-4">
+            Hitta oss på Hornstull
+          </h3>
+          <p className="text-gray-700">
+            Vi ligger på <strong>Långholmsgatan 5</strong>, bara 3 minuters
+            promenad från <strong>Hornstulls tunnelbanestation</strong>. Vår
+            pizzeria och glasscafé är öppen tisdag-torsdag 13-20 och
+            fredag-söndag 13-21. Välkommen in för att prova Stockholms bästa
+            napolitanska pizza och italienska gelato!
+          </p>
+        </section>
+      </section>
 
       <section className="md:w-[70%] w-full mx-auto mt-4">
         <h3 className="text-3xl text-amber-900 md:mb-8 mb-6 text-center">
@@ -144,7 +82,7 @@ export default function Info() {
               src="/gelato.jpg"
               width={300}
               height={300}
-              alt="Italiensk gelato - Gelateria Amores färska glassar gjord dagligen"
+              alt="Italiensk gelato gjord dagligen på Gelateria Amore pizzeria Hornstull Stockholm"
               className="rounded-lg shadow-md mb-4"
               sizes="(max-width: 768px) 100vw, 25vw"
             />
@@ -160,7 +98,7 @@ export default function Info() {
               src="/pizza-capricciosa.jpeg"
               width={300}
               height={300}
-              alt="Stenugnsbakad napolitansk pizza Estate - autentisk italiensk pizza i Stockholm"
+              alt="Napolitansk pizza Capricciosa stenugnsbakad på Gelateria Amore pizzeria Hornstull Stockholm"
               className="rounded-lg shadow-md mb-4"
               sizes="(max-width: 768px) 100vw, 25vw"
             />
@@ -176,7 +114,7 @@ export default function Info() {
               src="/gelato-pink.webp"
               width={300}
               height={300}
-              alt="Italiensk gelato - Gelateria Amores färska glassar gjord dagligen"
+              alt="Vegansk gelato gjord dagligen på Gelateria Amore pizzeria Hornstull Stockholm"
               className="rounded-lg shadow-md mb-4"
               sizes="(max-width: 768px) 100vw, 25vw"
             />
@@ -194,7 +132,7 @@ export default function Info() {
               src="/tomatosauce-gnocchi.JPG"
               width={300}
               height={300}
-              alt="Italiensk gelato - Gelateria Amores färska glassar gjord dagligen"
+              alt="Italiensk gnocchi gjord färskt på Gelateria Amore pizzeria Hornstull Stockholm"
               className="rounded-lg shadow-md mb-4"
               sizes="(max-width: 768px) 100vw, 25vw"
             />

@@ -108,14 +108,14 @@ export default function Hero() {
 
       {/* Content Container */}
       <section className="absolute inset-0 flex flex-col justify-around md:justify-center px-6 md:px-12">
-        <h1 className="text-5xl md:text-7xl font-light text-white mb-3 leading-tight tracking-tight">
-          Äkta italiensk gelato & pizza
+        <h1 className="text-5xl md:text-7xl font-light text-white mb-3 leading-tight tracking-tight md:w-[45%]">
+          Napolitansk Pizza & Italiensk Gelato på Hornstull
         </h1>
 
-        <div>
-          <p className="text-xl md:text-2xl text-amber-300 font-light mb-2 tracking-wide">
-            Handgjord med kärlek sedan 20
-          </p>
+        <section>
+          <h2 className="text-xl md:text-2xl text-amber-300 font-light mb-2 tracking-wide">
+            Stenugnsbakad pizza och handgjord glass i Stockholm sedan 2014
+          </h2>
 
           {/* Description */}
           <p className="text-base md:text-lg text-white/80 mb-8 max-w-xl leading-relaxed font-light bg-background/20 backdrop-blur-xs pl-2 rounded">
@@ -130,7 +130,7 @@ export default function Hero() {
           >
             Se meny
           </Link>
-        </div>
+        </section>
       </section>
 
       {/* Decorative Bottom Wave */}

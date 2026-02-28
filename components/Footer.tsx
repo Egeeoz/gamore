@@ -27,15 +27,14 @@ export default function Footer() {
         </defs>
         <rect width="100%" height="100%" fill="url(#spike-pattern-footer)" />
       </svg>
-      {/* <section className="flex flex-col items-center gap-2">
-      
-        <h2>Om oss</h2>
-        <p className="md:w-[60%] w-[90%] text-center">
-          Gelateria Amore är ett litet, familjedrivet företag. Ägarna Dragana
-          och Miroslav är passionerade, kunniga och entusiastiska när det gäller
-          glass och pizza. Kom in och upplev hur äkta kärlek smakar!
+      <section className="flex flex-col items-center gap-2 text-center">
+        <h2>PIZZERIA & GLASSCAFÉ PÅ HORNSTULL</h2>
+        <p className="md:w-[60%] w-[90%] text-sm">
+          Gelateria Amore serverar äkta napolitansk pizza och italiensk gelato
+          på Långholmsgatan 5, Hornstull. Stenugnsbakad pizza, färsk pasta och
+          handgjord glass sedan 2014. Välkommen!
         </p>
-      </section> */}
+      </section>
       <section className="flex flex-col items-center gap-2">
         <h2>FÖLJ OSS</h2>
         <div className="flex items-center justify-center gap-5 [&>a]:hover:text-amber-light [&>a]:ease-in-out [&>a]:transition">
