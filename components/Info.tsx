@@ -100,7 +100,7 @@ import Link from 'next/link';
 
 export default function Info() {
   return (
-    <section className="py-8 md:py-16 flex flex-col md:gap-8 gap-6 bg-white">
+    <section className="py-8 md:py-16 flex flex-col md:gap-8 gap-6 bg-cream">
       <h2 className="text-3xl md:text-5xl text-amber-900 text-center md:px-0 px-1">
         Välkommen till Gelateria Amore Stockholm
       </h2>
