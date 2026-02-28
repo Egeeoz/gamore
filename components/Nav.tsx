@@ -83,6 +83,7 @@ export default function Nav() {
           height={100}
           className="mr-6 md:mr-0"
           loading="eager"
+          fetchPriority="high"
           style={{ width: '185px', height: '100px' }}
         />
         <ul className="md:flex hidden gap-0 md:gap-4 lg:gap-10 xl:gap-16 uppercase lg:text-sm text-xs">
