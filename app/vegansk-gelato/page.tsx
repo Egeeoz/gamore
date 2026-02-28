@@ -69,7 +69,7 @@ export default function VeganGelatoPage() {
             <p className="text-xl md:text-2xl text-amber-300 font-light mb-2 tracking-wide text-right">
               100% vegansk njutning
             </p>
-            <p className="text-base md:text-lg text-white/80 mb-8 max-w-xl leading-relaxed font-light text-right">
+            <p className="bg-background/20 backdrop-blur-sm rounded pr-2 md:text-lg text-white/80 mb-8 max-w-xl leading-relaxed font-light text-right">
               Handgjord gelato med frukt- och vattenbas utan mjölk. Alla
               smakämnen är 100% veganska. Lär dig mer om hur vi tillverkar vår
               veganska gelato.

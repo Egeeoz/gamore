@@ -24,7 +24,15 @@ const orderOnlineItems = [
     href: 'https://order.foodtec.se/gamore/bestall-mat?delivery_option=self_pickup',
   },
   {
-    label: 'Beställ med leverans',
+    label: 'Beställ med Foodora',
+    href: 'https://www.foodora.se/restaurant/wen3/pizzeria-amore-wen3',
+  },
+  {
+    label: 'Beställ med Ubereats',
+    href: 'https://www.ubereats.com/se/store/pizzeria-amore/ZVxnn1WoXI6-8CnyRtaBKw?srsltid=AfmBOorD0OZYEB9t2N2MSS26zbPmKLLv9u5roElQ6mV64No06ZmwVrwu',
+  },
+  {
+    label: 'Beställ med Wolt',
     href: 'https://wolt.com/sv/swe/stockholm/restaurant/pizzeria-amore-langholmsgatan',
   },
 ];

@@ -70,7 +70,7 @@ export default function GelatoPage() {
             <p className="text-xl md:text-2xl text-amber-300 font-light mb-2 tracking-wide">
               Äkta kärlek i varje skalp
             </p>
-            <p className="text-base md:text-lg text-white/80 mb-8 max-w-xl leading-relaxed font-light">
+            <p className="bg-background/20 backdrop-blur-sm rounded pl-2 md:text-lg text-white/80 mb-8 max-w-xl leading-relaxed font-light">
               Handgjord gelato med svenska råvaror och italienska traditioner.
               Lär dig mer om vad gelato är och hur vi tillverkar den.
             </p>

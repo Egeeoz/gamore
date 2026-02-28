@@ -70,7 +70,7 @@ export default function PizzaPage() {
             <p className="text-xl md:text-2xl text-amber-300 font-light mb-2 tracking-wide">
               Äkta kärlek i varje tugga
             </p>
-            <p className="text-base md:text-lg text-white/80 mb-8 max-w-xl leading-relaxed font-light">
+            <p className="bg-background/20 backdrop-blur-sm pl-2 rounded md:text-lg text-white/80 mb-8 max-w-xl leading-relaxed font-light">
               Traditionell napolitansk pizza bakad med italienska recept och
               italienska traditioner. Lär dig mer om pizzans historia och hur vi
               bakar den.
