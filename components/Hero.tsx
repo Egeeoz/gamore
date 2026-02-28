@@ -108,7 +108,7 @@ export default function Hero() {
 
       {/* Content Container */}
       <section className="absolute inset-0 flex flex-col justify-around md:justify-center px-6 md:px-12">
-        <h1 className="text-5xl md:text-7xl font-light text-white mb-3 leading-tight tracking-tight w-[45%]">
+        <h1 className="text-5xl md:text-7xl font-light text-white mb-3 leading-tight tracking-tight md:w-[45%]">
           Napolitansk Pizza & Italiensk Gelato på Hornstull
         </h1>
 
