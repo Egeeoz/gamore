@@ -38,60 +38,124 @@ export const metadata: Metadata = {
     canonical: 'https://gamore.vercel.app/', // CHANGE THIS TO GAMORE.SE LATER
   },
   other: {
-    'application/ld+json': JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'Restaurant',
-      name: 'Gelateria Amore',
-      description: 'Äkta napolitansk pizza och italiensk gelato',
+    'application/ld+json': JSON.stringify([
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Restaurant',
+        '@id': 'https://gamore.se',
+        name: 'Gelateria Amore',
+        description:
+          'Napolitansk pizzeria och italiensk glasscafé på Hornstull i Stockholm',
 
-      // Adress
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'Långholmsgatan 5',
-        addressLocality: 'Stockholm',
-        postalCode: '117 33',
-        addressCountry: 'SE',
+        // Adress
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Långholmsgatan 5',
+          addressLocality: 'Hornstull, Stockholm',
+          addressRegion: 'Stockholm',
+          postalCode: '117 33',
+          addressCountry: 'SE',
+        },
+
+        // Kontakt
+        telephone: ['+46707961666', '+4683042700'],
+        email: 'info@gamore.se',
+
+        // Position
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 59.317738,
+          longitude: 18.0329,
+        },
+
+        // Öppettider
+        openingHoursSpecification: [
+          {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Tuesday', 'Wednesday', 'Thursday'],
+            opens: '13:00',
+            closes: '20:00',
+          },
+          {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Friday', 'Saturday', 'Sunday'],
+            opens: '13:00',
+            closes: '21:00',
+          },
+        ],
+
+        // Ny: Lägg till menysektion
+        hasMenu: {
+          '@type': 'Menu',
+          name: 'Huvudmeny',
+          description: 'Napolitansk pizza, pasta, gelato och italienska rätter',
+          hasMenuSection: [
+            {
+              '@type': 'MenuSection',
+              name: 'Pizza',
+              description: 'Stenugnsbakad napolitansk pizza',
+              hasMenuItem: [
+                {
+                  '@type': 'MenuItem',
+                  name: 'Pizza Margherita',
+                  description: 'Tomatsås, mozzarella, basilika',
+                  offers: {
+                    '@type': 'Offer',
+                    price: '135',
+                    priceCurrency: 'SEK',
+                  },
+                },
+                // Lägg till fler populära pizzor...
+              ],
+            },
+          ],
+        },
+
+        // Övrig info
+        servesCuisine: ['Italiensk', 'Pizza', 'Gelato'],
+        priceRange: '$$',
+        url: 'https://gamore.se',
+        image: 'https://gamore.se/pizza.jpg',
+
+        // Sociala medier
+        sameAs: [
+          'https://www.facebook.com/gelateriaamore/',
+          'https://www.instagram.com/gelateriaamore/',
+        ],
+
+        // Ny: Accepterade betalningsmetoder
+        paymentAccepted: 'Kontanter, Kort, Swish, Klarna',
+
+        // Ny: Parkering och transport
+        amenityFeature: [
+          {
+            '@type': 'LocationFeatureSpecification',
+            name: 'Närhet till kollektivtrafik',
+            value: 'Hornstulls tunnelbana 3 min promenad',
+          },
+        ],
       },
 
-      // Kontakt
-      telephone: '+46707961666',
-      email: 'info@gamore.se',
-
-      // Position (viktigt för "near me" sökningar)
-      geo: {
-        '@type': 'GeoCoordinates',
-        latitude: 59.317738,
-        longitude: 18.0329,
+      // Lägg till BreadcrumbList för bättre navigation
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Hem',
+            item: 'https://gamore.se',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Pizzeria Stockholm',
+            item: 'https://gamore.se/pizza',
+          },
+        ],
       },
-
-      // Öppettider BYT DETTA SEN
-      openingHoursSpecification: [
-        {
-          '@type': 'OpeningHoursSpecification',
-          dayOfWeek: ['Tuesday', 'Wednesday', 'Thursday'],
-          opens: '11:00',
-          closes: '18:00',
-        },
-        {
-          '@type': 'OpeningHoursSpecification',
-          dayOfWeek: ['Friday', 'Saturday', 'Sunday'],
-          opens: '11:00',
-          closes: '21:00',
-        },
-      ],
-
-      // Övrig info
-      servesCuisine: 'Italiensk',
-      priceRange: '$',
-      url: 'https://gamore.vercel.app/', // CHANGE THIS LATER TO REAL DOMAIN
-      image: 'https://gamore.vercel.app/gelato.jpg', // CHANGE THIS LATER TO REAL DOMAIN
-
-      // Sociala medier
-      sameAs: [
-        'https://www.facebook.com/gelateriaamore/',
-        'https://www.instagram.com/gelateriaamore/',
-      ],
-    }),
+    ]),
   },
 };
 

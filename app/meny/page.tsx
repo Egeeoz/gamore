@@ -1,4 +1,31 @@
+import { Metadata } from 'next';
 import MenuSection from './MenuSection';
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://gamore.vercel.app'),
+  title: 'Meny - Napolitansk Pizza, Pasta & Gelato | Gelateria Amore Stockholm',
+  description:
+    'Se vår kompletta meny med napolitansk pizza, färsk pasta, italiensk gelato och mer. Stenugnsbakad pizza och handgjord glass på Hornstull i Stockholm.',
+  keywords: [
+    'pizzameny Stockholm',
+    'napolitansk pizza Hornstull',
+    'italiensk restaurang meny',
+    'pizza priser Stockholm',
+    'pasta Stockholm',
+    'gelato meny',
+  ],
+  openGraph: {
+    title: 'Meny - Napolitansk Pizza & Italiensk Mat | Gelateria Amore',
+    description:
+      'Napolitansk pizza, pasta, gelato och mer. Se hela vår meny med priser.',
+    url: 'https://gamore.vercel.app/meny',
+    images: ['/pizza.jpg'],
+    locale: 'sv_SE',
+  },
+  alternates: {
+    canonical: 'https://gamore.vercel.app/meny',
+  },
+};
 
 export default function MenuPage() {
   const pizzaData = {
