@@ -107,50 +107,29 @@ export default function Hero() {
       <div className="absolute inset-0 bg-linear-to-r from-black/50 via-black/20 to-black/10" />
 
       {/* Content Container */}
-      <section className="absolute inset-0 flex flex-col justify-center px-6 md:px-12">
-        <div className="max-w-2xl">
-          {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-light text-white mb-3 leading-tight tracking-tight">
-            Äkta italiensk gelato & pizza
-          </h1>
+      <section className="absolute inset-0 flex flex-col justify-around md:justify-center px-6 md:px-12">
+        <h1 className="text-5xl md:text-7xl font-light text-white mb-3 leading-tight tracking-tight">
+          Äkta italiensk gelato & pizza
+        </h1>
 
-          {/* Subheading with Brand Color */}
+        <div>
           <p className="text-xl md:text-2xl text-amber-300 font-light mb-2 tracking-wide">
             Handgjord med kärlek sedan 20
           </p>
 
           {/* Description */}
-          <p className="text-base md:text-lg text-white/80 mb-8 max-w-xl leading-relaxed font-light">
+          <p className="text-base md:text-lg text-white/80 mb-8 max-w-xl leading-relaxed font-light bg-background/20 backdrop-blur-xs pl-2 rounded">
             Familjedrivet café på Långholmsgatan i Stockholm. Vår gelato
             tillverkas dagligen med svenska ekologiska råvaror och italienska
             traditioner.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <a
-              href="https://order.foodtec.se/gamore/bestall-mat?delivery_option=self_pickup"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="bg-white/20 hover:bg-white/30 text-white font-semibold py-3 px-8 rounded backdrop-blur-sm border border-white/30 transition-all duration-300 w-fit"
-            >
-              Beställ avhämtning
-            </a>
-            <a
-              href="https://wolt.com/sv/swe/stockholm/restaurant/pizzeria-amore-langholmsgatan"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="bg-white/20 hover:bg-white/30 text-white font-semibold py-3 px-8 rounded backdrop-blur-sm border border-white/30 transition-all duration-300 w-fit"
-            >
-              Beställ med leverans
-            </a>
-            <Link
-              href="/meny"
-              className="bg-white/20 hover:bg-white/30 text-white font-semibold py-3 px-8 rounded backdrop-blur-sm border border-white/30 transition-all duration-300 w-fit"
-            >
-              Se meny
-            </Link>
-          </div>
+          <Link
+            href="/meny"
+            className="bg-white/20 hover:bg-white/30 text-white font-semibold py-3 px-8 rounded backdrop-blur-sm border border-white/30 transition-all duration-300 w-fit"
+          >
+            Se meny
+          </Link>
         </div>
       </section>
 

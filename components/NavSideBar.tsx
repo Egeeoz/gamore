@@ -50,7 +50,19 @@ const NAV_ITEMS: NavItem[] = [
         target: '_blank',
       },
       {
-        title: 'Beställ med leverans',
+        title: 'Beställ med Foodora',
+        url: 'https://www.foodora.se/restaurant/wen3/pizzeria-amore-wen3',
+        rel: 'noopener noreferrer',
+        target: '_blank',
+      },
+      {
+        title: 'Beställ med Ubereats',
+        url: 'https://www.ubereats.com/se/store/pizzeria-amore/ZVxnn1WoXI6-8CnyRtaBKw?srsltid=AfmBOorD0OZYEB9t2N2MSS26zbPmKLLv9u5roElQ6mV64No06ZmwVrwu',
+        rel: 'noopener noreferrer',
+        target: '_blank',
+      },
+      {
+        title: 'Beställ med Wolt',
         url: 'https://wolt.com/sv/swe/stockholm/restaurant/pizzeria-amore-langholmsgatan',
         rel: 'noopener noreferrer',
         target: '_blank',
