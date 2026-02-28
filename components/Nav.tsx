@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import NavDropdown from './NavDropdown';
 import { SidebarTrigger } from './SidebarTrigger';
 
@@ -53,6 +56,20 @@ const aboutItems = [
 ];
 
 export default function Nav() {
+  const pathname = usePathname();
+
+  // Check if any gelateria item is active
+  const isGelateriaActive = gelateriaItems.some(
+    (item) =>
+      pathname === `/${item.href}` || pathname.startsWith(`/${item.href}/`),
+  );
+
+  // Check if any about item is active
+  const isAboutActive = aboutItems.some(
+    (item) =>
+      pathname === `/${item.href}` || pathname.startsWith(`/${item.href}/`),
+  );
+
   return (
     // Förbättrings ide, samla drop downs till en sida, separera beställ online knapp så den sticker ut mer för användare, ska smörgåstårta ligga under catering drop down? Beställ online knapp byta till dropdown, passar mer in i menyn som består av fler dropdown
 
@@ -72,7 +89,9 @@ export default function Nav() {
           <li>
             <Link
               href="/"
-              className="hover:text-amber-dark ease-in-out transition"
+              className={`hover:text-amber-dark ease-in-out transition ${
+                pathname === '/' ? 'border-b-2 border-amber-dark' : ''
+              }`}
             >
               hem
             </Link>
@@ -80,7 +99,9 @@ export default function Nav() {
           <li>
             <Link
               href="meny"
-              className="hover:text-amber-dark ease-in-out transition"
+              className={`hover:text-amber-dark ease-in-out transition ${
+                pathname === '/meny' ? 'border-b-2 border-amber-dark' : ''
+              }`}
             >
               meny
             </Link>
@@ -88,7 +109,9 @@ export default function Nav() {
           <li>
             <Link
               href="pizza"
-              className="hover:text-amber-dark ease-in-out transition"
+              className={`hover:text-amber-dark ease-in-out transition ${
+                pathname === '/pizza' ? 'border-b-2 border-amber-dark' : ''
+              }`}
             >
               pizza
             </Link>
@@ -118,7 +141,12 @@ export default function Nav() {
             </Link>
           </li> */}
           <li>
-            <NavDropdown title="GELATERIA" items={gelateriaItems} />
+            <NavDropdown
+              title="GELATERIA"
+              items={gelateriaItems}
+              isActive={isGelateriaActive}
+              pathname={pathname}
+            />
           </li>
           <li>
             <NavDropdown
@@ -129,7 +157,12 @@ export default function Nav() {
             />
           </li>
           <li>
-            <NavDropdown title="OM OSS" items={aboutItems} />
+            <NavDropdown
+              title="OM OSS"
+              items={aboutItems}
+              isActive={isAboutActive}
+              pathname={pathname}
+            />
           </li>
         </ul>
 
