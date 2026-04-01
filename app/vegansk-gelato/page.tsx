@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import gelatoImg from '@/public/vegan-gelato-blueberry.webp';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://gamore.vercel.app'),
+  metadataBase: new URL('https://gamore.se'),
   title: 'Vegansk Gelato Stockholm | Vegansk Glass | Gelateria Amore',
   description:
     'Vegansk gelato i Stockholm gjord på vatten och frukter. Lär dig mer om vår veganska glass utan mjölk. Smakämnena är 100% veganska.',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'Vegansk Gelato Stockholm - Äkta vegansk glass',
     description:
       'Vegansk gelato gjord på vatten och frukter. 100% veganska smakämnen utan mjölk eller ägg.',
-    url: 'https://gamore.vercel.app/vegansk-gelato',
+    url: 'https://gamore.se/vegansk-gelato',
     siteName: 'Gelateria Amore',
     images: [
       {
@@ -37,7 +37,53 @@ export const metadata: Metadata = {
     type: 'website',
   },
   alternates: {
-    canonical: 'https://gamore.vercel.app/vegansk-gelato',
+    canonical: 'https://gamore.se/vegansk-gelato',
+  },
+  other: {
+    'application/ld+json': JSON.stringify([
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: 'Vegansk Gelato Stockholm | Vegansk Glass | Gelateria Amore',
+        description:
+          'Vegansk gelato i Stockholm gjord på vatten och frukter. Lär dig mer om vår veganska glass utan mjölk. Smakämnena är 100% veganska.',
+        image: 'https://gamore.se/gelato.jpg',
+        author: {
+          '@type': 'Organization',
+          name: 'Gelateria Amore',
+          url: 'https://gamore.se',
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Gelateria Amore',
+          url: 'https://gamore.se',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://gamore.se/logo.png',
+          },
+        },
+        datePublished: '2024-01-01',
+        dateModified: new Date().toISOString().split('T')[0],
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Startsida',
+            item: 'https://gamore.se',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Vegansk Gelato',
+            item: 'https://gamore.se/vegansk-gelato',
+          },
+        ],
+      },
+    ]),
   },
 };
 

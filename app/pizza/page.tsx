@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import pizzaImg from '@/public/pizza.webp';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://gamore.vercel.app'),
+  metadataBase: new URL('https://gamore.se'),
   title:
     'Napolitansk Pizza Stockholm | Traditionell Italiensk Pizza | Gelateria Amore',
   description:
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       'Napolitansk Pizza i Stockholm - Äkta italiensk pizza enligt tradition',
     description:
       'Lär dig allt om äkta napolitansk pizza. Vi bakar vår pizza enligt traditionella italienska metoder med de bästa råvarorna.',
-    url: 'https://gamore.vercel.app/pizza',
+    url: 'https://gamore.se/pizza',
     siteName: 'Gelateria Amore',
     images: [
       {
@@ -38,7 +38,54 @@ export const metadata: Metadata = {
     type: 'website',
   },
   alternates: {
-    canonical: 'https://gamore.vercel.app/pizza',
+    canonical: 'https://gamore.se/pizza',
+  },
+  other: {
+    'application/ld+json': JSON.stringify([
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline:
+          'Napolitansk Pizza Stockholm | Traditionell Italiensk Pizza | Gelateria Amore',
+        description:
+          'Äkta napolitansk pizza i Stockholm bakad enligt traditionella metoder. Lär dig om pizzans historia och hur vi tillverkar den på Gelateria Amore.',
+        image: 'https://gamore.se/pizza.jpg',
+        author: {
+          '@type': 'Organization',
+          name: 'Gelateria Amore',
+          url: 'https://gamore.se',
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Gelateria Amore',
+          url: 'https://gamore.se',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://gamore.se/logo.png',
+          },
+        },
+        datePublished: '2024-01-01',
+        dateModified: new Date().toISOString().split('T')[0],
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Startsida',
+            item: 'https://gamore.se',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Napolitansk Pizza',
+            item: 'https://gamore.se/pizza',
+          },
+        ],
+      },
+    ]),
   },
 };
 

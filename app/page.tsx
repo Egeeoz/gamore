@@ -3,7 +3,7 @@ import Info from '@/components/Info';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://gamore.vercel.app'),
+  metadataBase: new URL('https://gamore.se'),
   title: 'Gelateria Amore - Stockholms Bästa Pizza & Gelato | Hornstull',
   description:
     'Gelateria Amore erbjuder äkta napolitansk pizza och italiensk gelato. Familjedrivet glasscafé på Långholmsgatan 5. Beställ avhämtning eller med leverans.',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: 'Gelateria Amore - Stockholms Bästa Pizza & Gelato',
     description:
       'Äkta napolitansk pizza och italiensk gelato. Familjedrivet på Hornstull sedan 2014.',
-    url: 'https://gamore.vercel.app/', // CHANGE THIS TO GAMORE.SE LATER
+    url: 'https://gamore.se/',
     siteName: 'Gelateria Amore',
     images: [
       {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   alternates: {
-    canonical: 'https://gamore.vercel.app/', // CHANGE THIS TO GAMORE.SE LATER
+    canonical: 'https://gamore.se/',
   },
   other: {
     'application/ld+json': JSON.stringify([

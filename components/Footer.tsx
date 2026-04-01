@@ -90,9 +90,6 @@ export default function Footer() {
           <a className="phone" href="tel:+46707961666">
             070 796 16 66
           </a>
-          <a className="phone" href="tel:+08304270">
-            08 30 42 70
-          </a>
         </address>
       </section>
       <section>

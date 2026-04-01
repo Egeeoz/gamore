@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://gamore.vercel.app'),
+  metadataBase: new URL('https://gamore.se'),
   title: 'Vår Historia - Gelateria Amore',
   description:
     'Läs om Gelateria Amore historia. Dragana och Miroslav öppnade denna familjedrivna glasscafé i Stockholm 2014 efter att ha lärt sig traditionell italiensk gelato i Venedig.',
@@ -12,8 +12,74 @@ export const metadata: Metadata = {
     'familjehistoria Stockholm',
     'italiensk gelato historia',
   ],
+  openGraph: {
+    title: 'Vår Historia - Gelateria Amore',
+    description:
+      'En kärlekshistoria från Venedig till Stockholm. Läs om hur Dragana och Miroslav skapade Stockholms bästa gelato.',
+    url: 'https://gamore.se/historia',
+    siteName: 'Gelateria Amore',
+    locale: 'sv_SE',
+    type: 'website',
+  },
   alternates: {
-    canonical: 'https://gamore.vercel.app/historia',
+    canonical: 'https://gamore.se/historia',
+  },
+  other: {
+    'application/ld+json': JSON.stringify([
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'Gelateria Amore',
+        url: 'https://gamore.se',
+        description:
+          'Familjedrivet italiensk glasscafé och pizzeria i Stockholm',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Långholmsgatan 5',
+          addressLocality: 'Stockholm',
+          addressRegion: 'Stockholm',
+          postalCode: '117 33',
+          addressCountry: 'SE',
+        },
+        founder: [
+          {
+            '@type': 'Person',
+            name: 'Dragana',
+            description: 'Utbildad kock, co-founder av Gelateria Amore',
+          },
+          {
+            '@type': 'Person',
+            name: 'Miroslav',
+            description:
+              'Livvakt, möbelrestaurerare, silversmed och co-founder av Gelateria Amore',
+          },
+        ],
+        foundingDate: '2014',
+        contactPoint: {
+          '@type': 'ContactPoint',
+          telephone: '+46707961666',
+          contactType: 'Customer Service',
+        },
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Startsida',
+            item: 'https://gamore.se',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Vår Historia',
+            item: 'https://gamore.se/historia',
+          },
+        ],
+      },
+    ]),
   },
 };
 
