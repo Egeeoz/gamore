@@ -40,7 +40,8 @@ export const metadata: Metadata = {
         '@context': 'https://schema.org',
         '@type': 'Event',
         name: 'Glassprovning Stockholm',
-        description: 'Upplev äkta italiensk gelato med en guidad provning på 12 olika smaker. Perfekt för företag, privatfester och glassälskare.',
+        description:
+          'Upplev äkta italiensk gelato med en guidad provning på 12 olika smaker. Perfekt för företag, privatfester och glassälskare.',
         image: 'https://gamore.se/gelato-banner.webp',
         eventStatus: 'https://schema.org/EventScheduled',
         eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
@@ -338,11 +339,11 @@ export default function Page() {
             </p>
 
             <p>
-              Vår gelato innehåller svenska ekologiska mejeriprodukter och de
-              finaste råvarorna som ekologisk honung, färska och torkade frukter
-              och bär samt reducerad mängd socker och fett för en nyttigare
-              gelato utan att kompromissa med smaken. Välkommen att boka en
-              glassprovning hos oss!
+              Vår gelato innehåller svenska mejeriprodukter och de finaste
+              råvarorna som svensk honung, färska och torkade frukter och bär
+              samt reducerad mängd socker och fett för en nyttigare gelato utan
+              att kompromissa med smaken. Välkommen att boka en glassprovning
+              hos oss!
             </p>
 
             <div className="bg-amber-50 border-l-4 border-amber-600 p-6 my-8">

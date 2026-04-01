@@ -104,7 +104,7 @@ const timelineEvents = [
     year: '2014',
     title: 'Drömmen blir verklighet',
     description:
-      'Gelateria Amore öppnar i Stockholm. En familjedriven glasscafé byggd på kärlek, kvalitet och äkta italienska traditioner. Fokus på närproducerade och ekologiska råvaror.',
+      'Gelateria Amore öppnar i Stockholm. En familjedriven glasscafé byggd på kärlek, kvalitet och äkta italienska traditioner. Fokus på närproducerade och svenska råvaror.',
     image: '/glasstårta.jpg',
     imageAlt: 'Gelateria Amore öppnar Stockholm',
   },
@@ -242,7 +242,7 @@ export default function Historia() {
             </li>
             <li>
               <strong>Kvalitet:</strong> Endast de finaste råvarorna, så mycket
-              ekologisk som möjligt
+              svensk som möjligt
             </li>
             <li>
               <strong>Närproducerat:</strong> Vi stödjer lokala leverantörer och

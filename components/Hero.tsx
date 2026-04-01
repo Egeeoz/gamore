@@ -120,8 +120,7 @@ export default function Hero() {
           {/* Description */}
           <p className="text-base md:text-lg text-white/80 mb-8 max-w-xl leading-relaxed font-light bg-background/20 backdrop-blur-xs pl-2 rounded">
             Familjedrivet café på Långholmsgatan i Stockholm. Vår gelato
-            tillverkas dagligen med svenska ekologiska råvaror och italienska
-            traditioner.
+            tillverkas dagligen med svenska råvaror och italienska traditioner.
           </p>
 
           <Link
