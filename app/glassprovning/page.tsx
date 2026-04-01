@@ -5,6 +5,7 @@ import gelatoImage from '@/public/gelato-banner.webp';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://gamore.se'),
   title: 'Glassprovning Stockholm - Boka Gelato-upplevelse | Gelateria Amore',
   description:
     'Boka unik glassprovning i Stockholm. Prova 12 smaker äkta italiensk gelato. Perfekt för företagsevent och privatfester. Bokning öppnar mars 2026!',
@@ -32,6 +33,62 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: 'https://gamore.se/glassprovning',
+  },
+  other: {
+    'application/ld+json': JSON.stringify([
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Event',
+        name: 'Glassprovning Stockholm',
+        description:
+          'Upplev äkta italiensk gelato med en guidad provning på 12 olika smaker. Perfekt för företag, privatfester och glassälskare.',
+        image: 'https://gamore.se/gelato-banner.webp',
+        eventStatus: 'https://schema.org/EventScheduled',
+        eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+        startDate: '2026-03-01',
+        location: {
+          '@type': 'Place',
+          name: 'Gelateria Amore',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: 'Långholmsgatan 5',
+            addressLocality: 'Stockholm',
+            addressRegion: 'Stockholm',
+            postalCode: '117 33',
+            addressCountry: 'SE',
+          },
+        },
+        organizer: {
+          '@type': 'Organization',
+          name: 'Gelateria Amore',
+          url: 'https://gamore.se',
+        },
+        offers: {
+          '@type': 'Offer',
+          url: 'https://order.foodtec.se/gamore-catering/bestall-mat',
+          priceCurrency: 'SEK',
+          availability: 'https://schema.org/PreOrder',
+        },
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Startsida',
+            item: 'https://gamore.se',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Glassprovning',
+            item: 'https://gamore.se/glassprovning',
+          },
+        ],
+      },
+    ]),
   },
 };
 
@@ -282,11 +339,11 @@ export default function Page() {
             </p>
 
             <p>
-              Vår gelato innehåller svenska ekologiska mejeriprodukter och de
-              finaste råvarorna som ekologisk honung, färska och torkade frukter
-              och bär samt reducerad mängd socker och fett för en nyttigare
-              gelato utan att kompromissa med smaken. Välkommen att boka en
-              glassprovning hos oss!
+              Vår gelato innehåller svenska mejeriprodukter och de finaste
+              råvarorna som svensk honung, färska och torkade frukter och bär
+              samt reducerad mängd socker och fett för en nyttigare gelato utan
+              att kompromissa med smaken. Välkommen att boka en glassprovning
+              hos oss!
             </p>
 
             <div className="bg-amber-50 border-l-4 border-amber-600 p-6 my-8">

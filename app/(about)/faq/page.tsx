@@ -8,10 +8,10 @@ import {
 } from '@/components/ui/accordion';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://gamore.vercel.app'),
-  title: 'Vanliga Frågor - Gelateria Amore',
+  metadataBase: new URL('https://gamore.se'),
+  title: 'Vanliga Frågor - Gelateria Amore Stockholm',
   description:
-    'Få svar på vanliga frågor om beställning, öppettider och betalning på Gelateria Amore i Stockholm.',
+    'Få svar på vanliga frågor om beställning, öppettider, betalning och leverans på Gelateria Amore i Stockholm.',
   keywords: [
     'vanliga frågor',
     'faq',
@@ -19,15 +19,98 @@ export const metadata: Metadata = {
     'öppettider',
     'kontakt',
     'Stockholm',
+    'gelato Stockholm',
+    'pizza Stockholm',
   ],
+  openGraph: {
+    title: 'Vanliga Frågor - Gelateria Amore',
+    description:
+      'Svar på dina frågor om vår meny, beställning, öppettider och leverans.',
+    url: 'https://gamore.se/faq',
+    siteName: 'Gelateria Amore',
+    locale: 'sv_SE',
+    type: 'website',
+  },
   alternates: {
-    canonical: 'https://gamore.vercel.app/faq',
+    canonical: 'https://gamore.se/faq',
+  },
+  other: {
+    'application/ld+json': JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Vilka är era öppettider?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Vi är öppna tisdag-torsdag 13:00-20:00 och fredag-söndag 13:00-21:00. Måndagar är vi stängda.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Hur beställer jag från er?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Du kan beställa avhämtning genom vår webshop eller beställa med leverans via Wolt. Du är också välkommen att besöka oss direkt på Långholmsgatan 5 under öppettider.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Finns det vegetariska eller veganska alternativ?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Ja, vi erbjuder både vegetariska rätter och vegansk gelato. Du kan se all vår meny på webbplatsen för att se vilka alternativ som passar dina behov.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Hur betalar jag?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Du kan betala med kort, Swish eller kontant. Om du beställer via vår webshop kan du också betala med Klarna.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Kan jag boka ett bord?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Vi är ett litet café utan reservationsmöjlighet. Du är välkommen att komma förbi när som helst under våra öppettider och njuta av vår gelato och pizza.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Erbjuder ni catering?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Vi fokuserar på vår glasscafé och pizzeria. Kontakta oss gärna på 070 796 16 66 eller info@gamore.se för att diskutera eventuella särskilda önskemål.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Är ni glutenfria?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Vi rekommenderar att du kontaktar oss direkt för att diskutera glutenfreialternativ. Ring oss på 070 796 16 66 eller mejla info@gamore.se.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Vilka betalningsmetoder accepterar ni?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Vi accepterar kort, Swish och kontant. Om du beställer online kan du också betala med Klarna.',
+          },
+        },
+      ],
+    }),
   },
 };
 
 const faqs = [
   {
-    question: 'Vilka är era öppettider?',
+    question: 'Vad är era öppettider?',
     answer:
       'Vi är öppna tisdag-torsdag 13:00-20:00 och fredag-söndag 13:00-21:00. Måndagar är vi stängda.',
   },

@@ -8,11 +8,10 @@ import { Metadata } from 'next';
 
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import CookieConsent from '@/components/CookieConsent';
+import AnalyticsWrapper from '@/components/AnalyticsWrapper';
 import { SidebarProvider } from '@/components/ui/sidebar';
 import NavSidebar from '@/components/NavSideBar';
-
-import { Analytics } from '@vercel/analytics/next';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const sourceSans3 = Source_Sans_3({
   subsets: ['latin'],
@@ -33,7 +32,7 @@ const birthstone = Birthstone({
 // });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://gamore.vercel.app'),
+  metadataBase: new URL('https://gamore.se'),
   title: {
     default: 'Gelateria Amore - Pizza & Gelato i Stockholm',
     template: '%s | Gelateria Amore',
@@ -55,10 +54,10 @@ export default function RootLayout({
             <Nav />
             <main className="flex-1 flex flex-col bg-background min-h-dvh">
               {children}
-              <Analytics />
-              <SpeedInsights />
+              <AnalyticsWrapper />
             </main>
             <Footer />
+            <CookieConsent />
           </div>
         </SidebarProvider>
       </body>

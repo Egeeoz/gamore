@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import MenuSection from './MenuSection';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://gamore.vercel.app'),
+  metadataBase: new URL('https://gamore.se'),
   title: 'Meny - Napolitansk Pizza, Pasta & Gelato | Gelateria Amore Stockholm',
   description:
     'Se vår kompletta meny med napolitansk pizza, färsk pasta, italiensk gelato och mer. Stenugnsbakad pizza och handgjord glass på Hornstull i Stockholm.',
@@ -18,12 +18,74 @@ export const metadata: Metadata = {
     title: 'Meny - Napolitansk Pizza & Italiensk Mat | Gelateria Amore',
     description:
       'Napolitansk pizza, pasta, gelato och mer. Se hela vår meny med priser.',
-    url: 'https://gamore.vercel.app/meny',
+    url: 'https://gamore.se/meny',
+    siteName: 'Gelateria Amore',
     images: ['/pizza.jpg'],
     locale: 'sv_SE',
+    type: 'website',
   },
   alternates: {
-    canonical: 'https://gamore.vercel.app/meny',
+    canonical: 'https://gamore.se/meny',
+  },
+  other: {
+    'application/ld+json': JSON.stringify([
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Restaurant',
+        name: 'Gelateria Amore',
+        url: 'https://gamore.se',
+        image: 'https://gamore.se/pizza.jpg',
+        description: 'Italiensk glasscafé och pizzeria i Stockholm',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Långholmsgatan 5',
+          addressLocality: 'Stockholm',
+          addressRegion: 'Stockholm',
+          postalCode: '117 33',
+          addressCountry: 'SE',
+        },
+        hasMenu: {
+          '@type': 'Menu',
+          name: 'Gelateria Amore Meny',
+          url: 'https://gamore.se/meny',
+          hasMenuSection: [
+            {
+              '@type': 'MenuSection',
+              name: 'Pizza',
+              description: 'Stenugnsbakad napolitansk pizza',
+            },
+            {
+              '@type': 'MenuSection',
+              name: 'Pasta',
+              description: 'Italiensk pasta',
+            },
+            {
+              '@type': 'MenuSection',
+              name: 'Gelato',
+              description: 'Italiensk handgjord glass',
+            },
+          ],
+        },
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Startsida',
+            item: 'https://gamore.se',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Meny',
+            item: 'https://gamore.se/meny',
+          },
+        ],
+      },
+    ]),
   },
 };
 
