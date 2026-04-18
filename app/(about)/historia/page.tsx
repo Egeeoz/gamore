@@ -89,7 +89,7 @@ const timelineEvents = [
     title: 'Kärlekens stad',
     description:
       'Trötta på vintermörkret i Sverige reste Dragana och Miro till Venedig. Där upptäckte de passionen för glasstillverkning och en dröm föddes.',
-    image: '/glasstårta.jpg',
+    image: '/VENEDIG2013.jpg',
     imageAlt: 'Venedig, Italiens stad',
   },
   {
@@ -97,7 +97,7 @@ const timelineEvents = [
     title: 'Utbildning & Passion',
     description:
       'Dragana och Miroslav gick på flera kurser i Italien, Frankrike och Sverige. De lärde sig den gamla traditionen att tillverka äkta italiensk gelato och utökade kompetensen inom choklad, kaffe, desserter, catering och pizza.',
-    image: '/glasstårta.jpg',
+    image: '/utbildning.jpg',
     imageAlt: 'Gelato tillverkning kurs',
   },
   {
@@ -105,7 +105,7 @@ const timelineEvents = [
     title: 'Drömmen blir verklighet',
     description:
       'Gelateria Amore öppnar i Stockholm. En familjedriven glasscafé byggd på kärlek, kvalitet och äkta italienska traditioner. Fokus på närproducerade och svenska råvaror.',
-    image: '/glasstårta.jpg',
+    image: '/amore-oppning.jpg',
     imageAlt: 'Gelateria Amore öppnar Stockholm',
   },
   {

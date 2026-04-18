@@ -1,9 +1,5 @@
 import './globals.css';
-import {
-  Source_Sans_3,
-  Herr_Von_Muellerhoff,
-  Birthstone,
-} from 'next/font/google';
+import { Source_Sans_3, Birthstone } from 'next/font/google';
 import { Metadata } from 'next';
 
 import Nav from '@/components/Nav';
@@ -25,12 +21,6 @@ const birthstone = Birthstone({
   weight: '400',
 });
 
-// const herVonMuellerHoff = Herr_Von_Muellerhoff({
-//   display: 'swap',
-//   preload: true,
-//   weight: '400',
-// });
-
 export const metadata: Metadata = {
   metadataBase: new URL('https://gamore.se'),
   title: {
@@ -38,6 +28,7 @@ export const metadata: Metadata = {
     template: '%s | Gelateria Amore',
   },
   description: 'Äkta napolitansk pizza och italiensk gelato på Hornstull',
+  icons: 'icon.png',
 };
 
 export default function RootLayout({
