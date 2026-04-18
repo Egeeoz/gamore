@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     template: '%s | Gelateria Amore',
   },
   description: 'Äkta napolitansk pizza och italiensk gelato på Hornstull',
+  icons: 'icon.png',
 };
 
 export default function RootLayout({
