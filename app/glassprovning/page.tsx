@@ -333,9 +333,9 @@ export default function Page() {
             <p>
               Vår glassprovning sker löpande och det sker nästintill en
               glassprovning om dagen. Kontakta oss för att boka in en
-              glassprovning på vårt cafe/glass- chokladfabrik med en timmes
-              upplevelse. Ni kommer att vara få vara med och njuta av många av
-              våra smarriga smaker.
+              glassprovning på vårt cafe/glass med en timmes upplevelse. Ni
+              kommer att vara få vara med och njuta av många av våra smarriga
+              smaker.
             </p>
 
             <p>
@@ -352,9 +352,9 @@ export default function Page() {
               </p>
               <p>
                 Det är viktigt att ni kontaktar oss och gör er bokning minst fem
-                (5) dag innan ni vill besöka oss för en glassprovning.Detta är
-                för att säkerställa att det finns platser kvar. Speciellt då vi
-                inte kan ta in mer än 16 personer per glassprovning. Ni måste
+                (5) dagar innan ni vill besöka oss för en glassprovning. Detta
+                är för att säkerställa att det finns platser kvar. Speciellt då
+                vi inte kan ta in mer än 16 personer per glassprovning. Ni måste
                 också ha Amores glassprovnings presentkort
               </p>
             </div>

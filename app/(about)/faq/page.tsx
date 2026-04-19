@@ -136,8 +136,20 @@ const faqs = [
   },
   {
     question: 'Erbjuder ni catering?',
-    answer:
-      'Vi fokuserar på vår glasscafé och pizzeria. Kontakta oss gärna på 070 796 16 66 eller info@gamore.se för att diskutera eventuella särskilda önskemål.',
+    answer: (
+      <>
+        Ja, vi erbjuder catering! Du kan beställa catering genom vår{' '}
+        <a
+          href="https://order.foodtec.se/gamore-catering/bestall-mat"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-amber-700 hover:text-amber-800 underline transition-colors"
+        >
+          webshop för catering
+        </a>
+        .
+      </>
+    ),
   },
   {
     question: 'Är ni glutenfria?',

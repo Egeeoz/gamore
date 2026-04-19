@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://gamore.se'),
   title: 'Vår Historia - Gelateria Amore',
   description:
-    'Läs om Gelateria Amore historia. Dragana och Miroslav öppnade denna familjedrivna glasscafé i Stockholm 2014 efter att ha lärt sig traditionell italiensk gelato i Venedig.',
+    'Läs om Gelateria Amore historia. Dragana och Miroslav öppnade denna familjedrivna glasscafé i Stockholm 2016 efter att ha lärt sig traditionell italiensk gelato i Venedig.',
   keywords: [
     'Gelateria Amore historia',
     'om oss',
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
               'Livvakt, möbelrestaurerare, silversmed och co-founder av Gelateria Amore',
           },
         ],
-        foundingDate: '2014',
+        foundingDate: '2016',
         contactPoint: {
           '@type': 'ContactPoint',
           telephone: '+46707961666',
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
 
 const timelineEvents = [
   {
-    year: '2010',
+    year: '2013',
     title: 'Kärlekens stad',
     description:
       'Trötta på vintermörkret i Sverige reste Dragana och Miro till Venedig. Där upptäckte de passionen för glasstillverkning och en dröm föddes.',
@@ -93,19 +93,19 @@ const timelineEvents = [
     imageAlt: 'Venedig, Italiens stad',
   },
   {
-    year: '2010 - 2013',
+    year: '2013 - 2015',
     title: 'Utbildning & Passion',
     description:
       'Dragana och Miroslav gick på flera kurser i Italien, Frankrike och Sverige. De lärde sig den gamla traditionen att tillverka äkta italiensk gelato och utökade kompetensen inom choklad, kaffe, desserter, catering och pizza.',
-    image: '/utbildning.jpg',
+    image: '/utbildning.JPG',
     imageAlt: 'Gelato tillverkning kurs',
   },
   {
-    year: '2014',
+    year: '2016',
     title: 'Drömmen blir verklighet',
     description:
-      'Gelateria Amore öppnar i Stockholm. En familjedriven glasscafé byggd på kärlek, kvalitet och äkta italienska traditioner. Fokus på närproducerade och svenska råvaror.',
-    image: '/amore-oppning.jpg',
+      'Gelateria Amore öppnar i Stockholm. Ett familjedrivet glasscafé byggd på kärlek, kvalitet och äkta italienska traditioner. Fokus på närproducerade och svenska råvaror.',
+    image: '/gamore-i-borjan.jpg',
     imageAlt: 'Gelateria Amore öppnar Stockholm',
   },
   {
@@ -126,8 +126,8 @@ export default function Historia() {
           Vår Historia
         </h1>
         <p className="text-lg text-gray-700">
-          En familjedrivet passion för äkta italiensk gelato och pizza. En resa
-          som började i Venedig och landet här i Stockholm.
+          En familjedriven passion för äkta italiensk gelato och pizza. En resa
+          som började i Venedig och landade här i Stockholm.
         </p>
 
         {/* Vision Section */}

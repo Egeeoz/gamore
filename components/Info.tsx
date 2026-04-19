@@ -17,7 +17,7 @@ export default function Info() {
           Hornstull serverar traditionell stenugnsbakad pizza enligt italienska
           metoder. Vår pizzeria ligger på Långholmsgatan 5, bara ett stenkast
           från Hornstulls tunnelbana. Förutom vår napolitanska pizza erbjuder vi
-          även färsk italiensk gelato gjord dagligen, pasta, wraps och
+          även färsk, dagligen tillverkad italiensk gelato samt pasta, wraps och
           desserter.
         </p>
         <p>

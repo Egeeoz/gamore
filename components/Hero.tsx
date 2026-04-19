@@ -114,21 +114,30 @@ export default function Hero() {
 
         <section>
           <h2 className="text-xl md:text-2xl text-amber-300 font-light mb-2 tracking-wide">
-            Stenugnsbakad pizza och handgjord glass i Stockholm sedan 2014
+            Stenugnsbakad pizza och handgjord glass i Stockholm sedan 2016
           </h2>
 
           {/* Description */}
-          <p className="text-base md:text-lg text-white/80 mb-8 max-w-xl leading-relaxed font-light bg-background/20 backdrop-blur-xs pl-2 rounded">
+          <p className="text-base md:text-lg text-white/80 mb-6 max-w-xl leading-relaxed font-light bg-background/20 backdrop-blur-xs pl-2 rounded">
             Familjedrivet café på Långholmsgatan i Stockholm. Vår gelato
             tillverkas dagligen med svenska råvaror och italienska traditioner.
           </p>
-
-          <Link
-            href="/meny"
-            className="bg-white/20 hover:bg-white/30 text-white font-semibold py-3 px-8 rounded backdrop-blur-sm border border-white/30 transition-all duration-300 w-fit"
-          >
-            Se meny
-          </Link>
+          <div className="flex gap-4 md:justify-start justify-between">
+            <Link
+              href="/meny"
+              className="bg-white/20 hover:bg-white/30 text-white font-semibold py-3 px-8 rounded backdrop-blur-sm border border-white/30 transition-all duration-300 w-fit"
+            >
+              Se meny
+            </Link>
+            <Link
+              href="https://order.foodtec.se/gamore-catering/bestall-mat"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white/20 text-amber-600 hover:bg-white/30 font-semibold py-3 px-8 rounded backdrop-blur-sm border border-white/30 transition-all duration-300 w-fit"
+            >
+              Catering
+            </Link>
+          </div>
         </section>
       </section>
 

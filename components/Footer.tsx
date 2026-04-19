@@ -32,7 +32,7 @@ export default function Footer() {
         <p className="md:w-[60%] w-[90%] text-sm">
           Gelateria Amore serverar äkta napolitansk pizza och italiensk gelato
           på Långholmsgatan 5, Hornstull. Stenugnsbakad pizza, färsk pasta och
-          handgjord glass sedan 2014. Välkommen!
+          handgjord glass sedan 2016. Välkommen!
         </p>
       </section>
       <section className="flex flex-col items-center gap-2">
