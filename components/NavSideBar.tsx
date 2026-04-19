@@ -70,7 +70,7 @@ const NAV_ITEMS: NavItem[] = [
     ],
   },
   {
-    title: 'GELATATERIA',
+    title: 'GELATERIA',
     subItems: [
       { title: 'Gelato', url: 'gelato' },
       { title: 'Glassprovning', url: 'glassprovning' },

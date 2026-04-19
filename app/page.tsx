@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Gelateria Amore - Stockholms Bästa Pizza & Gelato',
     description:
-      'Äkta napolitansk pizza och italiensk gelato. Familjedrivet på Hornstull sedan 2014.',
+      'Äkta napolitansk pizza och italiensk gelato. Familjedrivet på Hornstull sedan 2016.',
     url: 'https://gamore.se/',
     siteName: 'Gelateria Amore',
     images: [

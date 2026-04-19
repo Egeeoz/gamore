@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import gelatoImg from '@/public/gelato-pink.webp';
+import gelatoImg from '@/public/gelato-display-hero-img.webp';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://gamore.se'),
@@ -115,7 +115,7 @@ export default function GelatoPage() {
               Italiensk Gelato
             </h1>
             <p className="text-xl md:text-2xl text-amber-300 font-light mb-2 tracking-wide">
-              Äkta kärlek i varje skalp
+              Äkta kärlek i varje skopa
             </p>
             <p className="bg-background/20 backdrop-blur-sm rounded pl-2 md:text-lg text-white/80 mb-8 max-w-xl leading-relaxed font-light">
               Handgjord gelato med svenska råvaror och italienska traditioner.
@@ -235,7 +235,7 @@ export default function GelatoPage() {
             <p>
               Vi är väldigt stolta över vår Gelato och tillverkar den med äkta
               kärlek. Med äkta kärlek kommer även ett pris. Vi använder oss
-              endast av de bästa råvarorna som marknaden erbjuder – allt för att
+              endast av de bästa råvarorna som marknaden erbjuder, allt för att
               din smakupplevelse ska bli så genuin och minnesvärd som möjligt.
             </p>
             <p>

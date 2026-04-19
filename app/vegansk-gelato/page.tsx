@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import gelatoImg from '@/public/vegan-gelato-blueberry.webp';
+import gelatoImg from '@/public/vegan-gelato-display-hero-img.webp';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://gamore.se'),
@@ -116,7 +116,7 @@ export default function VeganGelatoPage() {
               100% vegansk njutning
             </p>
             <p className="bg-background/20 backdrop-blur-sm rounded pr-2 md:text-lg text-white/80 mb-8 max-w-xl leading-relaxed font-light text-right">
-              Handgjord gelato med frukt- och vattenbas utan mjölk. Alla
+              Handgjord gelato med frukt och vattenbas utan mjölk. Alla
               smakämnen är 100% veganska. Lär dig mer om hur vi tillverkar vår
               veganska gelato.
             </p>
@@ -195,7 +195,7 @@ export default function VeganGelatoPage() {
           {/* Image Gallery */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
             <Image
-              src="/gelato-yellow.webp"
+              src="/vegan-gelato-lemon.webp"
               alt="Vegansk gelato - färsk handgjord glass från Gelateria Amore Stockholm"
               width={400}
               height={400}
@@ -203,7 +203,7 @@ export default function VeganGelatoPage() {
               sizes="(max-width: 768px) 100vw, 50vw"
             />
             <Image
-              src="/gelato-white.webp"
+              src="/vegan-gelato-chocolate.webp"
               alt="Vegansk gelato - italiensk glass i Stockholm"
               width={400}
               height={400}
