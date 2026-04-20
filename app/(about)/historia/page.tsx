@@ -113,7 +113,7 @@ const timelineEvents = [
     title: 'En familjeaffär',
     description:
       'Dragana är utbildad kock som arbetat hela sitt liv med matlagning. Miroslav är livvakt, möbelrestaurerare, silversmed och framförallt matälskare. Deras dotter Tamara hjälper till i butiken. Tillsammans förenar de passion för äkta matlagning och de finaste råvarorna.',
-    image: '/glasstårta.jpg',
+    image: '/familj-bild.webp',
     imageAlt: 'Familjefoto av Gelateria Amore team',
   },
 ];
@@ -174,7 +174,7 @@ export default function Historia() {
                     </p>
                   </div>
 
-                  <div className="h-40 md:h-48 md:w-48 shrink-0 rounded-lg overflow-hidden">
+                  <div className="h-60 md:h-48 md:w-48 shrink-0 rounded-lg overflow-hidden">
                     <Image
                       src={event.image}
                       alt={event.imageAlt}
