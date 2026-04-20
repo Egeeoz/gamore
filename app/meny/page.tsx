@@ -375,29 +375,30 @@ export default function MenuPage() {
   const gelatoData = {
     left: [
       {
-        name: 'Pistage',
-        description: 'No description provided',
-        price: '65',
-      },
-      {
-        name: 'Choklad',
+        name: 'Olika smaker',
         description:
-          'Belgisk premium 70 % mörkchoklad kryddat med bourbonvanilj och havssalt.',
-        price: '55',
+          'Varje dag har vi olika smaker, kontakta oss gärna för att veta vilken smak det är för dagen.',
+        price: 'Från 55',
       },
+      // {
+      //   name: 'Choklad',
+      //   description:
+      //     'Belgisk premium 70 % mörkchoklad kryddat med bourbonvanilj och havssalt.',
+      //   price: '55',
+      // },
     ],
-    right: [
-      {
-        name: 'Hasselnötter',
-        description: 'No description provided',
-        price: '55',
-      },
-      {
-        name: 'Straccietella',
-        description: 'Vanilj glass med choklad strössel.',
-        price: '55',
-      },
-    ],
+    // right: [
+    //   {
+    //     name: 'Hasselnötter',
+    //     description: 'No description provided',
+    //     price: '55',
+    //   },
+    //   {
+    //     name: 'Straccietella',
+    //     description: 'Vanilj glass med choklad strössel.',
+    //     price: '55',
+    //   },
+    // ],
   };
 
   const dessertData = {
